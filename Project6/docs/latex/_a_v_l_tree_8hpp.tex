@@ -1,0 +1,46 @@
+\hypertarget{_a_v_l_tree_8hpp}{}\section{A\+V\+L\+Tree.\+hpp File Reference}
+\label{_a_v_l_tree_8hpp}\index{A\+V\+L\+Tree.\+hpp@{A\+V\+L\+Tree.\+hpp}}
+
+
+Templated interface and implementation of an A\+V\+L tree.  
+
+
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$iterator$>$}\\*
+{\ttfamily \#include $<$stdexcept$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnode}{node$<$ \+\_\+\+Type $>$}
+\begin{DoxyCompactList}\small\item\em A node for use in the A\+V\+L tree. Holds a value, height, and pointers to left and right child nodes. \end{DoxyCompactList}\item 
+class \hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree$<$ \+\_\+\+Type $>$}
+\begin{DoxyCompactList}\small\item\em An A\+V\+L Tree template. \end{DoxyCompactList}\item 
+class \hyperlink{class_a_v_l_tree__iterator}{A\+V\+L\+Tree\+\_\+iterator$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$}
+\begin{DoxyCompactList}\small\item\em A non-\/const iterator that iterates through the tree in-\/order. \end{DoxyCompactList}\item 
+class \hyperlink{class_a_v_l_tree__const__iterator}{A\+V\+L\+Tree\+\_\+const\+\_\+iterator$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$}
+\begin{DoxyCompactList}\small\item\em A constant iterator that iterates through the tree in-\/order. \end{DoxyCompactList}\item 
+class \hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree$<$ \+\_\+\+Type $>$}
+\begin{DoxyCompactList}\small\item\em An A\+V\+L Tree template. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+\+Type $>$ }\\void \hyperlink{_a_v_l_tree_8hpp_ac410cfeb66e2568b926448b70e69db1e}{swap} (\hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$ \&lhs, \hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$ \&rhs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Templated interface and implementation of an A\+V\+L tree. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_a_v_l_tree_8hpp_ac410cfeb66e2568b926448b70e69db1e}{}\index{A\+V\+L\+Tree.\+hpp@{A\+V\+L\+Tree.\+hpp}!swap@{swap}}
+\index{swap@{swap}!A\+V\+L\+Tree.\+hpp@{A\+V\+L\+Tree.\+hpp}}
+\subsubsection[{swap(\+A\+V\+L\+Tree$<$ \+\_\+\+Type $>$ \&lhs, A\+V\+L\+Tree$<$ \+\_\+\+Type $>$ \&rhs)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type $>$ void swap (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$ \&}]{lhs, }
+\item[{{\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)}\label{_a_v_l_tree_8hpp_ac410cfeb66e2568b926448b70e69db1e}

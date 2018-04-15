@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_token_8cpp" kind="file" language="C++">
+    <compoundname>Token.cpp</compoundname>
+    <includes refid="_token_8hpp" local="yes">Token.hpp</includes>
+    <incdepgraph>
+      <node id="512">
+        <label>cmath</label>
+      </node>
+      <node id="511">
+        <label>Token.hpp</label>
+        <link refid="_token_8hpp"/>
+        <childnode refid="512" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+        <childnode refid="514" relation="include">
+        </childnode>
+        <childnode refid="515" relation="include">
+        </childnode>
+        <childnode refid="516" relation="include">
+        </childnode>
+      </node>
+      <node id="513">
+        <label>string</label>
+      </node>
+      <node id="510">
+        <label>Token.cpp</label>
+        <link refid="Token.cpp"/>
+        <childnode refid="511" relation="include">
+        </childnode>
+      </node>
+      <node id="516">
+        <label>vector</label>
+      </node>
+      <node id="515">
+        <label>utility</label>
+      </node>
+      <node id="514">
+        <label>unordered_map</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>Contains some of the implementation for <ref refid="class_token" kindref="compound">Token</ref> objects. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_token_8hpp" kindref="compound">Token.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_token_1a98fb92871af9b32ec5dc5b1b16a3b92d" kindref="member">Token::calculateRanks</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>numDocs)<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>d<sp/>=<sp/>(_docFreqs.size()<sp/>&gt;<sp/>0)<sp/>?<sp/>_docFreqs.size()<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>elem<sp/>:<sp/>_docFreqs)<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>idf<sp/>=<sp/>log10f((</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)numDocs<sp/>/<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>d);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tf<sp/>=<sp/>elem.second.first;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>elem.second.second<sp/>=<sp/>tf<sp/>*<sp/>idf;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_token_1ae3802c4c2b1a3daf2de8e72eee09fb57" kindref="member">Token::hasDocPair</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;int,int&gt;&amp;<sp/>docID)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unordered_map&lt;int,std::pair&lt;int,float&gt;&gt;::const_iterator<sp/>itr<sp/>=<sp/>_docFreqs.find(docID.first);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(itr<sp/>!=<sp/>_docFreqs.end());</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_token_1a067a9966459518c42bdeff937b5e25c8" kindref="member">Token::incrDocPair</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;int,int&gt;&amp;<sp/>docID)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unordered_map&lt;int,std::pair&lt;int,float&gt;&gt;::iterator<sp/>itr<sp/>=<sp/>_docFreqs.find(docID.first);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(itr<sp/>!=<sp/>_docFreqs.end())<sp/>{<sp/>++(itr-&gt;second.first);<sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Token.cpp"/>
+  </compounddef>
+</doxygen>

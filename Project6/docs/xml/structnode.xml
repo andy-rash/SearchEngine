@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structnode" kind="struct" language="C++" prot="public">
+    <compoundname>node</compoundname>
+    <includes refid="_a_v_l_tree_8hpp" local="no">AVLTree.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>_Type</declname>
+        <defname>_Type</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnode_1a8353cf23af61f2a637764a1a46ca8eb6" prot="public" static="no" mutable="no">
+        <type>value_type</type>
+        <definition>value_type node&lt; _Type &gt;::_value</definition>
+        <argsstring></argsstring>
+        <name>_value</name>
+        <briefdescription>
+<para>Value stored in the node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="27" column="1" bodyfile="AVLTree.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnode_1a3acd2c366e647bce759f961f71ebf5b3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int node&lt; _Type &gt;::_height</definition>
+        <argsstring></argsstring>
+        <name>_height</name>
+        <briefdescription>
+<para>Height of the node in the tree. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="28" column="1" bodyfile="AVLTree.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnode_1ad045681eca718a3867a16a9644aac2a6" prot="public" static="no" mutable="no">
+        <type><ref refid="structnode" kindref="compound">node</ref> *</type>
+        <definition>node* node&lt; _Type &gt;::_parent</definition>
+        <argsstring></argsstring>
+        <name>_parent</name>
+        <briefdescription>
+<para>A pointer to the parent of the node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="29" column="1" bodyfile="AVLTree.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnode_1af082014da104d7b72a3b7299d027ffbb" prot="public" static="no" mutable="no">
+        <type><ref refid="structnode" kindref="compound">node</ref> *</type>
+        <definition>node* node&lt; _Type &gt;::_left</definition>
+        <argsstring></argsstring>
+        <name>_left</name>
+        <briefdescription>
+<para>A pointer to the left child of the node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="30" column="1" bodyfile="AVLTree.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnode_1aa65c4746c7391fb99f06fec3400addce" prot="public" static="no" mutable="no">
+        <type><ref refid="structnode" kindref="compound">node</ref> *</type>
+        <definition>node* node&lt; _Type &gt;::_right</definition>
+        <argsstring></argsstring>
+        <name>_right</name>
+        <briefdescription>
+<para>A pointer to the right child of the node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="31" column="1" bodyfile="AVLTree.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structnode_1a07f56d66b295e3a51cd8e5771c505e2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>node&lt; _Type &gt;::node</definition>
+        <argsstring>()</argsstring>
+        <name>node</name>
+        <briefdescription>
+<para>Initializes the member data with default values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="38" column="1" bodyfile="AVLTree.hpp" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="structnode_1a57d8701648d6e65867648f077add339b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>node&lt; _Type &gt;::node</definition>
+        <argsstring>(const node &amp;copy)</argsstring>
+        <name>node</name>
+        <param>
+          <type>const <ref refid="structnode" kindref="compound">node</ref> &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>copy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- another node to copy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="46" column="1" bodyfile="AVLTree.hpp" bodystart="46" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="structnode_1ac422b5fa2f7dc1bfc6485373f4a37cf8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>node&lt; _Type &gt;::node</definition>
+        <argsstring>(node &amp;&amp;copy)</argsstring>
+        <name>node</name>
+        <param>
+          <type><ref refid="structnode" kindref="compound">node</ref> &amp;&amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+<para>Move constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>copy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- another node to move from. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="72" column="1" bodyfile="AVLTree.hpp" bodystart="72" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="structnode_1a48762381e551e35cb9ee0d515339dab0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>node&lt; _Type &gt;::node</definition>
+        <argsstring>(const value_type &amp;value, node *parent, node *left, node *right)</argsstring>
+        <name>node</name>
+        <param>
+          <type>const value_type &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type><ref refid="structnode" kindref="compound">node</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="structnode" kindref="compound">node</ref> *</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type><ref refid="structnode" kindref="compound">node</ref> *</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the member data with a given value and pointers to a parent, left, and right child and a height of -1. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a value of type value_type. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a pointer to the parent of the new node (should almost always be nullptr). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a pointer to the left child of the new node (should almost always be nullptr). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a pointer to the right child of the new node (should almost always be nullptr). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="97" column="1" bodyfile="AVLTree.hpp" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="structnode_1a7eb8c2ea4c2dfeb90bef1ecee16aa0f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>node&lt; _Type &gt;::node</definition>
+        <argsstring>(const value_type &amp;value, const int &amp;height, node *parent, node *left, node *right)</argsstring>
+        <name>node</name>
+        <param>
+          <type>const value_type &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type><ref refid="structnode" kindref="compound">node</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="structnode" kindref="compound">node</ref> *</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type><ref refid="structnode" kindref="compound">node</ref> *</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="112" column="1" bodyfile="AVLTree.hpp" bodystart="112" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="structnode_1a527872acc0945cc69fdcc1237112ea40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>node&lt; _Type &gt;::~node</definition>
+        <argsstring>()</argsstring>
+        <name>~node</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="123" column="1" bodyfile="AVLTree.hpp" bodystart="123" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="structnode_1a88b75549d8936a1cdafd77d1daf9f218" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structnode" kindref="compound">node</ref> &amp;</type>
+        <definition>node&lt; _Type &gt;::operator=</definition>
+        <argsstring>(node copy)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="structnode" kindref="compound">node</ref></type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+<para>Assignment operator; uses copy-swap idiom. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>copy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a node passed by value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a reference to a node. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="150" column="1" bodyfile="AVLTree.hpp" bodystart="150" bodyend="156"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structnode_1ae91b864585481f95d662fe66839e3e42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class _Type1</type>
+          </param>
+        </templateparamlist>
+        <type>friend void</type>
+        <definition>node&lt; _Type &gt;::swap</definition>
+        <argsstring>(node&lt; _Type &gt; &amp;lhs, node&lt; _Type &gt; &amp;rhs)</argsstring>
+        <name>swap</name>
+        <param>
+          <type><ref refid="structnode" kindref="compound">node</ref>&lt; _Type &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structnode" kindref="compound">node</ref>&lt; _Type &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>friend swap function for external use. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- first node to be swapped. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- second node to be swapped. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="167" column="1" bodyfile="AVLTree.hpp" bodystart="167" bodyend="178"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A node for use in the AVL tree. Holds a value, height, and pointers to left and right child nodes. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_Type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a type for the node template. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_a_v_l_tree" kindref="compound">AVLTree</ref>. </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="27">
+        <label>node&lt; _Type &gt;</label>
+        <link refid="structnode"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>_left</edgelabel>
+          <edgelabel>_right</edgelabel>
+          <edgelabel>_parent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="AVLTree.hpp" line="23" column="1" bodyfile="AVLTree.hpp" bodystart="23" bodyend="180"/>
+    <listofallmembers>
+      <member refid="structnode_1a3acd2c366e647bce759f961f71ebf5b3" prot="public" virt="non-virtual"><scope>node</scope><name>_height</name></member>
+      <member refid="structnode_1af082014da104d7b72a3b7299d027ffbb" prot="public" virt="non-virtual"><scope>node</scope><name>_left</name></member>
+      <member refid="structnode_1ad045681eca718a3867a16a9644aac2a6" prot="public" virt="non-virtual"><scope>node</scope><name>_parent</name></member>
+      <member refid="structnode_1aa65c4746c7391fb99f06fec3400addce" prot="public" virt="non-virtual"><scope>node</scope><name>_right</name></member>
+      <member refid="structnode_1a8353cf23af61f2a637764a1a46ca8eb6" prot="public" virt="non-virtual"><scope>node</scope><name>_value</name></member>
+      <member refid="structnode_1a07f56d66b295e3a51cd8e5771c505e2f" prot="public" virt="non-virtual"><scope>node</scope><name>node</name></member>
+      <member refid="structnode_1a57d8701648d6e65867648f077add339b" prot="public" virt="non-virtual"><scope>node</scope><name>node</name></member>
+      <member refid="structnode_1ac422b5fa2f7dc1bfc6485373f4a37cf8" prot="public" virt="non-virtual"><scope>node</scope><name>node</name></member>
+      <member refid="structnode_1a48762381e551e35cb9ee0d515339dab0" prot="public" virt="non-virtual"><scope>node</scope><name>node</name></member>
+      <member refid="structnode_1a7eb8c2ea4c2dfeb90bef1ecee16aa0f9" prot="public" virt="non-virtual"><scope>node</scope><name>node</name></member>
+      <member refid="structnode_1a88b75549d8936a1cdafd77d1daf9f218" prot="public" virt="non-virtual"><scope>node</scope><name>operator=</name></member>
+      <member refid="structnode_1ae91b864585481f95d662fe66839e3e42" prot="public" virt="non-virtual"><scope>node</scope><name>swap</name></member>
+      <member refid="structnode_1a527872acc0945cc69fdcc1237112ea40" prot="public" virt="non-virtual"><scope>node</scope><name>~node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_token_8hpp" kind="file" language="C++">
+    <compoundname>Token.hpp</compoundname>
+    <includes local="no">cmath</includes>
+    <includes local="no">string</includes>
+    <includes local="no">unordered_map</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="_document_processor_8hpp" local="yes">DocumentProcessor.hpp</includedby>
+    <includedby refid="_a_v_l_tree_index_8hpp" local="yes">AVLTreeIndex.hpp</includedby>
+    <includedby refid="_index_handler_8hpp" local="yes">IndexHandler.hpp</includedby>
+    <includedby refid="_token_8cpp" local="yes">Token.cpp</includedby>
+    <incdepgraph>
+      <node id="519">
+        <label>cmath</label>
+      </node>
+      <node id="518">
+        <label>Token.hpp</label>
+        <link refid="Token.hpp"/>
+        <childnode refid="519" relation="include">
+        </childnode>
+        <childnode refid="520" relation="include">
+        </childnode>
+        <childnode refid="521" relation="include">
+        </childnode>
+        <childnode refid="522" relation="include">
+        </childnode>
+        <childnode refid="523" relation="include">
+        </childnode>
+      </node>
+      <node id="520">
+        <label>string</label>
+      </node>
+      <node id="523">
+        <label>vector</label>
+      </node>
+      <node id="522">
+        <label>utility</label>
+      </node>
+      <node id="521">
+        <label>unordered_map</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="525">
+        <label>DocumentProcessor.hpp</label>
+        <link refid="_document_processor_8hpp"/>
+        <childnode refid="526" relation="include">
+        </childnode>
+        <childnode refid="536" relation="include">
+        </childnode>
+        <childnode refid="537" relation="include">
+        </childnode>
+      </node>
+      <node id="530">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="526">
+        <label>IndexInterface.hpp</label>
+        <link refid="_index_interface_8hpp"/>
+        <childnode refid="527" relation="include">
+        </childnode>
+        <childnode refid="534" relation="include">
+        </childnode>
+        <childnode refid="529" relation="include">
+        </childnode>
+        <childnode refid="532" relation="include">
+        </childnode>
+      </node>
+      <node id="527">
+        <label>AVLTreeIndex.hpp</label>
+        <link refid="_a_v_l_tree_index_8hpp"/>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="529" relation="include">
+        </childnode>
+        <childnode refid="532" relation="include">
+        </childnode>
+      </node>
+      <node id="524">
+        <label>Token.hpp</label>
+        <link refid="Token.hpp"/>
+        <childnode refid="525" relation="include">
+        </childnode>
+        <childnode refid="527" relation="include">
+        </childnode>
+        <childnode refid="537" relation="include">
+        </childnode>
+        <childnode refid="539" relation="include">
+        </childnode>
+      </node>
+      <node id="534">
+        <label>HashTableIndex.hpp</label>
+        <link refid="_hash_table_index_8hpp"/>
+        <childnode refid="535" relation="include">
+        </childnode>
+        <childnode refid="529" relation="include">
+        </childnode>
+        <childnode refid="532" relation="include">
+        </childnode>
+      </node>
+      <node id="532">
+        <label>QueryProcessor.hpp</label>
+        <link refid="_query_processor_8hpp"/>
+        <childnode refid="529" relation="include">
+        </childnode>
+        <childnode refid="533" relation="include">
+        </childnode>
+      </node>
+      <node id="538">
+        <label>IndexHandler.cpp</label>
+        <link refid="_index_handler_8cpp"/>
+      </node>
+      <node id="528">
+        <label>AVLTreeIndex.cpp</label>
+        <link refid="_a_v_l_tree_index_8cpp"/>
+      </node>
+      <node id="539">
+        <label>Token.cpp</label>
+        <link refid="_token_8cpp"/>
+      </node>
+      <node id="535">
+        <label>HashTableIndex.cpp</label>
+        <link refid="_hash_table_index_8cpp"/>
+      </node>
+      <node id="537">
+        <label>IndexHandler.hpp</label>
+        <link refid="_index_handler_8hpp"/>
+        <childnode refid="538" relation="include">
+        </childnode>
+      </node>
+      <node id="533">
+        <label>QueryProcessor.cpp</label>
+        <link refid="_query_processor_8cpp"/>
+      </node>
+      <node id="529">
+        <label>SearchEngine.hpp</label>
+        <link refid="_search_engine_8hpp"/>
+        <childnode refid="530" relation="include">
+        </childnode>
+        <childnode refid="531" relation="include">
+        </childnode>
+      </node>
+      <node id="536">
+        <label>DocumentProcessor.cpp</label>
+        <link refid="_document_processor_8cpp"/>
+      </node>
+      <node id="531">
+        <label>SearchEngine.cpp</label>
+        <link refid="_search_engine_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_token" prot="public">Token</innerclass>
+    <briefdescription>
+<para>Contains the interface (and some inlined implementation) for <ref refid="class_token" kindref="compound">Token</ref> objects. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>TOKEN_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOKEN_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_token" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_token" kindref="compound">Token</ref><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>_payload;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unordered_map&lt;int,std::pair&lt;int,float&gt;&gt;<sp/>_docFreqs;<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>corpusFreq;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38" refid="class_token_1aa3c5868ba4115f3189df6b2ac5b36f39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_token_1aa3c5868ba4115f3189df6b2ac5b36f39" kindref="member">Token</ref>()<sp/>:<sp/>_payload(<ref refid="namespacestd" kindref="compound">std</ref>::string()),</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_docFreqs(<ref refid="namespacestd" kindref="compound">std</ref>::unordered_map&lt;int,<ref refid="namespacestd" kindref="compound">std</ref>::pair&lt;int,float&gt;&gt;()),</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>corpusFreq(0)<sp/>{}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="class_token_1afbdab46261b6980bebf75e1c910d19ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_token_1afbdab46261b6980bebf75e1c910d19ec" kindref="member">Token</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="class_token_1a518dac411db3279a9b2f4ce38e46d199" kindref="member">payload</ref>)<sp/>:<sp/>_payload(payload),</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_docFreqs(<ref refid="namespacestd" kindref="compound">std</ref>::unordered_map&lt;int,<ref refid="namespacestd" kindref="compound">std</ref>::pair&lt;int,float&gt;&gt;()),</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>corpusFreq(0)<sp/>{}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="class_token_1a1385cdd373c4f869067bcf4e4549b35e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_token_1a1385cdd373c4f869067bcf4e4549b35e" kindref="member">Token</ref>(std::string&amp;&amp;<sp/><ref refid="class_token_1a518dac411db3279a9b2f4ce38e46d199" kindref="member">payload</ref>)<sp/>:<sp/>_payload(<ref refid="namespacestd" kindref="compound">std</ref>::move(<ref refid="class_token_1a518dac411db3279a9b2f4ce38e46d199" kindref="member">payload</ref>)),</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_docFreqs(<ref refid="namespacestd" kindref="compound">std</ref>::unordered_map&lt;int,<ref refid="namespacestd" kindref="compound">std</ref>::pair&lt;int,float&gt;&gt;()),</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>corpusFreq(0)<sp/>{}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="class_token_1a3c9d92534dea1cf1664b049bbc497631" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_token_1a3c9d92534dea1cf1664b049bbc497631" kindref="member">addDocPair</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;int,int&gt;&amp;<sp/>doc)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_docFreqs[doc.first]<sp/>=<sp/>std::make_pair(doc.second,0.0f);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_token_1a98fb92871af9b32ec5dc5b1b16a3b92d" kindref="member">calculateRanks</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>numDocs);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="class_token_1a2f643ffd68e0d9f6fc3a812337cba728" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/><ref refid="class_token_1a2f643ffd68e0d9f6fc3a812337cba728" kindref="member">corpusFrequency</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>corpusFreq;<sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="class_token_1a96f7a2357460942a79f4c83edfc5328e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_token_1a96f7a2357460942a79f4c83edfc5328e" kindref="member">corpusFrequency</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>corpFreq)<sp/>{<sp/>corpusFreq<sp/>=<sp/>corpFreq;<sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="class_token_1ae6baab69fb2340897f5a96a824b59296" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unordered_map&lt;int,std::pair&lt;int,float&gt;&gt;&amp;<sp/><ref refid="class_token_1ae6baab69fb2340897f5a96a824b59296" kindref="member">docFreqs</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_docFreqs;<sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="class_token_1ad72b4a41e4b59f38a60749f4f5f7d839" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_token_1ad72b4a41e4b59f38a60749f4f5f7d839" kindref="member">docFreqs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,std::pair&lt;int,float&gt;&gt;&amp;<sp/>docs)<sp/>{<sp/>_docFreqs<sp/>=<sp/>docs;<sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_token_1ae3802c4c2b1a3daf2de8e72eee09fb57" kindref="member">hasDocPair</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;int,int&gt;&amp;<sp/>docID)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="class_token_1a7131e0dbc8f28dd91b0adfb40064addc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_token_1a7131e0dbc8f28dd91b0adfb40064addc" kindref="member">incrCorpFreq</ref>()<sp/>{<sp/>++corpusFreq;<sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140" refid="class_token_1a9624e44c95f3c6a1eaca03b384d96ed3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_token_1a9624e44c95f3c6a1eaca03b384d96ed3" kindref="member">incrCorpFreq</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>corpFreq)<sp/>{<sp/>corpusFreq<sp/>+=<sp/>corpFreq;<sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_token_1a067a9966459518c42bdeff937b5e25c8" kindref="member">incrDocPair</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;int,int&gt;&amp;<sp/>docID);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="class_token_1a518dac411db3279a9b2f4ce38e46d199" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string&amp;<sp/><ref refid="class_token_1a518dac411db3279a9b2f4ce38e46d199" kindref="member">payload</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_payload;<sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="165" refid="class_token_1a434580f0f776406d65ecd0985acd1f34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_token_1a434580f0f776406d65ecd0985acd1f34" kindref="member">payload</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="class_token_1a518dac411db3279a9b2f4ce38e46d199" kindref="member">payload</ref>)<sp/>{<sp/>_payload<sp/>=<sp/><ref refid="class_token_1a434580f0f776406d65ecd0985acd1f34" kindref="member">payload</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="173" refid="class_token_1ab4ef7da254223df781029a400d928350" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_token_1ab4ef7da254223df781029a400d928350" kindref="member">payload</ref>(std::string&amp;&amp;<sp/><ref refid="class_token_1a518dac411db3279a9b2f4ce38e46d199" kindref="member">payload</ref>)<sp/>{<sp/>_payload<sp/>=<sp/>std::move(<ref refid="class_token_1a518dac411db3279a9b2f4ce38e46d199" kindref="member">payload</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="class_token_1af48fd5b021b89a22f25aec6ae884f205" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_token_1af48fd5b021b89a22f25aec6ae884f205" kindref="member">operator== </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_token" kindref="compound">Token</ref>&amp;<sp/>lhs,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_token" kindref="compound">Token</ref>&amp;<sp/>rhs)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(lhs._payload<sp/>==<sp/>rhs._payload);<sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196" refid="class_token_1a720aad55f2d8469a52550be65d947562" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_token_1a720aad55f2d8469a52550be65d947562" kindref="member">operator!= </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_token" kindref="compound">Token</ref>&amp;<sp/>lhs,</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_token" kindref="compound">Token</ref>&amp;<sp/>rhs)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(lhs<sp/>==<sp/>rhs);<sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="class_token_1a9b5081d21f0f5dda0c237d0e7622c271" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_token_1a9b5081d21f0f5dda0c237d0e7622c271" kindref="member">operator&lt; </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_token" kindref="compound">Token</ref>&amp;<sp/>lhs,</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_token" kindref="compound">Token</ref>&amp;<sp/>rhs)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(lhs._payload<sp/>&lt;<sp/>rhs._payload);<sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="211"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TOKEN_HPP<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Token.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structstd_1_1std_1_1hash_3_01_document_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>std::std::hash&lt; Document &gt;</compoundname>
+    <includes refid="_document_8hpp" local="no">Document.hpp</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structstd_1_1std_1_1hash_3_01_document_01_4_1a093cc76d99ae61bbc7e21c1e6244d0ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t std::std::hash&lt; Document &gt;::operator()</definition>
+        <argsstring>(const Document &amp;doc)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const <ref refid="class_document" kindref="compound">Document</ref> &amp;</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Document.hpp" line="245" column="1" bodyfile="Document.hpp" bodystart="245" bodyend="249"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Document.hpp" line="243" column="1" bodyfile="Document.hpp" bodystart="243" bodyend="251"/>
+    <listofallmembers>
+      <member refid="structstd_1_1std_1_1hash_3_01_document_01_4_1a093cc76d99ae61bbc7e21c1e6244d0ed" prot="public" virt="non-virtual"><scope>std::std::hash&lt; Document &gt;</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_query_processor" kind="class" language="C++" prot="public">
+    <compoundname>QueryProcessor</compoundname>
+    <includes refid="_query_processor_8hpp" local="no">QueryProcessor.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_query_processor_1a6997d35d1892d77220996ccbeffdc1c6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QueryProcessor::numDocs</definition>
+        <argsstring></argsstring>
+        <name>numDocs</name>
+        <briefdescription>
+<para>Number of documents processed; used in tf-idf calculations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="QueryProcessor.hpp" line="38" column="1" bodyfile="QueryProcessor.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_query_processor_1a58e085366faef036aa7993b4eec5251c" prot="private" static="no" mutable="no">
+        <type>stemming::english_stem</type>
+        <definition>stemming::english_stem QueryProcessor::StemEnglish</definition>
+        <argsstring></argsstring>
+        <name>StemEnglish</name>
+        <briefdescription>
+<para>Oleander stemming object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="QueryProcessor.hpp" line="39" column="1" bodyfile="QueryProcessor.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_query_processor_1a681e418a5a0039f227c1b2ca37b16b4c" prot="private" static="no" mutable="no">
+        <type>std::unordered_set&lt; std::string &gt;</type>
+        <definition>std::unordered_set&lt;std::string&gt; QueryProcessor::stopWords</definition>
+        <argsstring></argsstring>
+        <name>stopWords</name>
+        <briefdescription>
+<para>std::unordered_set to contain the stop words. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="QueryProcessor.hpp" line="40" column="1" bodyfile="QueryProcessor.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_query_processor_1ab39ff6cf698a536ab413d1a98bcd5fd5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>QueryProcessor::difference</definition>
+        <argsstring>(set_type &amp;set, set_type &amp;difference_set)</argsstring>
+        <name>difference</name>
+        <param>
+          <type>set_type &amp;</type>
+          <declname>set</declname>
+        </param>
+        <param>
+          <type>set_type &amp;</type>
+          <declname>difference_set</declname>
+        </param>
+        <briefdescription>
+<para>Internal function. Finds the difference of two sets. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>set</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the return set; the set being subtracted from. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>difference_set</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the set being subtracted from the main set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="QueryProcessor.hpp" line="49" column="1" bodyfile="QueryProcessor.cpp" bodystart="36" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_query_processor_1a0d01c396ecaaba663e3c0133e4cbef34" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>set_type</type>
+        <definition>QueryProcessor::intersect</definition>
+        <argsstring>(std::vector&lt; Token &gt; &amp;affirmative)</argsstring>
+        <name>intersect</name>
+        <param>
+          <type>std::vector&lt; <ref refid="class_token" kindref="compound">Token</ref> &gt; &amp;</type>
+          <declname>affirmative</declname>
+        </param>
+        <briefdescription>
+<para>Internal function. Finds the intersection of a given number of Tokens. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>affirmative</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a set of Tokens to find the intersection of. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>set_type containing the intersection of affirmative&apos;s Tokens. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="QueryProcessor.hpp" line="60" column="1" bodyfile="QueryProcessor.cpp" bodystart="64" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="class_query_processor_1ab2d0a62cb1d62bc4ca1678a0e8958970" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>QueryProcessor::oleander</definition>
+        <argsstring>(std::string &amp;token)</argsstring>
+        <name>oleander</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+<para>Internal function. Stems a given word using the Oleander library. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a token to be stemmed (using the library). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="QueryProcessor.hpp" line="68" column="1" bodyfile="QueryProcessor.cpp" bodystart="239" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="class_query_processor_1ac7e131b9fd4344d0891e5dfddac63ef4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>QueryProcessor::stem</definition>
+        <argsstring>(std::string &amp;token)</argsstring>
+        <name>stem</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+<para>Internal function. Processes a given token (stems, removes certain characters, transforms to lower case). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a token to be processed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="QueryProcessor.hpp" line="76" column="1" bodyfile="QueryProcessor.cpp" bodystart="389" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="class_query_processor_1a7fc610a5ba7a87c65b81bc1ad9bfd6a0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>set_type</type>
+        <definition>QueryProcessor::unionize</definition>
+        <argsstring>(std::vector&lt; Token &gt; &amp;affirmative)</argsstring>
+        <name>unionize</name>
+        <param>
+          <type>std::vector&lt; <ref refid="class_token" kindref="compound">Token</ref> &gt; &amp;</type>
+          <declname>affirmative</declname>
+        </param>
+        <briefdescription>
+<para>Internal function. Finds the union of a given number of Tokens. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>affirmative</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a set of Tokens to find the union of. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>set_type containing the union of affirmative&apos;s Tokens. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="QueryProcessor.hpp" line="86" column="1" bodyfile="QueryProcessor.cpp" bodystart="406" bodyend="537"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_query_processor_1a32a6760ff0aab51b38fb8eb236e2e140" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QueryProcessor::QueryProcessor</definition>
+        <argsstring>()</argsstring>
+        <name>QueryProcessor</name>
+        <briefdescription>
+<para>Initializes the member data with default values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="QueryProcessor.hpp" line="95" column="1" bodyfile="QueryProcessor.cpp" bodystart="8" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_query_processor_1a24544d09490d3ef704acaae4f3d5d478" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>set_type</type>
+        <definition>QueryProcessor::processTerms</definition>
+        <argsstring>(std::vector&lt; std::string &gt; &amp;terms, IndexInterface &amp;indexer)</argsstring>
+        <name>processTerms</name>
+        <param>
+          <type>std::vector&lt; std::string &gt; &amp;</type>
+          <declname>terms</declname>
+        </param>
+        <param>
+          <type><ref refid="class_index_interface" kindref="compound">IndexInterface</ref> &amp;</type>
+          <declname>indexer</declname>
+        </param>
+        <briefdescription>
+<para>parses the query based on boolean terms if any and returns a set of results if any. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>terms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a std::vector containing the search terms to be processed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indexer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- an indexing object; one of either <ref refid="class_a_v_l_tree_index" kindref="compound">AVLTreeIndex</ref> or <ref refid="class_hash_table_index" kindref="compound">HashTableIndex</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a set_type containing the search results. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="QueryProcessor.hpp" line="106" column="1" bodyfile="QueryProcessor.cpp" bodystart="262" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="class_query_processor_1a08d7a42132998959c37e75ec61d5662c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>QueryProcessor::search</definition>
+        <argsstring>(std::string &amp;query, IndexInterface &amp;indexer)</argsstring>
+        <name>search</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>query</declname>
+        </param>
+        <param>
+          <type><ref refid="class_index_interface" kindref="compound">IndexInterface</ref> &amp;</type>
+          <declname>indexer</declname>
+        </param>
+        <briefdescription>
+<para>Performs a search based on the given query; sends the tokenized query to <ref refid="class_query_processor_1a24544d09490d3ef704acaae4f3d5d478" kindref="member">processTerms()</ref>; also outputs the results. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>query</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a string to search the index for. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indexer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- an indexing object; one of either <ref refid="class_a_v_l_tree_index" kindref="compound">AVLTreeIndex</ref> or <ref refid="class_hash_table_index" kindref="compound">HashTableIndex</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="QueryProcessor.hpp" line="116" column="1" bodyfile="QueryProcessor.cpp" bodystart="328" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="class_query_processor_1a9bf3ee98ae9154d55ea70051ea199673" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>QueryProcessor::setNumDocs</definition>
+        <argsstring>(const IndexInterface &amp;indexer)</argsstring>
+        <name>setNumDocs</name>
+        <param>
+          <type>const <ref refid="class_index_interface" kindref="compound">IndexInterface</ref> &amp;</type>
+          <declname>indexer</declname>
+        </param>
+        <briefdescription>
+<para>Sets the number of documents processed; for use in calculating tf-idf values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indexer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- an indexing object; one of either <ref refid="class_a_v_l_tree_index" kindref="compound">AVLTreeIndex</ref> or <ref refid="class_hash_table_index" kindref="compound">HashTableIndex</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="QueryProcessor.hpp" line="125" column="1" bodyfile="QueryProcessor.hpp" bodystart="125" bodyend="125"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for parsing user queries and ranking results. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_index_interface" kindref="compound">IndexInterface</ref>. </para></simplesect>
+</para>    </detaileddescription>
+    <location file="QueryProcessor.hpp" line="32" column="1" bodyfile="QueryProcessor.hpp" bodystart="32" bodyend="127"/>
+    <listofallmembers>
+      <member refid="class_query_processor_1ab39ff6cf698a536ab413d1a98bcd5fd5" prot="private" virt="non-virtual"><scope>QueryProcessor</scope><name>difference</name></member>
+      <member refid="class_query_processor_1a0d01c396ecaaba663e3c0133e4cbef34" prot="private" virt="non-virtual"><scope>QueryProcessor</scope><name>intersect</name></member>
+      <member refid="class_query_processor_1a6997d35d1892d77220996ccbeffdc1c6" prot="private" virt="non-virtual"><scope>QueryProcessor</scope><name>numDocs</name></member>
+      <member refid="class_query_processor_1ab2d0a62cb1d62bc4ca1678a0e8958970" prot="private" virt="non-virtual"><scope>QueryProcessor</scope><name>oleander</name></member>
+      <member refid="class_query_processor_1a24544d09490d3ef704acaae4f3d5d478" prot="public" virt="non-virtual"><scope>QueryProcessor</scope><name>processTerms</name></member>
+      <member refid="class_query_processor_1a32a6760ff0aab51b38fb8eb236e2e140" prot="public" virt="non-virtual"><scope>QueryProcessor</scope><name>QueryProcessor</name></member>
+      <member refid="class_query_processor_1a08d7a42132998959c37e75ec61d5662c" prot="public" virt="non-virtual"><scope>QueryProcessor</scope><name>search</name></member>
+      <member refid="class_query_processor_1a9bf3ee98ae9154d55ea70051ea199673" prot="public" virt="non-virtual"><scope>QueryProcessor</scope><name>setNumDocs</name></member>
+      <member refid="class_query_processor_1ac7e131b9fd4344d0891e5dfddac63ef4" prot="private" virt="non-virtual"><scope>QueryProcessor</scope><name>stem</name></member>
+      <member refid="class_query_processor_1a58e085366faef036aa7993b4eec5251c" prot="private" virt="non-virtual"><scope>QueryProcessor</scope><name>StemEnglish</name></member>
+      <member refid="class_query_processor_1a681e418a5a0039f227c1b2ca37b16b4c" prot="private" virt="non-virtual"><scope>QueryProcessor</scope><name>stopWords</name></member>
+      <member refid="class_query_processor_1a7fc610a5ba7a87c65b81bc1ad9bfd6a0" prot="private" virt="non-virtual"><scope>QueryProcessor</scope><name>unionize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

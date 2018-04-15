@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_query_processor_8hpp" kind="file" language="C++">
+    <compoundname>QueryProcessor.hpp</compoundname>
+    <includes local="no">algorithm</includes>
+    <includes local="no">codecvt</includes>
+    <includes local="no">locale</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">unordered_map</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">vector</includes>
+    <includes refid="_document_8hpp" local="yes">Document.hpp</includes>
+    <includes refid="_index_interface_8hpp" local="yes">IndexInterface.hpp</includes>
+    <includes refid="_a_v_l_tree_index_8hpp" local="yes">AVLTreeIndex.hpp</includes>
+    <includes refid="_hash_table_index_8hpp" local="yes">HashTableIndex.hpp</includes>
+    <includes local="yes">./Resources/pugixml-1.7/src/pugixml.hpp</includes>
+    <includes local="yes">./Resources/Oleander/stemming/english_stem.h</includes>
+    <includedby refid="_search_engine_8hpp" local="yes">SearchEngine.hpp</includedby>
+    <includedby refid="_query_processor_8cpp" local="yes">QueryProcessor.cpp</includedby>
+    <incdepgraph>
+      <node id="413">
+        <label>locale</label>
+      </node>
+      <node id="420">
+        <label>functional</label>
+      </node>
+      <node id="423">
+        <label>DocumentProcessor.hpp</label>
+        <link refid="_document_processor_8hpp"/>
+        <childnode refid="411" relation="include">
+        </childnode>
+        <childnode refid="412" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="428" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
+        </childnode>
+        <childnode refid="434" relation="include">
+        </childnode>
+        <childnode refid="435" relation="include">
+        </childnode>
+      </node>
+      <node id="430">
+        <label>iterator</label>
+      </node>
+      <node id="421">
+        <label>IndexInterface.hpp</label>
+        <link refid="_index_interface_8hpp"/>
+        <childnode refid="422" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+        <childnode refid="434" relation="include">
+        </childnode>
+      </node>
+      <node id="436">
+        <label>AVLTreeIndex.hpp</label>
+        <link refid="_a_v_l_tree_index_8hpp"/>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
+        </childnode>
+      </node>
+      <node id="433">
+        <label>cmath</label>
+      </node>
+      <node id="425">
+        <label>errno.h</label>
+      </node>
+      <node id="431">
+        <label>stdexcept</label>
+      </node>
+      <node id="432">
+        <label>Token.hpp</label>
+        <link refid="_token_8hpp"/>
+        <childnode refid="433" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+      </node>
+      <node id="437">
+        <label>HashTableIndex.hpp</label>
+        <link refid="_hash_table_index_8hpp"/>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="421" relation="include">
+        </childnode>
+      </node>
+      <node id="415">
+        <label>string</label>
+      </node>
+      <node id="428">
+        <label>unordered_set</label>
+      </node>
+      <node id="410">
+        <label>QueryProcessor.hpp</label>
+        <link refid="QueryProcessor.hpp"/>
+        <childnode refid="411" relation="include">
+        </childnode>
+        <childnode refid="412" relation="include">
+        </childnode>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="434" relation="include">
+        </childnode>
+        <childnode refid="435" relation="include">
+        </childnode>
+      </node>
+      <node id="422">
+        <label>fstream</label>
+      </node>
+      <node id="434">
+        <label>./Resources/pugixml-1.7/src/pugixml.hpp</label>
+      </node>
+      <node id="427">
+        <label>sys/types.h</label>
+      </node>
+      <node id="418">
+        <label>vector</label>
+      </node>
+      <node id="417">
+        <label>utility</label>
+      </node>
+      <node id="414">
+        <label>sstream</label>
+      </node>
+      <node id="412">
+        <label>codecvt</label>
+      </node>
+      <node id="419">
+        <label>Document.hpp</label>
+        <link refid="_document_8hpp"/>
+        <childnode refid="420" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+      </node>
+      <node id="426">
+        <label>iostream</label>
+      </node>
+      <node id="416">
+        <label>unordered_map</label>
+      </node>
+      <node id="429">
+        <label>AVLTree.hpp</label>
+        <link refid="_a_v_l_tree_8hpp"/>
+        <childnode refid="411" relation="include">
+        </childnode>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+      </node>
+      <node id="411">
+        <label>algorithm</label>
+      </node>
+      <node id="435">
+        <label>./Resources/Oleander/stemming/english_stem.h</label>
+      </node>
+      <node id="424">
+        <label>dirent.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="440">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="438">
+        <label>QueryProcessor.hpp</label>
+        <link refid="QueryProcessor.hpp"/>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="442" relation="include">
+        </childnode>
+      </node>
+      <node id="442">
+        <label>QueryProcessor.cpp</label>
+        <link refid="_query_processor_8cpp"/>
+      </node>
+      <node id="439">
+        <label>SearchEngine.hpp</label>
+        <link refid="_search_engine_8hpp"/>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+      </node>
+      <node id="441">
+        <label>SearchEngine.cpp</label>
+        <link refid="_search_engine_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_query_processor" prot="public">QueryProcessor</innerclass>
+    <briefdescription>
+<para>Contains the interface for <ref refid="class_query_processor" kindref="compound">QueryProcessor</ref> objects. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>QUERYPROCESSOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>QUERYPROCESSOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;codecvt&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;locale&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_document_8hpp" kindref="compound">Document.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_index_interface_8hpp" kindref="compound">IndexInterface.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_a_v_l_tree_index_8hpp" kindref="compound">AVLTreeIndex.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_hash_table_index_8hpp" kindref="compound">HashTableIndex.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;./Resources/pugixml-1.7/src/pugixml.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;./Resources/Oleander/stemming/english_stem.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="class_query_processor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_query_processor" kindref="compound">QueryProcessor</ref><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;std::pair&lt;int,float&gt;&gt;<sp/>set_type;<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numDocs;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>stemming::english_stem&lt;&gt;<sp/>StemEnglish;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unordered_set&lt;std::string&gt;<sp/>stopWords;<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>difference(set_type&amp;<sp/>set,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set_type&amp;<sp/>difference_set);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>set_type</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>intersect(std::vector&lt;Token&gt;&amp;<sp/>affirmative);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>oleander(std::string&amp;<sp/>token);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>stem(std::string&amp;<sp/>token);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>set_type</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>unionize(std::vector&lt;Token&gt;&amp;<sp/>affirmative);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_query_processor_1a32a6760ff0aab51b38fb8eb236e2e140" kindref="member">QueryProcessor</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>set_type</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_query_processor_1a24544d09490d3ef704acaae4f3d5d478" kindref="member">processTerms</ref>(std::vector&lt;std::string&gt;&amp;<sp/>terms,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_index_interface" kindref="compound">IndexInterface</ref>&amp;<sp/>indexer);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_query_processor_1a08d7a42132998959c37e75ec61d5662c" kindref="member">search</ref>(std::string&amp;<sp/>query,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_index_interface" kindref="compound">IndexInterface</ref>&amp;<sp/>indexer);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125" refid="class_query_processor_1a9bf3ee98ae9154d55ea70051ea199673" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_query_processor_1a9bf3ee98ae9154d55ea70051ea199673" kindref="member">setNumDocs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_index_interface" kindref="compound">IndexInterface</ref>&amp;<sp/>indexer)<sp/>{<sp/>numDocs<sp/>=<sp/>indexer.<ref refid="class_index_interface_1af5d7e170720c26b3d38499d4e5e1dd69" kindref="member">getNumDocs</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>QUERYPROCESSOR_HPP<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="QueryProcessor.hpp"/>
+  </compounddef>
+</doxygen>

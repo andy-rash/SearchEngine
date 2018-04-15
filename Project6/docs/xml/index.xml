@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.10">
+  <compound refid="class_a_v_l_tree" kind="class"><name>AVLTree</name>
+    <member refid="class_a_v_l_tree_1a3b97d3835e767e85b1cededfeefa9d84" kind="friend"><name>AVLTree_iterator</name></member>
+    <member refid="class_a_v_l_tree_1afe091ef781f649e6f53c487b80a067f1" kind="friend"><name>AVLTree_const_iterator</name></member>
+    <member refid="class_a_v_l_tree_1a39e9bd2267563dcefbe27caeef5b11f1" kind="friend"><name>operator==</name></member>
+    <member refid="class_a_v_l_tree_1a610d3e95f9713a58a8855da82215aab3" kind="friend"><name>operator!=</name></member>
+    <member refid="class_a_v_l_tree_1aff3d7f86e77633d2f2b9434fb1cf474c" kind="variable"><name>_root</name></member>
+    <member refid="class_a_v_l_tree_1a86c053efc44e2130d8d3ce3f1d22bf88" kind="variable"><name>_sz</name></member>
+    <member refid="class_a_v_l_tree_1a3105fda72da80d723954e28623217784" kind="function"><name>AVLTree</name></member>
+    <member refid="class_a_v_l_tree_1a837ef12a2f40b4285332dcf1cdaf0065" kind="function"><name>AVLTree</name></member>
+    <member refid="class_a_v_l_tree_1af975ce032bf12e7e952651df2430a153" kind="function"><name>AVLTree</name></member>
+    <member refid="class_a_v_l_tree_1aa679b2f120f33fda54e61ac9fe1fbfd1" kind="function"><name>~AVLTree</name></member>
+    <member refid="class_a_v_l_tree_1ab6e878dfa1a127b4f79be2d32f075d2e" kind="function"><name>operator=</name></member>
+    <member refid="class_a_v_l_tree_1a65acff2e86e46d2a99b52df98f2a1713" kind="function"><name>begin</name></member>
+    <member refid="class_a_v_l_tree_1a727c82149d7a4336c226befbdd6e2ae3" kind="function"><name>begin</name></member>
+    <member refid="class_a_v_l_tree_1ad79395d1467b80703d47e1c272024b9d" kind="function"><name>clear</name></member>
+    <member refid="class_a_v_l_tree_1a73c6aeccc0c4192ffa6fc469c10e852e" kind="function"><name>contains</name></member>
+    <member refid="class_a_v_l_tree_1a80576afed5890eb0295e98b60db75ab4" kind="function"><name>empty</name></member>
+    <member refid="class_a_v_l_tree_1af636ba0f814af8a79ed120bd5bfac310" kind="function"><name>end</name></member>
+    <member refid="class_a_v_l_tree_1a51190d0f736c44522292a6931e2a45f2" kind="function"><name>end</name></member>
+    <member refid="class_a_v_l_tree_1a853f57000e0cf3f2d9ef5fbbc3223e60" kind="function"><name>find</name></member>
+    <member refid="class_a_v_l_tree_1a0b11c1f2ca86904dcfe4d7d710e253f1" kind="function"><name>find</name></member>
+    <member refid="class_a_v_l_tree_1a8da12b14718d64a6ddc6cd8e7470b03e" kind="function"><name>insert</name></member>
+    <member refid="class_a_v_l_tree_1aae30d36bc9cb070787c1d0d97413eb86" kind="function"><name>size</name></member>
+    <member refid="class_a_v_l_tree_1ae5f263d44778e8ca8a4035c53dbd4b40" kind="function"><name>swap</name></member>
+    <member refid="class_a_v_l_tree_1a24193974709949af94a3ac9ec2df38b4" kind="function"><name>_clear</name></member>
+    <member refid="class_a_v_l_tree_1adc35092dce3040fd204de8f6dd186220" kind="function"><name>_contains</name></member>
+    <member refid="class_a_v_l_tree_1a7391b0d3f49d9fc5702ee0efc94b71a5" kind="function"><name>_find</name></member>
+    <member refid="class_a_v_l_tree_1aaee1b432e055c367a40dfd9398f86598" kind="function"><name>_find</name></member>
+    <member refid="class_a_v_l_tree_1acd415ea1fcf5b341cf6cc537a8134a0e" kind="function"><name>_height</name></member>
+    <member refid="class_a_v_l_tree_1aed966880377ee097b34e962ea643b9c7" kind="function"><name>_insert</name></member>
+    <member refid="class_a_v_l_tree_1a6e6c28aec8e1b7b66fc15139443f01e7" kind="function"><name>_max</name></member>
+    <member refid="class_a_v_l_tree_1a073748ef358de34aa8083cbedd1f47c9" kind="function"><name>_leftLeft</name></member>
+    <member refid="class_a_v_l_tree_1a38bc5435ae82b541216b1a63e18efaec" kind="function"><name>_leftRight</name></member>
+    <member refid="class_a_v_l_tree_1a2dfc412489ed6db79835b56151863245" kind="function"><name>_rightLeft</name></member>
+    <member refid="class_a_v_l_tree_1a4db8ddcfc5a478961e89547cf8f76c3b" kind="function"><name>_rightRight</name></member>
+  </compound>
+  <compound refid="class_a_v_l_tree__const__iterator" kind="class"><name>AVLTree_const_iterator</name>
+    <member refid="class_a_v_l_tree__const__iterator_1aa2d12330a9ba748729e42d8fc882c98e" kind="typedef"><name>iterator_category</name></member>
+    <member refid="class_a_v_l_tree__const__iterator_1abff96c9a253b234068c5d34f7471751d" kind="typedef"><name>value_type</name></member>
+    <member refid="class_a_v_l_tree__const__iterator_1a60f81dd86cc602fcc95a298df957990b" kind="typedef"><name>reference</name></member>
+    <member refid="class_a_v_l_tree__const__iterator_1a0fbfdccc80380ae68a44281dcc18e770" kind="typedef"><name>pointer</name></member>
+    <member refid="class_a_v_l_tree__const__iterator_1a4373b7d2f957d78030ee9dbd86fc307e" kind="typedef"><name>difference_type</name></member>
+    <member refid="class_a_v_l_tree__const__iterator_1ad8477a42408fd130992d2cfcb42dcb5d" kind="variable"><name>_ptr</name></member>
+    <member refid="class_a_v_l_tree__const__iterator_1ad7a12b75802e659f5991bcf31cbf8acb" kind="variable"><name>_ref</name></member>
+    <member refid="class_a_v_l_tree__const__iterator_1aa926bd8d1e26ee32ade14a311ebf8df5" kind="friend"><name>AVLTree</name></member>
+    <member refid="class_a_v_l_tree__const__iterator_1a3b97d3835e767e85b1cededfeefa9d84" kind="friend"><name>AVLTree_iterator</name></member>
+    <member refid="class_a_v_l_tree__const__iterator_1aa8f8a38cc48dccdbf336f2e44dbf084c" kind="friend"><name>operator==</name></member>
+    <member refid="class_a_v_l_tree__const__iterator_1affd846c45384c4c538ae133d9723ffa4" kind="friend"><name>operator!=</name></member>
+    <member refid="class_a_v_l_tree__const__iterator_1a78ce8eb277b5289da1b8509813cbc2a0" kind="function"><name>AVLTree_const_iterator</name></member>
+    <member refid="class_a_v_l_tree__const__iterator_1aebe2a178aeadf813a978f9cdb8ff96d3" kind="function"><name>AVLTree_const_iterator</name></member>
+    <member refid="class_a_v_l_tree__const__iterator_1aa9555f1f662455ec6af572f9350ade37" kind="function"><name>AVLTree_const_iterator</name></member>
+    <member refid="class_a_v_l_tree__const__iterator_1a32243cde4217f623dc9522b130874be7" kind="function"><name>AVLTree_const_iterator</name></member>
+    <member refid="class_a_v_l_tree__const__iterator_1a592ad3ce6efbfcafe4ecaf41b1f30f85" kind="function"><name>~AVLTree_const_iterator</name></member>
+    <member refid="class_a_v_l_tree__const__iterator_1ad4cd511f243d194f804659bd6be65cbf" kind="function"><name>operator=</name></member>
+    <member refid="class_a_v_l_tree__const__iterator_1afcbc171c8f59cfda44b0063f99177e56" kind="function"><name>operator*</name></member>
+    <member refid="class_a_v_l_tree__const__iterator_1afcff074e299c45ae42196b5e4b4be8d0" kind="function"><name>operator-&gt;</name></member>
+    <member refid="class_a_v_l_tree__const__iterator_1ad881a06d60c2f8481d1b3f08ba32e3fa" kind="function"><name>operator++</name></member>
+    <member refid="class_a_v_l_tree__const__iterator_1a4d43deacd7fe153f00031da0f5b9597e" kind="function"><name>operator++</name></member>
+  </compound>
+  <compound refid="class_a_v_l_tree__iterator" kind="class"><name>AVLTree_iterator</name>
+    <member refid="class_a_v_l_tree__iterator_1aeb3e2ca18b485bfb0328a6a66e798f7e" kind="typedef"><name>iterator_category</name></member>
+    <member refid="class_a_v_l_tree__iterator_1adad51d3a8cc80149c12d9eb311f979fc" kind="typedef"><name>value_type</name></member>
+    <member refid="class_a_v_l_tree__iterator_1a67cbb11da40a9e4a517bb9a082590d5a" kind="typedef"><name>reference</name></member>
+    <member refid="class_a_v_l_tree__iterator_1ab3060d2f8d96febec03250b59b9d6c5b" kind="typedef"><name>pointer</name></member>
+    <member refid="class_a_v_l_tree__iterator_1ac6fc6dee98fa0759f9ae3081ae6e4038" kind="typedef"><name>difference_type</name></member>
+    <member refid="class_a_v_l_tree__iterator_1a6751a589fccabfbacf9368d97785b940" kind="variable"><name>_ptr</name></member>
+    <member refid="class_a_v_l_tree__iterator_1a99947695b51a109ee29b34aeece1330b" kind="variable"><name>_ref</name></member>
+    <member refid="class_a_v_l_tree__iterator_1aa926bd8d1e26ee32ade14a311ebf8df5" kind="friend"><name>AVLTree</name></member>
+    <member refid="class_a_v_l_tree__iterator_1afe091ef781f649e6f53c487b80a067f1" kind="friend"><name>AVLTree_const_iterator</name></member>
+    <member refid="class_a_v_l_tree__iterator_1a45d6200909fd4d5e6f7e7084ef428d34" kind="friend"><name>operator==</name></member>
+    <member refid="class_a_v_l_tree__iterator_1a32ea0c466c92a1554c309cd332712c66" kind="friend"><name>operator!=</name></member>
+    <member refid="class_a_v_l_tree__iterator_1af7088173a96c0a691d6c2e21575205f8" kind="function"><name>AVLTree_iterator</name></member>
+    <member refid="class_a_v_l_tree__iterator_1af2b909a226f39060ee9b27159329891c" kind="function"><name>AVLTree_iterator</name></member>
+    <member refid="class_a_v_l_tree__iterator_1a0e2b50ac09524402305b57cf6d70a403" kind="function"><name>AVLTree_iterator</name></member>
+    <member refid="class_a_v_l_tree__iterator_1a126eb53123eb440dd96fe2738b82cbc3" kind="function"><name>~AVLTree_iterator</name></member>
+    <member refid="class_a_v_l_tree__iterator_1a0ed09a6668db4965df05ce76d1afd58b" kind="function"><name>operator=</name></member>
+    <member refid="class_a_v_l_tree__iterator_1a9aee606e4ff5c9500190256e78793200" kind="function"><name>operator*</name></member>
+    <member refid="class_a_v_l_tree__iterator_1a7a15816e2b2a6e4bf6242477391f5cc5" kind="function"><name>operator-&gt;</name></member>
+    <member refid="class_a_v_l_tree__iterator_1a66da49835f9ef7d848c03ca4891d2e38" kind="function"><name>operator++</name></member>
+    <member refid="class_a_v_l_tree__iterator_1a2b089f2be379782a8a7fb3021207e28b" kind="function"><name>operator++</name></member>
+  </compound>
+  <compound refid="class_a_v_l_tree_index" kind="class"><name>AVLTreeIndex</name>
+    <member refid="class_a_v_l_tree_index_1a1844b03d25ec12d2992b20dda2824025" kind="variable"><name>tokens</name></member>
+    <member refid="class_a_v_l_tree_index_1aba8dc551ea4963a8082991f52bb19c25" kind="function"><name>AVLTreeIndex</name></member>
+    <member refid="class_a_v_l_tree_index_1a33cfafc8516541f0d135c707955588f7" kind="function"><name>~AVLTreeIndex</name></member>
+    <member refid="class_a_v_l_tree_index_1a1f84720f7580bd785a11d0e0425bd537" kind="function"><name>addDocument</name></member>
+    <member refid="class_a_v_l_tree_index_1a1a877f264d30b657f37c6ed070d2e250" kind="function"><name>clearIndex</name></member>
+    <member refid="class_a_v_l_tree_index_1a447e5741c289869d5a5188def065fb6c" kind="function"><name>emptyIndex</name></member>
+    <member refid="class_a_v_l_tree_index_1ab549fb6b9fdf08926540f6652859d442" kind="function"><name>findWord</name></member>
+    <member refid="class_a_v_l_tree_index_1a0716178493a342dd6b790cfa8d01b3fa" kind="function"><name>getDocumentByID</name></member>
+    <member refid="class_a_v_l_tree_index_1acb31068c39161358ec6545df5feaabc0" kind="function"><name>hasWord</name></member>
+    <member refid="class_a_v_l_tree_index_1a603741ace3489018f33f5ba4282e3f0d" kind="function"><name>listIndex</name></member>
+    <member refid="class_a_v_l_tree_index_1af161b8697db7e3f599abc78a36f8d145" kind="function"><name>loadIndex</name></member>
+    <member refid="class_a_v_l_tree_index_1a37200f167e48a7b24cb012b9ff5cf44c" kind="function"><name>makeIndex</name></member>
+  </compound>
+  <compound refid="class_document" kind="class"><name>Document</name>
+    <member refid="class_document_1a04ae4bee63a62d446c0f6007598d4051" kind="variable"><name>_body</name></member>
+    <member refid="class_document_1a5d9dd56b0af38bd84d1dcacf0c7ce5a9" kind="variable"><name>_date</name></member>
+    <member refid="class_document_1ad9c0c14ae52f04af231ae9fbebae10df" kind="variable"><name>_time</name></member>
+    <member refid="class_document_1ac21a0c8503c8f62484fcbe319aa3c754" kind="variable"><name>_title</name></member>
+    <member refid="class_document_1a462b4bbe2c25638e5cab3feee64116bd" kind="variable"><name>_username</name></member>
+    <member refid="class_document_1a2a43ee1034d17567784d7c4a0c9c1125" kind="variable"><name>_id</name></member>
+    <member refid="class_document_1ac81fac7a8d9ba85529addc5b3299f2ff" kind="friend"><name>std::hash&lt; Document &gt;</name></member>
+    <member refid="class_document_1ad4716fc286025a1c6b8020e517833e03" kind="friend"><name>operator==</name></member>
+    <member refid="class_document_1a333a5550c36ff69a94c749828fcf0165" kind="friend"><name>operator!=</name></member>
+    <member refid="class_document_1a180fade9b73b45b1619be1e857b5b39e" kind="friend"><name>operator&lt;</name></member>
+    <member refid="class_document_1acdbcbe550084e8c20f4f67eb229ad66a" kind="function"><name>Document</name></member>
+    <member refid="class_document_1a37880d88667c09cc39ef46937f2cf6e4" kind="function"><name>Document</name></member>
+    <member refid="class_document_1ad90511280d1b3815e57ed78003002ea1" kind="function"><name>operator=</name></member>
+    <member refid="class_document_1a878497826a1ca34e778ef05f1a809d1a" kind="function"><name>body</name></member>
+    <member refid="class_document_1a239171caccf983622b557898846c46e5" kind="function"><name>body</name></member>
+    <member refid="class_document_1a1185d78c1c5c5ea69572c20d1c8e552a" kind="function"><name>date</name></member>
+    <member refid="class_document_1a7e1af2cd6cb30c92b5f434863898019e" kind="function"><name>date</name></member>
+    <member refid="class_document_1acda3a6caa3bc958024aa795cde6c7081" kind="function"><name>id</name></member>
+    <member refid="class_document_1ab538b0d75fd467eea80868917c63fbe5" kind="function"><name>id</name></member>
+    <member refid="class_document_1afda77c47efd90655ba5bb2ab8bf9ba00" kind="function"><name>time</name></member>
+    <member refid="class_document_1a351642ea8074b80657d34a034797e53c" kind="function"><name>time</name></member>
+    <member refid="class_document_1a4aac8266d0fea88e39ee390159130787" kind="function"><name>title</name></member>
+    <member refid="class_document_1ae586532a45e61a77afd0c0cfe95089ab" kind="function"><name>title</name></member>
+    <member refid="class_document_1a52990ba26536e2e3a08593444e0ccdf3" kind="function"><name>username</name></member>
+    <member refid="class_document_1a24faf5e067badd65b55330535dec8c6a" kind="function"><name>username</name></member>
+  </compound>
+  <compound refid="class_document_processor" kind="class"><name>DocumentProcessor</name>
+    <member refid="class_document_processor_1aa126f102479d1be8f07d15e5b68f93cc" kind="variable"><name>doc</name></member>
+    <member refid="class_document_processor_1a5d09c282906ca649675253275ca75788" kind="variable"><name>StemEnglish</name></member>
+    <member refid="class_document_processor_1af5ad54237cf58ff4a412bde166af7f03" kind="variable"><name>body</name></member>
+    <member refid="class_document_processor_1a16b0653a7d17435a4870ef3f0260cc33" kind="variable"><name>date</name></member>
+    <member refid="class_document_processor_1ab1969e0dea9c04cbec5ca9093a3aa768" kind="variable"><name>time</name></member>
+    <member refid="class_document_processor_1af54b35a71c7aa108751373845123175a" kind="variable"><name>title</name></member>
+    <member refid="class_document_processor_1a3080316c9149c06f8e27f798833bd492" kind="variable"><name>username</name></member>
+    <member refid="class_document_processor_1abadd4a16af083ed6198003116698eea6" kind="variable"><name>id</name></member>
+    <member refid="class_document_processor_1a1f5b9f2d2a8fdb41f789e491e1d4a8da" kind="variable"><name>numDocs</name></member>
+    <member refid="class_document_processor_1a2af1ae4b0b7d823234f595abb88ad537" kind="variable"><name>stopWords</name></member>
+    <member refid="class_document_processor_1a7d6be1886da63cc9e30644a2637d1d34" kind="variable"><name>documents</name></member>
+    <member refid="class_document_processor_1a5c2388c341a3d05b6804a14fdd012c73" kind="function"><name>getDir</name></member>
+    <member refid="class_document_processor_1af509aa01a8b75810e24c9e4925d67478" kind="function"><name>oleander</name></member>
+    <member refid="class_document_processor_1ad65aab2ef5e51b0f87b74c378d1726c2" kind="function"><name>stem</name></member>
+    <member refid="class_document_processor_1a4a4cefc8163b834855aa0cd0aec68d86" kind="function"><name>DocumentProcessor</name></member>
+    <member refid="class_document_processor_1aa04641c8135b87e07ccb2b73283938ba" kind="function"><name>addDocument</name></member>
+    <member refid="class_document_processor_1a3f1563705a88a8ab9ea63af0a929917c" kind="function"><name>addDocument</name></member>
+    <member refid="class_document_processor_1a9fc30d3b7c2220c86cd4b672c512b109" kind="function"><name>batchTokenize</name></member>
+    <member refid="class_document_processor_1a19db4cd4e6367bbbd51fb6b6b1ea8396" kind="function"><name>batchTokenize</name></member>
+    <member refid="class_document_processor_1a126fc41f4a3ec8af3240714862e686c5" kind="function"><name>clear</name></member>
+    <member refid="class_document_processor_1a0ca26f0de7652ae68da6ad06673b2304" kind="function"><name>createDocuments</name></member>
+    <member refid="class_document_processor_1a09d1b766a653de2d1ce6a81f2213d975" kind="function"><name>documentsSize</name></member>
+    <member refid="class_document_processor_1a7e0fff87749449ff712fab6deed57e8e" kind="function"><name>getDocuments</name></member>
+    <member refid="class_document_processor_1a3f725ffc320008889f9a2797b8dadb70" kind="function"><name>getDocumentByID</name></member>
+    <member refid="class_document_processor_1a2efd77c307ac1672d77b582be3cf57f9" kind="function"><name>tokenize</name></member>
+    <member refid="class_document_processor_1ab83334ce4255441e2757dc39cdbbd1ed" kind="function"><name>tokenize</name></member>
+  </compound>
+  <compound refid="structstd_1_1std_1_1hash_3_01_document_01_4" kind="struct"><name>std::std::hash&lt; Document &gt;</name>
+    <member refid="structstd_1_1std_1_1hash_3_01_document_01_4_1a093cc76d99ae61bbc7e21c1e6244d0ed" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="class_hash_table_index" kind="class"><name>HashTableIndex</name>
+    <member refid="class_hash_table_index_1a20bf60fb5857280ba83934836d2b92e0" kind="variable"><name>index</name></member>
+    <member refid="class_hash_table_index_1a13c1c8deae84226c8bef382adf103b53" kind="function"><name>HashTableIndex</name></member>
+    <member refid="class_hash_table_index_1af4d2eeae8263c353f91140cb2583fb58" kind="function"><name>~HashTableIndex</name></member>
+    <member refid="class_hash_table_index_1a5387a8b9f0e585105a79624a93cd6ec0" kind="function"><name>addDocument</name></member>
+    <member refid="class_hash_table_index_1a69b31cc0bb54877b628bd67dadc5973f" kind="function"><name>clearIndex</name></member>
+    <member refid="class_hash_table_index_1a19b62a531429e670b25cd92be4333890" kind="function"><name>emptyIndex</name></member>
+    <member refid="class_hash_table_index_1a3d4c8e0244943cc44f33a35b742f7578" kind="function"><name>findWord</name></member>
+    <member refid="class_hash_table_index_1ac5cc9451bce6e13739af7c5f154eea0b" kind="function"><name>getDocumentByID</name></member>
+    <member refid="class_hash_table_index_1aea9366ff9299d41bd3447bc6c95a3960" kind="function"><name>hasWord</name></member>
+    <member refid="class_hash_table_index_1a42bbd9b325fb95b54a546c3c98c67624" kind="function"><name>listIndex</name></member>
+    <member refid="class_hash_table_index_1a8c483a83b40b49b0f35be9fea0674501" kind="function"><name>loadIndex</name></member>
+    <member refid="class_hash_table_index_1a5105f715d8c5fd3b74d6bec462cb0c38" kind="function"><name>makeIndex</name></member>
+  </compound>
+  <compound refid="class_index_handler" kind="class"><name>IndexHandler</name>
+    <member refid="class_index_handler_1ab6ae050be57090c92949fd8186a58fbc" kind="variable"><name>docProc</name></member>
+    <member refid="class_index_handler_1a0b9bee63462901392bdb938819f20bc9" kind="variable"><name>outputFile</name></member>
+    <member refid="class_index_handler_1a2f9a84d10825863fad3bb52d69aa1619" kind="variable"><name>tokens</name></member>
+    <member refid="class_index_handler_1a5d807f074fc01ca2d21636fa1eaaa283" kind="variable"><name>numDocs</name></member>
+    <member refid="class_index_handler_1ad3f5fa0610dc22219ceb2f025d618546" kind="variable"><name>numTokens</name></member>
+    <member refid="class_index_handler_1a27748387661142a2eb545be6f0499996" kind="function"><name>IndexHandler</name></member>
+    <member refid="class_index_handler_1a59b96a28cc87ee0ee4e9e36b021952b0" kind="function"><name>addDocument</name></member>
+    <member refid="class_index_handler_1a6bf96d298c05a661245313a44d65d109" kind="function"><name>clearIndex</name></member>
+    <member refid="class_index_handler_1a5b9c45db93955ffa813bb3467e253f66" kind="function"><name>emptyIndexAVL</name></member>
+    <member refid="class_index_handler_1af1b5de0f985fe2b203e337baf6aa3bd2" kind="function"><name>findWord</name></member>
+    <member refid="class_index_handler_1a99ae2a9f65e44cb1b83b3cb865cbc81c" kind="function"><name>getDocumentByID</name></member>
+    <member refid="class_index_handler_1a342414794783dc47d71b7a3034356d46" kind="function"><name>getNumDocs</name></member>
+    <member refid="class_index_handler_1a3bad0c158a41fa574d3507af6cc7267e" kind="function"><name>getNumTokens</name></member>
+    <member refid="class_index_handler_1a78bae3a45ea4d4e09e576b482bf58f78" kind="function"><name>hasWord</name></member>
+    <member refid="class_index_handler_1ad05b01f580d6d13d879d805750dfb4d0" kind="function"><name>listIndexAVL</name></member>
+    <member refid="class_index_handler_1a5b56a244de1d63699ab5ba1ca8606544" kind="function"><name>loadIndexAVL</name></member>
+    <member refid="class_index_handler_1a6dc7f45d95d8c3b9fe11056296c9de3d" kind="function"><name>makeIndexAVL</name></member>
+  </compound>
+  <compound refid="class_index_interface" kind="class"><name>IndexInterface</name>
+    <member refid="class_index_interface_1a752bff152d0a7b370256dc532b273f4f" kind="variable"><name>docProc</name></member>
+    <member refid="class_index_interface_1a6dcf83f08cc162f7e1a1ada77fd9645a" kind="variable"><name>outputFile</name></member>
+    <member refid="class_index_interface_1ab3d5b59b8b3f495fc7b450e7e4b374cf" kind="variable"><name>numDocs</name></member>
+    <member refid="class_index_interface_1aa6a6922ae1a882158234c5e0fb382ad2" kind="variable"><name>numTokens</name></member>
+    <member refid="class_index_interface_1a7b1e7eae7faa652d2f63efeecf0ca2de" kind="function"><name>IndexInterface</name></member>
+    <member refid="class_index_interface_1a3927fabe77a7da5845dc0495b2c1c2b2" kind="function"><name>~IndexInterface</name></member>
+    <member refid="class_index_interface_1aa7601d76e8cc3f0657e800efdc4c127e" kind="function"><name>addDocument</name></member>
+    <member refid="class_index_interface_1aac36b4561598ee84c0c68958a1e3f82b" kind="function"><name>clearIndex</name></member>
+    <member refid="class_index_interface_1aaf90058a62e096bf607ea3dec2545ee4" kind="function"><name>emptyIndex</name></member>
+    <member refid="class_index_interface_1aa0ea18e7daa9984240d108bd765b2816" kind="function"><name>findWord</name></member>
+    <member refid="class_index_interface_1aa694a3e8feb722519b45f7313281bfad" kind="function"><name>getDocumentByID</name></member>
+    <member refid="class_index_interface_1af5d7e170720c26b3d38499d4e5e1dd69" kind="function"><name>getNumDocs</name></member>
+    <member refid="class_index_interface_1a3260a1213d90bd6cb6fd33043fb28b44" kind="function"><name>getNumTokens</name></member>
+    <member refid="class_index_interface_1a8ccd80a03123406cb4b1e2494349f9da" kind="function"><name>hasWord</name></member>
+    <member refid="class_index_interface_1ad8567919eafa87ac20c35928c929084d" kind="function"><name>listIndex</name></member>
+    <member refid="class_index_interface_1a006f773f4e143745474e847cfb9f27fc" kind="function"><name>loadIndex</name></member>
+    <member refid="class_index_interface_1a7b2ae510fa62eebb654708b90972c1b6" kind="function"><name>makeIndex</name></member>
+  </compound>
+  <compound refid="structnode" kind="struct"><name>node</name>
+    <member refid="structnode_1a8353cf23af61f2a637764a1a46ca8eb6" kind="variable"><name>_value</name></member>
+    <member refid="structnode_1a3acd2c366e647bce759f961f71ebf5b3" kind="variable"><name>_height</name></member>
+    <member refid="structnode_1ad045681eca718a3867a16a9644aac2a6" kind="variable"><name>_parent</name></member>
+    <member refid="structnode_1af082014da104d7b72a3b7299d027ffbb" kind="variable"><name>_left</name></member>
+    <member refid="structnode_1aa65c4746c7391fb99f06fec3400addce" kind="variable"><name>_right</name></member>
+    <member refid="structnode_1a07f56d66b295e3a51cd8e5771c505e2f" kind="function"><name>node</name></member>
+    <member refid="structnode_1a57d8701648d6e65867648f077add339b" kind="function"><name>node</name></member>
+    <member refid="structnode_1ac422b5fa2f7dc1bfc6485373f4a37cf8" kind="function"><name>node</name></member>
+    <member refid="structnode_1a48762381e551e35cb9ee0d515339dab0" kind="function"><name>node</name></member>
+    <member refid="structnode_1a7eb8c2ea4c2dfeb90bef1ecee16aa0f9" kind="function"><name>node</name></member>
+    <member refid="structnode_1a527872acc0945cc69fdcc1237112ea40" kind="function"><name>~node</name></member>
+    <member refid="structnode_1a88b75549d8936a1cdafd77d1daf9f218" kind="function"><name>operator=</name></member>
+    <member refid="structnode_1ae91b864585481f95d662fe66839e3e42" kind="friend"><name>swap</name></member>
+  </compound>
+  <compound refid="class_query_processor" kind="class"><name>QueryProcessor</name>
+    <member refid="class_query_processor_1a6997d35d1892d77220996ccbeffdc1c6" kind="variable"><name>numDocs</name></member>
+    <member refid="class_query_processor_1a58e085366faef036aa7993b4eec5251c" kind="variable"><name>StemEnglish</name></member>
+    <member refid="class_query_processor_1a681e418a5a0039f227c1b2ca37b16b4c" kind="variable"><name>stopWords</name></member>
+    <member refid="class_query_processor_1ab39ff6cf698a536ab413d1a98bcd5fd5" kind="function"><name>difference</name></member>
+    <member refid="class_query_processor_1a0d01c396ecaaba663e3c0133e4cbef34" kind="function"><name>intersect</name></member>
+    <member refid="class_query_processor_1ab2d0a62cb1d62bc4ca1678a0e8958970" kind="function"><name>oleander</name></member>
+    <member refid="class_query_processor_1ac7e131b9fd4344d0891e5dfddac63ef4" kind="function"><name>stem</name></member>
+    <member refid="class_query_processor_1a7fc610a5ba7a87c65b81bc1ad9bfd6a0" kind="function"><name>unionize</name></member>
+    <member refid="class_query_processor_1a32a6760ff0aab51b38fb8eb236e2e140" kind="function"><name>QueryProcessor</name></member>
+    <member refid="class_query_processor_1a24544d09490d3ef704acaae4f3d5d478" kind="function"><name>processTerms</name></member>
+    <member refid="class_query_processor_1a08d7a42132998959c37e75ec61d5662c" kind="function"><name>search</name></member>
+    <member refid="class_query_processor_1a9bf3ee98ae9154d55ea70051ea199673" kind="function"><name>setNumDocs</name></member>
+  </compound>
+  <compound refid="class_search_engine" kind="class"><name>SearchEngine</name>
+    <member refid="class_search_engine_1a04a47a0447c5a90739aeed0ee559cd21" kind="variable"><name>indexer</name></member>
+    <member refid="class_search_engine_1ad07b0844a46bac4bc7de771c94ae3581" kind="variable"><name>query</name></member>
+    <member refid="class_search_engine_1ae16ece5ef11d85ee82f2d34a9c2ae6ce" kind="variable"><name>numDocs</name></member>
+    <member refid="class_search_engine_1a7610a93376fd97cbf2a0ca3a9ea55cf6" kind="variable"><name>numTokens</name></member>
+    <member refid="class_search_engine_1ab129d2c96c29c6dcf4a28abbe4168f6c" kind="function"><name>SearchEngine</name></member>
+    <member refid="class_search_engine_1a863ab87efd742b9a8f20b87774ab570f" kind="function"><name>~SearchEngine</name></member>
+    <member refid="class_search_engine_1a9ea46878a950ecad2f9f4af265ab3ace" kind="function"><name>addDocument</name></member>
+    <member refid="class_search_engine_1a5418e11e3626e8a72d697346051c44fd" kind="function"><name>clearIndex</name></member>
+    <member refid="class_search_engine_1a76393f870a6ce5591b140b81df9c5fac" kind="function"><name>interactive</name></member>
+    <member refid="class_search_engine_1ac492e86eaba0b6c7c270ee88e2d6d0ab" kind="function"><name>launchUI</name></member>
+    <member refid="class_search_engine_1ad269ece849be36f3be5b315e0a32a120" kind="function"><name>maintenance</name></member>
+  </compound>
+  <compound refid="class_token" kind="class"><name>Token</name>
+    <member refid="class_token_1af1d63dfea74f638ec25cc04fb6e2f020" kind="variable"><name>_payload</name></member>
+    <member refid="class_token_1a28f9f1fe03d85a965287e9074406a78d" kind="variable"><name>_docFreqs</name></member>
+    <member refid="class_token_1a41c3c30e4e3a3e3511024b79fc39c8f9" kind="variable"><name>corpusFreq</name></member>
+    <member refid="class_token_1aa3c5868ba4115f3189df6b2ac5b36f39" kind="function"><name>Token</name></member>
+    <member refid="class_token_1afbdab46261b6980bebf75e1c910d19ec" kind="function"><name>Token</name></member>
+    <member refid="class_token_1a1385cdd373c4f869067bcf4e4549b35e" kind="function"><name>Token</name></member>
+    <member refid="class_token_1a3c9d92534dea1cf1664b049bbc497631" kind="function"><name>addDocPair</name></member>
+    <member refid="class_token_1a98fb92871af9b32ec5dc5b1b16a3b92d" kind="function"><name>calculateRanks</name></member>
+    <member refid="class_token_1a2f643ffd68e0d9f6fc3a812337cba728" kind="function"><name>corpusFrequency</name></member>
+    <member refid="class_token_1a96f7a2357460942a79f4c83edfc5328e" kind="function"><name>corpusFrequency</name></member>
+    <member refid="class_token_1ae6baab69fb2340897f5a96a824b59296" kind="function"><name>docFreqs</name></member>
+    <member refid="class_token_1ad72b4a41e4b59f38a60749f4f5f7d839" kind="function"><name>docFreqs</name></member>
+    <member refid="class_token_1ae3802c4c2b1a3daf2de8e72eee09fb57" kind="function"><name>hasDocPair</name></member>
+    <member refid="class_token_1a7131e0dbc8f28dd91b0adfb40064addc" kind="function"><name>incrCorpFreq</name></member>
+    <member refid="class_token_1a9624e44c95f3c6a1eaca03b384d96ed3" kind="function"><name>incrCorpFreq</name></member>
+    <member refid="class_token_1a067a9966459518c42bdeff937b5e25c8" kind="function"><name>incrDocPair</name></member>
+    <member refid="class_token_1a518dac411db3279a9b2f4ce38e46d199" kind="function"><name>payload</name></member>
+    <member refid="class_token_1a434580f0f776406d65ecd0985acd1f34" kind="function"><name>payload</name></member>
+    <member refid="class_token_1ab4ef7da254223df781029a400d928350" kind="function"><name>payload</name></member>
+    <member refid="class_token_1af48fd5b021b89a22f25aec6ae884f205" kind="friend"><name>operator==</name></member>
+    <member refid="class_token_1a720aad55f2d8469a52550be65d947562" kind="friend"><name>operator!=</name></member>
+    <member refid="class_token_1a9b5081d21f0f5dda0c237d0e7622c271" kind="friend"><name>operator&lt;</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="namespacestd_1_1std" kind="namespace"><name>std::std</name>
+  </compound>
+  <compound refid="_a_v_l_tree_8hpp" kind="file"><name>AVLTree.hpp</name>
+    <member refid="_a_v_l_tree_8hpp_1ac410cfeb66e2568b926448b70e69db1e" kind="function"><name>swap</name></member>
+  </compound>
+  <compound refid="_a_v_l_tree_index_8cpp" kind="file"><name>AVLTreeIndex.cpp</name>
+  </compound>
+  <compound refid="_a_v_l_tree_index_8hpp" kind="file"><name>AVLTreeIndex.hpp</name>
+  </compound>
+  <compound refid="_document_8hpp" kind="file"><name>Document.hpp</name>
+  </compound>
+  <compound refid="_document_processor_8cpp" kind="file"><name>DocumentProcessor.cpp</name>
+  </compound>
+  <compound refid="_document_processor_8hpp" kind="file"><name>DocumentProcessor.hpp</name>
+  </compound>
+  <compound refid="_hash_table_index_8cpp" kind="file"><name>HashTableIndex.cpp</name>
+  </compound>
+  <compound refid="_hash_table_index_8hpp" kind="file"><name>HashTableIndex.hpp</name>
+  </compound>
+  <compound refid="_index_handler_8cpp" kind="file"><name>IndexHandler.cpp</name>
+  </compound>
+  <compound refid="_index_handler_8hpp" kind="file"><name>IndexHandler.hpp</name>
+  </compound>
+  <compound refid="_index_interface_8hpp" kind="file"><name>IndexInterface.hpp</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_query_processor_8cpp" kind="file"><name>QueryProcessor.cpp</name>
+  </compound>
+  <compound refid="_query_processor_8hpp" kind="file"><name>QueryProcessor.hpp</name>
+  </compound>
+  <compound refid="_search_engine_8cpp" kind="file"><name>SearchEngine.cpp</name>
+  </compound>
+  <compound refid="_search_engine_8hpp" kind="file"><name>SearchEngine.hpp</name>
+  </compound>
+  <compound refid="_token_8cpp" kind="file"><name>Token.cpp</name>
+  </compound>
+  <compound refid="_token_8hpp" kind="file"><name>Token.hpp</name>
+  </compound>
+</doxygenindex>

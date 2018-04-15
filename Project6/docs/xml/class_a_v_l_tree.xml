@@ -1,0 +1,806 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_a_v_l_tree" kind="class" language="C++" prot="public">
+    <compoundname>AVLTree</compoundname>
+    <includes refid="_a_v_l_tree_8hpp" local="no">AVLTree.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>_Type</declname>
+        <defname>_Type</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_a_v_l_tree_1a3b97d3835e767e85b1cededfeefa9d84" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class</type>
+          </param>
+          <param>
+            <type>class</type>
+          </param>
+        </templateparamlist>
+        <type>friend class</type>
+        <definition>friend class AVLTree_iterator</definition>
+        <argsstring></argsstring>
+        <name>AVLTree_iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="587" column="1" bodyfile="AVLTree.hpp" bodystart="585" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_a_v_l_tree_1afe091ef781f649e6f53c487b80a067f1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class</type>
+          </param>
+          <param>
+            <type>class</type>
+          </param>
+        </templateparamlist>
+        <type>friend class</type>
+        <definition>friend class AVLTree_const_iterator</definition>
+        <argsstring></argsstring>
+        <name>AVLTree_const_iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="588" column="1" bodyfile="AVLTree.hpp" bodystart="588" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_a_v_l_tree_1a39e9bd2267563dcefbe27caeef5b11f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>AVLTree&lt; _Type &gt;::operator==</definition>
+        <argsstring>(AVLTree &amp;lhs, AVLTree &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="class_a_v_l_tree" kindref="compound">AVLTree</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="class_a_v_l_tree" kindref="compound">AVLTree</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Compares two AVL trees for equality. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- one AVL tree to compare. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- second AVL tree to compare. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean whether two trees are equal. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="750" column="1" bodyfile="AVLTree.hpp" bodystart="750" bodyend="751"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_a_v_l_tree_1a610d3e95f9713a58a8855da82215aab3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>AVLTree&lt; _Type &gt;::operator!=</definition>
+        <argsstring>(AVLTree &amp;lhs, AVLTree &amp;rhs)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="class_a_v_l_tree" kindref="compound">AVLTree</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="class_a_v_l_tree" kindref="compound">AVLTree</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Compares two AVL trees for inequality. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- one AVL tree to compare. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- second AVL tree to compare. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean whether two trees are not equal. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="762" column="1" bodyfile="AVLTree.hpp" bodystart="762" bodyend="763"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_v_l_tree_1aff3d7f86e77633d2f2b9434fb1cf474c" prot="private" static="no" mutable="no">
+        <type>_node_pointer</type>
+        <definition>_node_pointer AVLTree&lt; _Type &gt;::_root</definition>
+        <argsstring></argsstring>
+        <name>_root</name>
+        <briefdescription>
+<para>A pointer to the root node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="590" column="1" bodyfile="AVLTree.hpp" bodystart="590" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_v_l_tree_1a86c053efc44e2130d8d3ce3f1d22bf88" prot="private" static="no" mutable="no">
+        <type>size_type</type>
+        <definition>size_type AVLTree&lt; _Type &gt;::_sz</definition>
+        <argsstring></argsstring>
+        <name>_sz</name>
+        <briefdescription>
+<para>size_type that holds the size of the tree. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="591" column="1" bodyfile="AVLTree.hpp" bodystart="591" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_v_l_tree_1a3105fda72da80d723954e28623217784" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AVLTree&lt; _Type &gt;::AVLTree</definition>
+        <argsstring>()</argsstring>
+        <name>AVLTree</name>
+        <briefdescription>
+<para>Initializes the member data with default values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="603" column="1" bodyfile="AVLTree.hpp" bodystart="603" bodyend="603"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1a837ef12a2f40b4285332dcf1cdaf0065" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AVLTree&lt; _Type &gt;::AVLTree</definition>
+        <argsstring>(const AVLTree &amp;copy)</argsstring>
+        <name>AVLTree</name>
+        <param>
+          <type>const <ref refid="class_a_v_l_tree" kindref="compound">AVLTree</ref> &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>copy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- an object reference to an <ref refid="class_a_v_l_tree" kindref="compound">AVLTree</ref> instance to be copied. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="611" column="1" bodyfile="AVLTree.hpp" bodystart="611" bodyend="619"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1af975ce032bf12e7e952651df2430a153" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AVLTree&lt; _Type &gt;::AVLTree</definition>
+        <argsstring>(AVLTree &amp;&amp;copy)</argsstring>
+        <name>AVLTree</name>
+        <param>
+          <type><ref refid="class_a_v_l_tree" kindref="compound">AVLTree</ref> &amp;&amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+<para>Move constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>copy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- an rvalue reference to an <ref refid="class_a_v_l_tree" kindref="compound">AVLTree</ref> instance to be moved from. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="627" column="1" bodyfile="AVLTree.hpp" bodystart="627" bodyend="632"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1aa679b2f120f33fda54e61ac9fe1fbfd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AVLTree&lt; _Type &gt;::~AVLTree</definition>
+        <argsstring>()</argsstring>
+        <name>~AVLTree</name>
+        <briefdescription>
+<para>Destructor. Calls _clear() to properly manage memory. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="639" column="1" bodyfile="AVLTree.hpp" bodystart="639" bodyend="639"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1ab6e878dfa1a127b4f79be2d32f075d2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_a_v_l_tree" kindref="compound">AVLTree</ref> &amp;</type>
+        <definition>AVLTree&lt; _Type &gt; &amp; AVLTree&lt; _Type &gt;::operator=</definition>
+        <argsstring>(AVLTree copy)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="class_a_v_l_tree" kindref="compound">AVLTree</ref></type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+<para>Overloaded assignment operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>copy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- an object reference to an <ref refid="class_a_v_l_tree" kindref="compound">AVLTree</ref> instance to be copied. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>reference to an <ref refid="class_a_v_l_tree" kindref="compound">AVLTree</ref> object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="648" column="1" bodyfile="AVLTree.hpp" bodystart="1082" bodyend="1088"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1a65acff2e86e46d2a99b52df98f2a1713" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>iterator</type>
+        <definition>AVLTree&lt; _Type &gt;::iterator AVLTree&lt; _Type &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Beginning element of the tree (lowest element). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>iterator to the first node in-order in the AVL tree.</para></simplesect>
+<simplesect kind="return"><para>const_iterator to the first node in-order in the AVL tree. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="656" column="1" bodyfile="AVLTree.hpp" bodystart="1092" bodyend="1108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1a727c82149d7a4336c226befbdd6e2ae3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const_iterator</type>
+        <definition>AVLTree&lt; _Type &gt;::const_iterator AVLTree&lt; _Type &gt;::begin</definition>
+        <argsstring>() const </argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="664" column="1" bodyfile="AVLTree.hpp" bodystart="1112" bodyend="1128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1ad79395d1467b80703d47e1c272024b9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>AVLTree&lt; _Type &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Removes all elements in the tree. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="671" column="1" bodyfile="AVLTree.hpp" bodystart="671" bodyend="671"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1a73c6aeccc0c4192ffa6fc469c10e852e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>AVLTree&lt; _Type &gt;::contains</definition>
+        <argsstring>(const value_type &amp;val)</argsstring>
+        <name>contains</name>
+        <param>
+          <type>const value_type &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether the tree is empty. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a value to search for in the tree. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool whether the tree contains the value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="680" column="1" bodyfile="AVLTree.hpp" bodystart="680" bodyend="680"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1a80576afed5890eb0295e98b60db75ab4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>AVLTree&lt; _Type &gt;::empty</definition>
+        <argsstring>() const </argsstring>
+        <name>empty</name>
+        <briefdescription>
+<para>Returns whether the tree is empty. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool whether tree is empty. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="688" column="1" bodyfile="AVLTree.hpp" bodystart="688" bodyend="688"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1af636ba0f814af8a79ed120bd5bfac310" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>iterator</type>
+        <definition>const_iterator AVLTree&lt; _Type &gt;::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Last position in tree (after max element). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>iterator to a nullptr.</para></simplesect>
+<simplesect kind="return"><para>const_iterator to a nullptr. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="697" column="1" bodyfile="AVLTree.hpp" bodystart="697" bodyend="697"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1a51190d0f736c44522292a6931e2a45f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const_iterator</type>
+        <definition>const_iterator AVLTree&lt; _Type &gt;::end</definition>
+        <argsstring>() const </argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="706" column="1" bodyfile="AVLTree.hpp" bodystart="706" bodyend="706"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1a853f57000e0cf3f2d9ef5fbbc3223e60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>iterator</type>
+        <definition>AVLTree&lt; _Type &gt;::find</definition>
+        <argsstring>(const value_type &amp;val)</argsstring>
+        <name>find</name>
+        <param>
+          <type>const value_type &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Returns a value from the tree. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a value to search for in the tree. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>iterator to a value in the tree or <ref refid="class_a_v_l_tree_1af636ba0f814af8a79ed120bd5bfac310" kindref="member">end()</ref> if it doesn&apos;t exist.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a value to search for in the tree. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>const_iterator to a value in the tree or <ref refid="class_a_v_l_tree_1af636ba0f814af8a79ed120bd5bfac310" kindref="member">end()</ref> if it doesn&apos;t exist. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="715" column="1" bodyfile="AVLTree.hpp" bodystart="715" bodyend="715"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1a0b11c1f2ca86904dcfe4d7d710e253f1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const_iterator</type>
+        <definition>const_iterator AVLTree&lt; _Type &gt;::find</definition>
+        <argsstring>(const value_type &amp;val) const </argsstring>
+        <name>find</name>
+        <param>
+          <type>const value_type &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="724" column="1" bodyfile="AVLTree.hpp" bodystart="724" bodyend="724"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1a8da12b14718d64a6ddc6cd8e7470b03e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>AVLTree&lt; _Type &gt;::insert</definition>
+        <argsstring>(const value_type &amp;val)</argsstring>
+        <name>insert</name>
+        <param>
+          <type>const value_type &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Inserts an element of type value_type into the list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="731" column="1" bodyfile="AVLTree.hpp" bodystart="731" bodyend="731"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1aae30d36bc9cb070787c1d0d97413eb86" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_type</type>
+        <definition>AVLTree&lt; _Type &gt;::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Returns the size of the tree. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>size_type representing the size of the tree. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="739" column="1" bodyfile="AVLTree.hpp" bodystart="739" bodyend="739"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1ae5f263d44778e8ca8a4035c53dbd4b40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AVLTree&lt; _Type &gt;::swap</definition>
+        <argsstring>(AVLTree &amp;other)</argsstring>
+        <name>swap</name>
+        <param>
+          <type><ref refid="class_a_v_l_tree" kindref="compound">AVLTree</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Swaps this with another AVL tree. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the other AVL tree to swap this with. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="771" column="1" bodyfile="AVLTree.hpp" bodystart="1131" bodyend="1138"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_a_v_l_tree_1a24193974709949af94a3ac9ec2df38b4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AVLTree&lt; _Type &gt;::_clear</definition>
+        <argsstring>(_node_pointer &amp;ptr)</argsstring>
+        <name>_clear</name>
+        <param>
+          <type>_node_pointer &amp;</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Internal function. Deletes a node and its subtree(s) recursively. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a reference to a pointer to a node in the tree. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="781" column="1" bodyfile="AVLTree.hpp" bodystart="881" bodyend="894"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1adc35092dce3040fd204de8f6dd186220" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AVLTree&lt; _Type &gt;::_contains</definition>
+        <argsstring>(const value_type &amp;val, _node_pointer &amp;ptr)</argsstring>
+        <name>_contains</name>
+        <param>
+          <type>const value_type &amp;</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>_node_pointer &amp;</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Internal function. Attempts to find a value in the tree. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a value to search for in the tree. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a reference to a pointer to a node in the tree. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool whether the tree contains the value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="791" column="1" bodyfile="AVLTree.hpp" bodystart="897" bodyend="924"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1a7391b0d3f49d9fc5702ee0efc94b71a5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>iterator</type>
+        <definition>AVLTree&lt; _Type &gt;::iterator AVLTree&lt; _Type &gt;::_find</definition>
+        <argsstring>(const value_type &amp;val, _node_pointer &amp;ptr)</argsstring>
+        <name>_find</name>
+        <param>
+          <type>const value_type &amp;</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>_node_pointer &amp;</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="802" column="1" bodyfile="AVLTree.hpp" bodystart="928" bodyend="951"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1aaee1b432e055c367a40dfd9398f86598" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const_iterator</type>
+        <definition>AVLTree&lt; _Type &gt;::const_iterator AVLTree&lt; _Type &gt;::_find</definition>
+        <argsstring>(const value_type &amp;val, _node_pointer &amp;ptr) const </argsstring>
+        <name>_find</name>
+        <param>
+          <type>const value_type &amp;</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>_node_pointer &amp;</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="813" column="1" bodyfile="AVLTree.hpp" bodystart="955" bodyend="978"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1acd415ea1fcf5b341cf6cc537a8134a0e" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>AVLTree&lt; _Type &gt;::_height</definition>
+        <argsstring>(_node_pointer ptr) const </argsstring>
+        <name>_height</name>
+        <param>
+          <type>_node_pointer</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Internal function. Returns the height of a given node. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a pointer to a node in the tree. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>integer representing the height of a node. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="823" column="1" bodyfile="AVLTree.hpp" bodystart="823" bodyend="823"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1aed966880377ee097b34e962ea643b9c7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AVLTree&lt; _Type &gt;::_insert</definition>
+        <argsstring>(const value_type &amp;val, _node_pointer &amp;ptr)</argsstring>
+        <name>_insert</name>
+        <param>
+          <type>const value_type &amp;</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>_node_pointer &amp;</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Internal function. Inserts a value recursively into the tree at a given node. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a value to be inserted. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a pointer to a node in the tree. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="832" column="1" bodyfile="AVLTree.hpp" bodystart="981" bodyend="1015"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1a6e6c28aec8e1b7b66fc15139443f01e7" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>AVLTree&lt; _Type &gt;::_max</definition>
+        <argsstring>(const int &amp;lhs, const int &amp;rhs) const </argsstring>
+        <name>_max</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Internal function. Returns the greater of two integers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- left hand side value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- right hand side value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>integer representing the greater of the two given values. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="843" column="1" bodyfile="AVLTree.hpp" bodystart="843" bodyend="844"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1a073748ef358de34aa8083cbedd1f47c9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AVLTree&lt; _Type &gt;::_leftLeft</definition>
+        <argsstring>(_node_pointer &amp;ptr)</argsstring>
+        <name>_leftLeft</name>
+        <param>
+          <type>_node_pointer &amp;</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Internal function. A case 1 rotate: when a node is inserted into the left subtree of the left child of the node of imbalance. </para>        </briefdescription>
+        <detaileddescription>
+<para>Internal function. A case 4 rotate: when a node is inserted into the right subtree of the right child of the node of imbalance.</para><para>Internal function. A case 3 rotate: when a node is inserted into the left subtree of the right child of the node of imbalance.</para><para>Internal function. A case 2 rotate: when a node is inserted into the right subtree of the left child of the node of imbalance.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a reference to a pointer to a node in the tree. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="852" column="1" bodyfile="AVLTree.hpp" bodystart="1018" bodyend="1038"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1a38bc5435ae82b541216b1a63e18efaec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AVLTree&lt; _Type &gt;::_leftRight</definition>
+        <argsstring>(_node_pointer &amp;ptr)</argsstring>
+        <name>_leftRight</name>
+        <param>
+          <type>_node_pointer &amp;</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="860" column="1" bodyfile="AVLTree.hpp" bodystart="1041" bodyend="1047"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1a2dfc412489ed6db79835b56151863245" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AVLTree&lt; _Type &gt;::_rightLeft</definition>
+        <argsstring>(_node_pointer &amp;ptr)</argsstring>
+        <name>_rightLeft</name>
+        <param>
+          <type>_node_pointer &amp;</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="868" column="1" bodyfile="AVLTree.hpp" bodystart="1050" bodyend="1056"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_tree_1a4db8ddcfc5a478961e89547cf8f76c3b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AVLTree&lt; _Type &gt;::_rightRight</definition>
+        <argsstring>(_node_pointer &amp;ptr)</argsstring>
+        <name>_rightRight</name>
+        <param>
+          <type>_node_pointer &amp;</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AVLTree.hpp" line="876" column="1" bodyfile="AVLTree.hpp" bodystart="1059" bodyend="1079"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An AVL Tree template. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_a_v_l_tree__iterator" kindref="compound">AVLTree_iterator</ref>. </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_a_v_l_tree__const__iterator" kindref="compound">AVLTree_const_iterator</ref>. </para></simplesect>
+<simplesect kind="see"><para><ref refid="structnode" kindref="compound">node</ref>. </para></simplesect>
+</para>    </detaileddescription>
+    <location file="AVLTree.hpp" line="183" column="1" bodyfile="AVLTree.hpp" bodystart="183" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="class_a_v_l_tree_1a24193974709949af94a3ac9ec2df38b4" prot="private" virt="non-virtual"><scope>AVLTree</scope><name>_clear</name></member>
+      <member refid="class_a_v_l_tree_1adc35092dce3040fd204de8f6dd186220" prot="private" virt="non-virtual"><scope>AVLTree</scope><name>_contains</name></member>
+      <member refid="class_a_v_l_tree_1a7391b0d3f49d9fc5702ee0efc94b71a5" prot="private" virt="non-virtual"><scope>AVLTree</scope><name>_find</name></member>
+      <member refid="class_a_v_l_tree_1aaee1b432e055c367a40dfd9398f86598" prot="private" virt="non-virtual"><scope>AVLTree</scope><name>_find</name></member>
+      <member refid="class_a_v_l_tree_1acd415ea1fcf5b341cf6cc537a8134a0e" prot="private" virt="non-virtual"><scope>AVLTree</scope><name>_height</name></member>
+      <member refid="class_a_v_l_tree_1aed966880377ee097b34e962ea643b9c7" prot="private" virt="non-virtual"><scope>AVLTree</scope><name>_insert</name></member>
+      <member refid="class_a_v_l_tree_1a073748ef358de34aa8083cbedd1f47c9" prot="private" virt="non-virtual"><scope>AVLTree</scope><name>_leftLeft</name></member>
+      <member refid="class_a_v_l_tree_1a38bc5435ae82b541216b1a63e18efaec" prot="private" virt="non-virtual"><scope>AVLTree</scope><name>_leftRight</name></member>
+      <member refid="class_a_v_l_tree_1a6e6c28aec8e1b7b66fc15139443f01e7" prot="private" virt="non-virtual"><scope>AVLTree</scope><name>_max</name></member>
+      <member refid="class_a_v_l_tree_1a2dfc412489ed6db79835b56151863245" prot="private" virt="non-virtual"><scope>AVLTree</scope><name>_rightLeft</name></member>
+      <member refid="class_a_v_l_tree_1a4db8ddcfc5a478961e89547cf8f76c3b" prot="private" virt="non-virtual"><scope>AVLTree</scope><name>_rightRight</name></member>
+      <member refid="class_a_v_l_tree_1aff3d7f86e77633d2f2b9434fb1cf474c" prot="private" virt="non-virtual"><scope>AVLTree</scope><name>_root</name></member>
+      <member refid="class_a_v_l_tree_1a86c053efc44e2130d8d3ce3f1d22bf88" prot="private" virt="non-virtual"><scope>AVLTree</scope><name>_sz</name></member>
+      <member refid="class_a_v_l_tree_1a3105fda72da80d723954e28623217784" prot="public" virt="non-virtual"><scope>AVLTree</scope><name>AVLTree</name></member>
+      <member refid="class_a_v_l_tree_1a837ef12a2f40b4285332dcf1cdaf0065" prot="public" virt="non-virtual"><scope>AVLTree</scope><name>AVLTree</name></member>
+      <member refid="class_a_v_l_tree_1af975ce032bf12e7e952651df2430a153" prot="public" virt="non-virtual"><scope>AVLTree</scope><name>AVLTree</name></member>
+      <member refid="class_a_v_l_tree_1afe091ef781f649e6f53c487b80a067f1" prot="private" virt="non-virtual"><scope>AVLTree</scope><name>AVLTree_const_iterator</name></member>
+      <member refid="class_a_v_l_tree_1a3b97d3835e767e85b1cededfeefa9d84" prot="private" virt="non-virtual"><scope>AVLTree</scope><name>AVLTree_iterator</name></member>
+      <member refid="class_a_v_l_tree_1a65acff2e86e46d2a99b52df98f2a1713" prot="public" virt="non-virtual"><scope>AVLTree</scope><name>begin</name></member>
+      <member refid="class_a_v_l_tree_1a727c82149d7a4336c226befbdd6e2ae3" prot="public" virt="non-virtual"><scope>AVLTree</scope><name>begin</name></member>
+      <member refid="class_a_v_l_tree_1ad79395d1467b80703d47e1c272024b9d" prot="public" virt="non-virtual"><scope>AVLTree</scope><name>clear</name></member>
+      <member refid="class_a_v_l_tree_1a73c6aeccc0c4192ffa6fc469c10e852e" prot="public" virt="non-virtual"><scope>AVLTree</scope><name>contains</name></member>
+      <member refid="class_a_v_l_tree_1a80576afed5890eb0295e98b60db75ab4" prot="public" virt="non-virtual"><scope>AVLTree</scope><name>empty</name></member>
+      <member refid="class_a_v_l_tree_1af636ba0f814af8a79ed120bd5bfac310" prot="public" virt="non-virtual"><scope>AVLTree</scope><name>end</name></member>
+      <member refid="class_a_v_l_tree_1a51190d0f736c44522292a6931e2a45f2" prot="public" virt="non-virtual"><scope>AVLTree</scope><name>end</name></member>
+      <member refid="class_a_v_l_tree_1a853f57000e0cf3f2d9ef5fbbc3223e60" prot="public" virt="non-virtual"><scope>AVLTree</scope><name>find</name></member>
+      <member refid="class_a_v_l_tree_1a0b11c1f2ca86904dcfe4d7d710e253f1" prot="public" virt="non-virtual"><scope>AVLTree</scope><name>find</name></member>
+      <member refid="class_a_v_l_tree_1a8da12b14718d64a6ddc6cd8e7470b03e" prot="public" virt="non-virtual"><scope>AVLTree</scope><name>insert</name></member>
+      <member refid="class_a_v_l_tree_1a610d3e95f9713a58a8855da82215aab3" prot="public" virt="non-virtual"><scope>AVLTree</scope><name>operator!=</name></member>
+      <member refid="class_a_v_l_tree_1ab6e878dfa1a127b4f79be2d32f075d2e" prot="public" virt="non-virtual"><scope>AVLTree</scope><name>operator=</name></member>
+      <member refid="class_a_v_l_tree_1a39e9bd2267563dcefbe27caeef5b11f1" prot="public" virt="non-virtual"><scope>AVLTree</scope><name>operator==</name></member>
+      <member refid="class_a_v_l_tree_1aae30d36bc9cb070787c1d0d97413eb86" prot="public" virt="non-virtual"><scope>AVLTree</scope><name>size</name></member>
+      <member refid="class_a_v_l_tree_1ae5f263d44778e8ca8a4035c53dbd4b40" prot="public" virt="non-virtual"><scope>AVLTree</scope><name>swap</name></member>
+      <member refid="class_a_v_l_tree_1aa679b2f120f33fda54e61ac9fe1fbfd1" prot="public" virt="non-virtual"><scope>AVLTree</scope><name>~AVLTree</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

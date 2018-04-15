@@ -1,0 +1,257 @@
+\hypertarget{class_document_processor}{}\section{Document\+Processor Class Reference}
+\label{class_document_processor}\index{Document\+Processor@{Document\+Processor}}
+
+
+Processes each document from the corpus.  
+
+
+
+
+{\ttfamily \#include $<$Document\+Processor.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_document_processor_a4a4cefc8163b834855aa0cd0aec68d86}{Document\+Processor} ()
+\begin{DoxyCompactList}\small\item\em Loads the stopwords into the std\+::unordered\+\_\+set by default. \end{DoxyCompactList}\item 
+bool \hyperlink{class_document_processor_aa04641c8135b87e07ccb2b73283938ba}{add\+Document} (const std\+::string \&file\+Name, \hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree}$<$ \hyperlink{class_token}{Token} $>$ \&tokens)
+\begin{DoxyCompactList}\small\item\em Adds a document to the set of documents. \end{DoxyCompactList}\item 
+bool \hyperlink{class_document_processor_a3f1563705a88a8ab9ea63af0a929917c}{add\+Document} (const std\+::string \&file\+Name, index\+\_\+type \&index)
+\begin{DoxyCompactList}\small\item\em Adds a document to the set of documents. \end{DoxyCompactList}\item 
+bool \hyperlink{class_document_processor_a9fc30d3b7c2220c86cd4b672c512b109}{batch\+Tokenize} (const std\+::string \&file\+Name, \hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree}$<$ \hyperlink{class_token}{Token} $>$ \&tokens)
+\begin{DoxyCompactList}\small\item\em Parses the X\+M\+L file(s), tokenizes the pages, and adds each \hyperlink{class_token}{Token} to the A\+V\+L tree. \end{DoxyCompactList}\item 
+bool \hyperlink{class_document_processor_a19db4cd4e6367bbbd51fb6b6b1ea8396}{batch\+Tokenize} (const std\+::string \&file\+Name, index\+\_\+type \&index)
+\begin{DoxyCompactList}\small\item\em Parses the X\+M\+L file(s), tokenizes the pages, and adds each token to the index. \end{DoxyCompactList}\item 
+void \hyperlink{class_document_processor_a126fc41f4a3ec8af3240714862e686c5}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clears the contents of the set of documents. \end{DoxyCompactList}\item 
+bool \hyperlink{class_document_processor_a0ca26f0de7652ae68da6ad06673b2304}{create\+Documents} (const std\+::string \&file\+Name)
+\item 
+int \hyperlink{class_document_processor_a09d1b766a653de2d1ce6a81f2213d975}{documents\+Size} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of documents processed. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+set$<$ \hyperlink{class_document}{Document} $>$ \& \hyperlink{class_document_processor_a7e0fff87749449ff712fab6deed57e8e}{get\+Documents} ()
+\begin{DoxyCompactList}\small\item\em Returns the set of Documents. \end{DoxyCompactList}\item 
+const \hyperlink{class_document}{Document} \& \hyperlink{class_document_processor_a3f725ffc320008889f9a2797b8dadb70}{get\+Document\+By\+I\+D} (const int \&doc\+I\+D)
+\begin{DoxyCompactList}\small\item\em Returns a specific document out of the set pertaining to a specific I\+D number. \end{DoxyCompactList}\item 
+void \hyperlink{class_document_processor_a2efd77c307ac1672d77b582be3cf57f9}{tokenize} (\hyperlink{class_document}{Document} \&doc, \hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree}$<$ \hyperlink{class_token}{Token} $>$ \&tokens)
+\begin{DoxyCompactList}\small\item\em Tokenizes a given \hyperlink{class_document}{Document} and adds the Tokens to the given A\+V\+L tree. \end{DoxyCompactList}\item 
+void \hyperlink{class_document_processor_ab83334ce4255441e2757dc39cdbbd1ed}{tokenize} (\hyperlink{class_document}{Document} \&doc, index\+\_\+type \&index)
+\begin{DoxyCompactList}\small\item\em Tokenizes a given \hyperlink{class_document}{Document} and adds the tokens to the index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processes each document from the corpus. 
+
+Stems and removes stop words. Computes term frequencies (information stored in \hyperlink{class_token}{Token} objects) \begin{DoxySeeAlso}{See also}
+\hyperlink{class_document}{Document}. 
+
+\hyperlink{class_token}{Token}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_document_processor_a4a4cefc8163b834855aa0cd0aec68d86}{}\index{Document\+Processor@{Document\+Processor}!Document\+Processor@{Document\+Processor}}
+\index{Document\+Processor@{Document\+Processor}!Document\+Processor@{Document\+Processor}}
+\subsubsection[{Document\+Processor()}]{\setlength{\rightskip}{0pt plus 5cm}Document\+Processor\+::\+Document\+Processor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_document_processor_a4a4cefc8163b834855aa0cd0aec68d86}
+
+
+Loads the stopwords into the std\+::unordered\+\_\+set by default. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_document_processor_aa04641c8135b87e07ccb2b73283938ba}{}\index{Document\+Processor@{Document\+Processor}!add\+Document@{add\+Document}}
+\index{add\+Document@{add\+Document}!Document\+Processor@{Document\+Processor}}
+\subsubsection[{add\+Document(const std\+::string \&file\+Name, A\+V\+L\+Tree$<$ Token $>$ \&tokens)}]{\setlength{\rightskip}{0pt plus 5cm}Document\+Processor\+::add\+Document (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file\+Name, }
+\item[{{\bf A\+V\+L\+Tree}$<$ {\bf Token} $>$ \&}]{tokens}
+\end{DoxyParamCaption}
+)}\label{class_document_processor_aa04641c8135b87e07ccb2b73283938ba}
+
+
+Adds a document to the set of documents. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & -\/ a string representing the path to the file to parse. \\
+\hline
+{\em tokens} & -\/ an A\+V\+L tree that holds the resulting tokens. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether the document was added successfully. 
+\end{DoxyReturn}
+\hypertarget{class_document_processor_a3f1563705a88a8ab9ea63af0a929917c}{}\index{Document\+Processor@{Document\+Processor}!add\+Document@{add\+Document}}
+\index{add\+Document@{add\+Document}!Document\+Processor@{Document\+Processor}}
+\subsubsection[{add\+Document(const std\+::string \&file\+Name, index\+\_\+type \&index)}]{\setlength{\rightskip}{0pt plus 5cm}Document\+Processor\+::add\+Document (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file\+Name, }
+\item[{index\+\_\+type \&}]{index}
+\end{DoxyParamCaption}
+)}\label{class_document_processor_a3f1563705a88a8ab9ea63af0a929917c}
+
+
+Adds a document to the set of documents. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & -\/ a string representing the path to the file to parse. \\
+\hline
+{\em index} & -\/ an index object that holds the resulting data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether the document was added successfully. 
+\end{DoxyReturn}
+\hypertarget{class_document_processor_a9fc30d3b7c2220c86cd4b672c512b109}{}\index{Document\+Processor@{Document\+Processor}!batch\+Tokenize@{batch\+Tokenize}}
+\index{batch\+Tokenize@{batch\+Tokenize}!Document\+Processor@{Document\+Processor}}
+\subsubsection[{batch\+Tokenize(const std\+::string \&file\+Name, A\+V\+L\+Tree$<$ Token $>$ \&tokens)}]{\setlength{\rightskip}{0pt plus 5cm}Document\+Processor\+::batch\+Tokenize (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path, }
+\item[{{\bf A\+V\+L\+Tree}$<$ {\bf Token} $>$ \&}]{tokens}
+\end{DoxyParamCaption}
+)}\label{class_document_processor_a9fc30d3b7c2220c86cd4b672c512b109}
+
+
+Parses the X\+M\+L file(s), tokenizes the pages, and adds each \hyperlink{class_token}{Token} to the A\+V\+L tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & -\/ a path to the directory containing the file(s). \\
+\hline
+{\em tokens} & -\/ an A\+V\+L tree that holds the resulting tokens. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether the process was successful. 
+\end{DoxyReturn}
+\hypertarget{class_document_processor_a19db4cd4e6367bbbd51fb6b6b1ea8396}{}\index{Document\+Processor@{Document\+Processor}!batch\+Tokenize@{batch\+Tokenize}}
+\index{batch\+Tokenize@{batch\+Tokenize}!Document\+Processor@{Document\+Processor}}
+\subsubsection[{batch\+Tokenize(const std\+::string \&file\+Name, index\+\_\+type \&index)}]{\setlength{\rightskip}{0pt plus 5cm}Document\+Processor\+::batch\+Tokenize (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path, }
+\item[{index\+\_\+type \&}]{index}
+\end{DoxyParamCaption}
+)}\label{class_document_processor_a19db4cd4e6367bbbd51fb6b6b1ea8396}
+
+
+Parses the X\+M\+L file(s), tokenizes the pages, and adds each token to the index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & -\/ a path to the directory containing the file(s). \\
+\hline
+{\em index} & -\/ an index object that holds the resulting data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether the process was successful. 
+\end{DoxyReturn}
+\hypertarget{class_document_processor_a126fc41f4a3ec8af3240714862e686c5}{}\index{Document\+Processor@{Document\+Processor}!clear@{clear}}
+\index{clear@{clear}!Document\+Processor@{Document\+Processor}}
+\subsubsection[{clear()}]{\setlength{\rightskip}{0pt plus 5cm}Document\+Processor\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_document_processor_a126fc41f4a3ec8af3240714862e686c5}
+
+
+Clears the contents of the set of documents. 
+
+\hypertarget{class_document_processor_a0ca26f0de7652ae68da6ad06673b2304}{}\index{Document\+Processor@{Document\+Processor}!create\+Documents@{create\+Documents}}
+\index{create\+Documents@{create\+Documents}!Document\+Processor@{Document\+Processor}}
+\subsubsection[{create\+Documents(const std\+::string \&file\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}bool Document\+Processor\+::create\+Documents (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file\+Name}
+\end{DoxyParamCaption}
+)}\label{class_document_processor_a0ca26f0de7652ae68da6ad06673b2304}
+\hypertarget{class_document_processor_a09d1b766a653de2d1ce6a81f2213d975}{}\index{Document\+Processor@{Document\+Processor}!documents\+Size@{documents\+Size}}
+\index{documents\+Size@{documents\+Size}!Document\+Processor@{Document\+Processor}}
+\subsubsection[{documents\+Size() const }]{\setlength{\rightskip}{0pt plus 5cm}Document\+Processor\+::documents\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_document_processor_a09d1b766a653de2d1ce6a81f2213d975}
+
+
+Returns the number of documents processed. 
+
+\begin{DoxyReturn}{Returns}
+integer representing the number of documents processed. 
+\end{DoxyReturn}
+\hypertarget{class_document_processor_a3f725ffc320008889f9a2797b8dadb70}{}\index{Document\+Processor@{Document\+Processor}!get\+Document\+By\+I\+D@{get\+Document\+By\+I\+D}}
+\index{get\+Document\+By\+I\+D@{get\+Document\+By\+I\+D}!Document\+Processor@{Document\+Processor}}
+\subsubsection[{get\+Document\+By\+I\+D(const int \&doc\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}Document\+Processor\+::get\+Document\+By\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{doc\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_document_processor_a3f725ffc320008889f9a2797b8dadb70}
+
+
+Returns a specific document out of the set pertaining to a specific I\+D number. 
+
+\begin{DoxyReturn}{Returns}
+const \hyperlink{class_document}{Document} reference pertaining to the given I\+D number. 
+\end{DoxyReturn}
+\hypertarget{class_document_processor_a7e0fff87749449ff712fab6deed57e8e}{}\index{Document\+Processor@{Document\+Processor}!get\+Documents@{get\+Documents}}
+\index{get\+Documents@{get\+Documents}!Document\+Processor@{Document\+Processor}}
+\subsubsection[{get\+Documents()}]{\setlength{\rightskip}{0pt plus 5cm}Document\+Processor\+::get\+Documents (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_document_processor_a7e0fff87749449ff712fab6deed57e8e}
+
+
+Returns the set of Documents. 
+
+\begin{DoxyReturn}{Returns}
+std\+::unordered\+\_\+set containing the documents. 
+\end{DoxyReturn}
+\hypertarget{class_document_processor_a2efd77c307ac1672d77b582be3cf57f9}{}\index{Document\+Processor@{Document\+Processor}!tokenize@{tokenize}}
+\index{tokenize@{tokenize}!Document\+Processor@{Document\+Processor}}
+\subsubsection[{tokenize(\+Document \&doc, A\+V\+L\+Tree$<$ Token $>$ \&tokens)}]{\setlength{\rightskip}{0pt plus 5cm}Document\+Processor\+::tokenize (
+\begin{DoxyParamCaption}
+\item[{{\bf Document} \&}]{doc, }
+\item[{{\bf A\+V\+L\+Tree}$<$ {\bf Token} $>$ \&}]{tokens}
+\end{DoxyParamCaption}
+)}\label{class_document_processor_a2efd77c307ac1672d77b582be3cf57f9}
+
+
+Tokenizes a given \hyperlink{class_document}{Document} and adds the Tokens to the given A\+V\+L tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doc} & -\/ a document to tokenize. \\
+\hline
+{\em tokens} & -\/ an A\+V\+L tree that holds the resulting tokens. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_document_processor_ab83334ce4255441e2757dc39cdbbd1ed}{}\index{Document\+Processor@{Document\+Processor}!tokenize@{tokenize}}
+\index{tokenize@{tokenize}!Document\+Processor@{Document\+Processor}}
+\subsubsection[{tokenize(\+Document \&doc, index\+\_\+type \&index)}]{\setlength{\rightskip}{0pt plus 5cm}Document\+Processor\+::tokenize (
+\begin{DoxyParamCaption}
+\item[{{\bf Document} \&}]{doc, }
+\item[{index\+\_\+type \&}]{tokens}
+\end{DoxyParamCaption}
+)}\label{class_document_processor_ab83334ce4255441e2757dc39cdbbd1ed}
+
+
+Tokenizes a given \hyperlink{class_document}{Document} and adds the tokens to the index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doc} & -\/ a document to tokenize. \\
+\hline
+{\em index} & -\/ an index object that holds the resulting data. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_document_processor_8hpp}{Document\+Processor.\+hpp}\item 
+\hyperlink{_document_processor_8cpp}{Document\+Processor.\+cpp}\end{DoxyCompactItemize}

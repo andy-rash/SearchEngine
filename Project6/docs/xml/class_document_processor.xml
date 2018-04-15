@@ -1,0 +1,582 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_document_processor" kind="class" language="C++" prot="public">
+    <compoundname>DocumentProcessor</compoundname>
+    <includes refid="_document_processor_8hpp" local="no">DocumentProcessor.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_document_processor_1aa126f102479d1be8f07d15e5b68f93cc" prot="private" static="no" mutable="no">
+        <type>pugi::xml_document</type>
+        <definition>pugi::xml_document DocumentProcessor::doc</definition>
+        <argsstring></argsstring>
+        <name>doc</name>
+        <briefdescription>
+<para>Pugi XML document object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="47" column="1" bodyfile="DocumentProcessor.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_document_processor_1a5d09c282906ca649675253275ca75788" prot="private" static="no" mutable="no">
+        <type>stemming::english_stem</type>
+        <definition>stemming::english_stem DocumentProcessor::StemEnglish</definition>
+        <argsstring></argsstring>
+        <name>StemEnglish</name>
+        <briefdescription>
+<para>Oleander stemming object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="48" column="1" bodyfile="DocumentProcessor.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_document_processor_1af5ad54237cf58ff4a412bde166af7f03" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string DocumentProcessor::body</definition>
+        <argsstring></argsstring>
+        <name>body</name>
+        <briefdescription>
+<para>Temporary string to hold the body text of a document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="49" column="1" bodyfile="DocumentProcessor.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_document_processor_1a16b0653a7d17435a4870ef3f0260cc33" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string DocumentProcessor::date</definition>
+        <argsstring></argsstring>
+        <name>date</name>
+        <briefdescription>
+<para>Temporary string to hold the date of a document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="50" column="1" bodyfile="DocumentProcessor.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_document_processor_1ab1969e0dea9c04cbec5ca9093a3aa768" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string DocumentProcessor::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+<para>Temporary string to hold the time of a document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="51" column="1" bodyfile="DocumentProcessor.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_document_processor_1af54b35a71c7aa108751373845123175a" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string DocumentProcessor::title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <briefdescription>
+<para>Temporary string to hold the title of a document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="52" column="1" bodyfile="DocumentProcessor.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_document_processor_1a3080316c9149c06f8e27f798833bd492" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string DocumentProcessor::username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <briefdescription>
+<para>Temporary string to hold the username of a document&apos;s contributor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="53" column="1" bodyfile="DocumentProcessor.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_document_processor_1abadd4a16af083ed6198003116698eea6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DocumentProcessor::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>Temporary integer to hold the ID of a document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="54" column="1" bodyfile="DocumentProcessor.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_document_processor_1a1f5b9f2d2a8fdb41f789e491e1d4a8da" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DocumentProcessor::numDocs</definition>
+        <argsstring></argsstring>
+        <name>numDocs</name>
+        <briefdescription>
+<para>integer for containing the number of documents processed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="56" column="1" bodyfile="DocumentProcessor.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_document_processor_1a2af1ae4b0b7d823234f595abb88ad537" prot="private" static="no" mutable="no">
+        <type>std::unordered_set&lt; std::string &gt;</type>
+        <definition>std::unordered_set&lt;std::string&gt; DocumentProcessor::stopWords</definition>
+        <argsstring></argsstring>
+        <name>stopWords</name>
+        <briefdescription>
+<para>std::unordered_set to contain the stop words. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="57" column="1" bodyfile="DocumentProcessor.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_document_processor_1a7d6be1886da63cc9e30644a2637d1d34" prot="private" static="no" mutable="no">
+        <type>std::unordered_set&lt; <ref refid="class_document" kindref="compound">Document</ref> &gt;</type>
+        <definition>std::unordered_set&lt;Document&gt; DocumentProcessor::documents</definition>
+        <argsstring></argsstring>
+        <name>documents</name>
+        <briefdescription>
+<para>std::unordered_set to contain Documents for later lookup. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="58" column="1" bodyfile="DocumentProcessor.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_document_processor_1a5c2388c341a3d05b6804a14fdd012c73" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>DocumentProcessor::getDir</definition>
+        <argsstring>(const std::string &amp;dir, std::vector&lt; std::string &gt; &amp;ls)</argsstring>
+        <name>getDir</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>dir</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; &amp;</type>
+          <declname>ls</declname>
+          <defname>rhs</defname>
+        </param>
+        <briefdescription>
+<para>Internal function. Returns the contents of a given directory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a string to get the directory listing from. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ls</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a std::vector that contains the directory listing after the function completes. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="67" column="1" bodyfile="DocumentProcessor.cpp" bodystart="295" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="class_document_processor_1af509aa01a8b75810e24c9e4925d67478" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DocumentProcessor::oleander</definition>
+        <argsstring>(std::string &amp;token)</argsstring>
+        <name>oleander</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="76" column="1" bodyfile="DocumentProcessor.cpp" bodystart="333" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="class_document_processor_1ad65aab2ef5e51b0f87b74c378d1726c2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>DocumentProcessor::stem</definition>
+        <argsstring>(std::string &amp;token)</argsstring>
+        <name>stem</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+<para>Internal function. Processes a given token (stems, removes certain characters, transforms to lower case). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a token to be processed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="84" column="1" bodyfile="DocumentProcessor.cpp" bodystart="355" bodyend="369"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_document_processor_1a4a4cefc8163b834855aa0cd0aec68d86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DocumentProcessor::DocumentProcessor</definition>
+        <argsstring>()</argsstring>
+        <name>DocumentProcessor</name>
+        <briefdescription>
+<para>Loads the stopwords into the std::unordered_set by default. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="93" column="1" bodyfile="DocumentProcessor.cpp" bodystart="8" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_document_processor_1aa04641c8135b87e07ccb2b73283938ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>DocumentProcessor::addDocument</definition>
+        <argsstring>(const std::string &amp;fileName, AVLTree&lt; Token &gt; &amp;tokens)</argsstring>
+        <name>addDocument</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type><ref refid="class_a_v_l_tree" kindref="compound">AVLTree</ref>&lt; <ref refid="class_token" kindref="compound">Token</ref> &gt; &amp;</type>
+          <declname>tokens</declname>
+        </param>
+        <briefdescription>
+<para>Adds a document to the set of documents. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a string representing the path to the file to parse. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tokens</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- an AVL tree that holds the resulting tokens. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean whether the document was added successfully. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="103" column="1" bodyfile="DocumentProcessor.cpp" bodystart="34" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_document_processor_1a3f1563705a88a8ab9ea63af0a929917c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>DocumentProcessor::addDocument</definition>
+        <argsstring>(const std::string &amp;fileName, index_type &amp;index)</argsstring>
+        <name>addDocument</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>index_type &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Adds a document to the set of documents. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a string representing the path to the file to parse. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- an index object that holds the resulting data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean whether the document was added successfully. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="114" column="1" bodyfile="DocumentProcessor.cpp" bodystart="98" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_document_processor_1a9fc30d3b7c2220c86cd4b672c512b109" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>DocumentProcessor::batchTokenize</definition>
+        <argsstring>(const std::string &amp;fileName, AVLTree&lt; Token &gt; &amp;tokens)</argsstring>
+        <name>batchTokenize</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fileName</declname>
+          <defname>path</defname>
+        </param>
+        <param>
+          <type><ref refid="class_a_v_l_tree" kindref="compound">AVLTree</ref>&lt; <ref refid="class_token" kindref="compound">Token</ref> &gt; &amp;</type>
+          <declname>tokens</declname>
+        </param>
+        <briefdescription>
+<para>Parses the XML file(s), tokenizes the pages, and adds each <ref refid="class_token" kindref="compound">Token</ref> to the AVL tree. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a path to the directory containing the file(s). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tokens</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- an AVL tree that holds the resulting tokens. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean whether the process was successful. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="125" column="1" bodyfile="DocumentProcessor.cpp" bodystart="162" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="class_document_processor_1a19db4cd4e6367bbbd51fb6b6b1ea8396" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>DocumentProcessor::batchTokenize</definition>
+        <argsstring>(const std::string &amp;fileName, index_type &amp;index)</argsstring>
+        <name>batchTokenize</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fileName</declname>
+          <defname>path</defname>
+        </param>
+        <param>
+          <type>index_type &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Parses the XML file(s), tokenizes the pages, and adds each token to the index. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a path to the directory containing the file(s). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- an index object that holds the resulting data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean whether the process was successful. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="136" column="1" bodyfile="DocumentProcessor.cpp" bodystart="186" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="class_document_processor_1a126fc41f4a3ec8af3240714862e686c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>DocumentProcessor::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Clears the contents of the set of documents. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="144" column="1" bodyfile="DocumentProcessor.cpp" bodystart="291" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="class_document_processor_1a0ca26f0de7652ae68da6ad06673b2304" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DocumentProcessor::createDocuments</definition>
+        <argsstring>(const std::string &amp;fileName)</argsstring>
+        <name>createDocuments</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="153" column="1" bodyfile="DocumentProcessor.cpp" bodystart="210" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="class_document_processor_1a09d1b766a653de2d1ce6a81f2213d975" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>DocumentProcessor::documentsSize</definition>
+        <argsstring>() const </argsstring>
+        <name>documentsSize</name>
+        <briefdescription>
+<para>Returns the number of documents processed. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>integer representing the number of documents processed. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="161" column="1" bodyfile="DocumentProcessor.cpp" bodystart="293" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="class_document_processor_1a7e0fff87749449ff712fab6deed57e8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::unordered_set&lt; <ref refid="class_document" kindref="compound">Document</ref> &gt; &amp;</type>
+        <definition>DocumentProcessor::getDocuments</definition>
+        <argsstring>()</argsstring>
+        <name>getDocuments</name>
+        <briefdescription>
+<para>Returns the set of Documents. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::unordered_set containing the documents. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="170" column="1" bodyfile="DocumentProcessor.cpp" bodystart="318" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="class_document_processor_1a3f725ffc320008889f9a2797b8dadb70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_document" kindref="compound">Document</ref> &amp;</type>
+        <definition>DocumentProcessor::getDocumentByID</definition>
+        <argsstring>(const int &amp;docID)</argsstring>
+        <name>getDocumentByID</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>docID</declname>
+        </param>
+        <briefdescription>
+<para>Returns a specific document out of the set pertaining to a specific ID number. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const <ref refid="class_document" kindref="compound">Document</ref> reference pertaining to the given ID number. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="178" column="1" bodyfile="DocumentProcessor.cpp" bodystart="320" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="class_document_processor_1a2efd77c307ac1672d77b582be3cf57f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>DocumentProcessor::tokenize</definition>
+        <argsstring>(Document &amp;doc, AVLTree&lt; Token &gt; &amp;tokens)</argsstring>
+        <name>tokenize</name>
+        <param>
+          <type><ref refid="class_document" kindref="compound">Document</ref> &amp;</type>
+          <declname>doc</declname>
+        </param>
+        <param>
+          <type><ref refid="class_a_v_l_tree" kindref="compound">AVLTree</ref>&lt; <ref refid="class_token" kindref="compound">Token</ref> &gt; &amp;</type>
+          <declname>tokens</declname>
+        </param>
+        <briefdescription>
+<para>Tokenizes a given <ref refid="class_document" kindref="compound">Document</ref> and adds the Tokens to the given AVL tree. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>doc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a document to tokenize. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tokens</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- an AVL tree that holds the resulting tokens. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="187" column="1" bodyfile="DocumentProcessor.cpp" bodystart="371" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="class_document_processor_1ab83334ce4255441e2757dc39cdbbd1ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>DocumentProcessor::tokenize</definition>
+        <argsstring>(Document &amp;doc, index_type &amp;index)</argsstring>
+        <name>tokenize</name>
+        <param>
+          <type><ref refid="class_document" kindref="compound">Document</ref> &amp;</type>
+          <declname>doc</declname>
+        </param>
+        <param>
+          <type>index_type &amp;</type>
+          <declname>index</declname>
+          <defname>tokens</defname>
+        </param>
+        <briefdescription>
+<para>Tokenizes a given <ref refid="class_document" kindref="compound">Document</ref> and adds the tokens to the index. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>doc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a document to tokenize. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- an index object that holds the resulting data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DocumentProcessor.hpp" line="197" column="1" bodyfile="DocumentProcessor.cpp" bodystart="419" bodyend="516"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Processes each document from the corpus. </para>    </briefdescription>
+    <detaileddescription>
+<para>Stems and removes stop words. Computes term frequencies (information stored in <ref refid="class_token" kindref="compound">Token</ref> objects) <simplesect kind="see"><para><ref refid="class_document" kindref="compound">Document</ref>. </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_token" kindref="compound">Token</ref>. </para></simplesect>
+</para>    </detaileddescription>
+    <location file="DocumentProcessor.hpp" line="40" column="1" bodyfile="DocumentProcessor.hpp" bodystart="40" bodyend="200"/>
+    <listofallmembers>
+      <member refid="class_document_processor_1aa04641c8135b87e07ccb2b73283938ba" prot="public" virt="non-virtual"><scope>DocumentProcessor</scope><name>addDocument</name></member>
+      <member refid="class_document_processor_1a3f1563705a88a8ab9ea63af0a929917c" prot="public" virt="non-virtual"><scope>DocumentProcessor</scope><name>addDocument</name></member>
+      <member refid="class_document_processor_1a9fc30d3b7c2220c86cd4b672c512b109" prot="public" virt="non-virtual"><scope>DocumentProcessor</scope><name>batchTokenize</name></member>
+      <member refid="class_document_processor_1a19db4cd4e6367bbbd51fb6b6b1ea8396" prot="public" virt="non-virtual"><scope>DocumentProcessor</scope><name>batchTokenize</name></member>
+      <member refid="class_document_processor_1af5ad54237cf58ff4a412bde166af7f03" prot="private" virt="non-virtual"><scope>DocumentProcessor</scope><name>body</name></member>
+      <member refid="class_document_processor_1a126fc41f4a3ec8af3240714862e686c5" prot="public" virt="non-virtual"><scope>DocumentProcessor</scope><name>clear</name></member>
+      <member refid="class_document_processor_1a0ca26f0de7652ae68da6ad06673b2304" prot="public" virt="non-virtual"><scope>DocumentProcessor</scope><name>createDocuments</name></member>
+      <member refid="class_document_processor_1a16b0653a7d17435a4870ef3f0260cc33" prot="private" virt="non-virtual"><scope>DocumentProcessor</scope><name>date</name></member>
+      <member refid="class_document_processor_1aa126f102479d1be8f07d15e5b68f93cc" prot="private" virt="non-virtual"><scope>DocumentProcessor</scope><name>doc</name></member>
+      <member refid="class_document_processor_1a4a4cefc8163b834855aa0cd0aec68d86" prot="public" virt="non-virtual"><scope>DocumentProcessor</scope><name>DocumentProcessor</name></member>
+      <member refid="class_document_processor_1a7d6be1886da63cc9e30644a2637d1d34" prot="private" virt="non-virtual"><scope>DocumentProcessor</scope><name>documents</name></member>
+      <member refid="class_document_processor_1a09d1b766a653de2d1ce6a81f2213d975" prot="public" virt="non-virtual"><scope>DocumentProcessor</scope><name>documentsSize</name></member>
+      <member refid="class_document_processor_1a5c2388c341a3d05b6804a14fdd012c73" prot="private" virt="non-virtual"><scope>DocumentProcessor</scope><name>getDir</name></member>
+      <member refid="class_document_processor_1a3f725ffc320008889f9a2797b8dadb70" prot="public" virt="non-virtual"><scope>DocumentProcessor</scope><name>getDocumentByID</name></member>
+      <member refid="class_document_processor_1a7e0fff87749449ff712fab6deed57e8e" prot="public" virt="non-virtual"><scope>DocumentProcessor</scope><name>getDocuments</name></member>
+      <member refid="class_document_processor_1abadd4a16af083ed6198003116698eea6" prot="private" virt="non-virtual"><scope>DocumentProcessor</scope><name>id</name></member>
+      <member refid="class_document_processor_1a1f5b9f2d2a8fdb41f789e491e1d4a8da" prot="private" virt="non-virtual"><scope>DocumentProcessor</scope><name>numDocs</name></member>
+      <member refid="class_document_processor_1af509aa01a8b75810e24c9e4925d67478" prot="private" virt="non-virtual"><scope>DocumentProcessor</scope><name>oleander</name></member>
+      <member refid="class_document_processor_1ad65aab2ef5e51b0f87b74c378d1726c2" prot="private" virt="non-virtual"><scope>DocumentProcessor</scope><name>stem</name></member>
+      <member refid="class_document_processor_1a5d09c282906ca649675253275ca75788" prot="private" virt="non-virtual"><scope>DocumentProcessor</scope><name>StemEnglish</name></member>
+      <member refid="class_document_processor_1a2af1ae4b0b7d823234f595abb88ad537" prot="private" virt="non-virtual"><scope>DocumentProcessor</scope><name>stopWords</name></member>
+      <member refid="class_document_processor_1ab1969e0dea9c04cbec5ca9093a3aa768" prot="private" virt="non-virtual"><scope>DocumentProcessor</scope><name>time</name></member>
+      <member refid="class_document_processor_1af54b35a71c7aa108751373845123175a" prot="private" virt="non-virtual"><scope>DocumentProcessor</scope><name>title</name></member>
+      <member refid="class_document_processor_1a2efd77c307ac1672d77b582be3cf57f9" prot="public" virt="non-virtual"><scope>DocumentProcessor</scope><name>tokenize</name></member>
+      <member refid="class_document_processor_1ab83334ce4255441e2757dc39cdbbd1ed" prot="public" virt="non-virtual"><scope>DocumentProcessor</scope><name>tokenize</name></member>
+      <member refid="class_document_processor_1a3080316c9149c06f8e27f798833bd492" prot="private" virt="non-virtual"><scope>DocumentProcessor</scope><name>username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

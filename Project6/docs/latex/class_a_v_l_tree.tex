@@ -1,0 +1,375 @@
+\hypertarget{class_a_v_l_tree}{}\section{A\+V\+L\+Tree$<$ \+\_\+\+Type $>$ Class Template Reference}
+\label{class_a_v_l_tree}\index{A\+V\+L\+Tree$<$ \+\_\+\+Type $>$@{A\+V\+L\+Tree$<$ \+\_\+\+Type $>$}}
+
+
+An A\+V\+L Tree template.  
+
+
+
+
+{\ttfamily \#include $<$A\+V\+L\+Tree.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_v_l_tree_a3105fda72da80d723954e28623217784}{A\+V\+L\+Tree} ()
+\begin{DoxyCompactList}\small\item\em Initializes the member data with default values. \end{DoxyCompactList}\item 
+\hyperlink{class_a_v_l_tree_a837ef12a2f40b4285332dcf1cdaf0065}{A\+V\+L\+Tree} (const \hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree} \&copy)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_a_v_l_tree_af975ce032bf12e7e952651df2430a153}{A\+V\+L\+Tree} (\hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree} \&\&copy)
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_a_v_l_tree_aa679b2f120f33fda54e61ac9fe1fbfd1}{$\sim$\+A\+V\+L\+Tree} ()
+\begin{DoxyCompactList}\small\item\em Destructor. Calls \+\_\+clear() to properly manage memory. \end{DoxyCompactList}\item 
+\hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree} \& \hyperlink{class_a_v_l_tree_ab6e878dfa1a127b4f79be2d32f075d2e}{operator=} (\hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree} copy)
+\begin{DoxyCompactList}\small\item\em Overloaded assignment operator. \end{DoxyCompactList}\item 
+iterator \hyperlink{class_a_v_l_tree_a65acff2e86e46d2a99b52df98f2a1713}{begin} ()
+\begin{DoxyCompactList}\small\item\em Beginning element of the tree (lowest element). \end{DoxyCompactList}\item 
+const\+\_\+iterator \hyperlink{class_a_v_l_tree_a727c82149d7a4336c226befbdd6e2ae3}{begin} () const 
+\item 
+void \hyperlink{class_a_v_l_tree_ad79395d1467b80703d47e1c272024b9d}{clear} ()
+\begin{DoxyCompactList}\small\item\em Removes all elements in the tree. \end{DoxyCompactList}\item 
+bool \hyperlink{class_a_v_l_tree_a73c6aeccc0c4192ffa6fc469c10e852e}{contains} (const value\+\_\+type \&val)
+\begin{DoxyCompactList}\small\item\em Returns whether the tree is empty. \end{DoxyCompactList}\item 
+bool \hyperlink{class_a_v_l_tree_a80576afed5890eb0295e98b60db75ab4}{empty} () const 
+\begin{DoxyCompactList}\small\item\em Returns whether the tree is empty. \end{DoxyCompactList}\item 
+iterator \hyperlink{class_a_v_l_tree_af636ba0f814af8a79ed120bd5bfac310}{end} ()
+\begin{DoxyCompactList}\small\item\em Last position in tree (after max element). \end{DoxyCompactList}\item 
+const\+\_\+iterator \hyperlink{class_a_v_l_tree_a51190d0f736c44522292a6931e2a45f2}{end} () const 
+\item 
+iterator \hyperlink{class_a_v_l_tree_a853f57000e0cf3f2d9ef5fbbc3223e60}{find} (const value\+\_\+type \&val)
+\begin{DoxyCompactList}\small\item\em Returns a value from the tree. \end{DoxyCompactList}\item 
+const\+\_\+iterator \hyperlink{class_a_v_l_tree_a0b11c1f2ca86904dcfe4d7d710e253f1}{find} (const value\+\_\+type \&val) const 
+\item 
+void \hyperlink{class_a_v_l_tree_a8da12b14718d64a6ddc6cd8e7470b03e}{insert} (const value\+\_\+type \&val)
+\begin{DoxyCompactList}\small\item\em Inserts an element of type value\+\_\+type into the list. \end{DoxyCompactList}\item 
+size\+\_\+type \hyperlink{class_a_v_l_tree_aae30d36bc9cb070787c1d0d97413eb86}{size} () const 
+\begin{DoxyCompactList}\small\item\em Returns the size of the tree. \end{DoxyCompactList}\item 
+void \hyperlink{class_a_v_l_tree_ae5f263d44778e8ca8a4035c53dbd4b40}{swap} (\hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree} \&other)
+\begin{DoxyCompactList}\small\item\em Swaps this with another A\+V\+L tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class , class $>$ }\\class \hyperlink{class_a_v_l_tree_a3b97d3835e767e85b1cededfeefa9d84}{A\+V\+L\+Tree\+\_\+iterator}
+\item 
+{\footnotesize template$<$class , class $>$ }\\class \hyperlink{class_a_v_l_tree_afe091ef781f649e6f53c487b80a067f1}{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}
+\item 
+bool \hyperlink{class_a_v_l_tree_a39e9bd2267563dcefbe27caeef5b11f1}{operator==} (\hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree} \&lhs, \hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree} \&rhs)
+\begin{DoxyCompactList}\small\item\em Compares two A\+V\+L trees for equality. \end{DoxyCompactList}\item 
+bool \hyperlink{class_a_v_l_tree_a610d3e95f9713a58a8855da82215aab3}{operator!=} (\hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree} \&lhs, \hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree} \&rhs)
+\begin{DoxyCompactList}\small\item\em Compares two A\+V\+L trees for inequality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+\+Type$>$class A\+V\+L\+Tree$<$ \+\_\+\+Type $>$}
+
+An A\+V\+L Tree template. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_a_v_l_tree__iterator}{A\+V\+L\+Tree\+\_\+iterator}. 
+
+\hyperlink{class_a_v_l_tree__const__iterator}{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}. 
+
+\hyperlink{structnode}{node}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_a_v_l_tree_a3105fda72da80d723954e28623217784}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{A\+V\+L\+Tree()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::{\bf A\+V\+L\+Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree_a3105fda72da80d723954e28623217784}
+
+
+Initializes the member data with default values. 
+
+\hypertarget{class_a_v_l_tree_a837ef12a2f40b4285332dcf1cdaf0065}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{A\+V\+L\+Tree(const A\+V\+L\+Tree \&copy)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::{\bf A\+V\+L\+Tree} (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$ \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree_a837ef12a2f40b4285332dcf1cdaf0065}
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & -\/ an object reference to an \hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree} instance to be copied. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_a_v_l_tree_af975ce032bf12e7e952651df2430a153}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{A\+V\+L\+Tree(\+A\+V\+L\+Tree \&\&copy)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::{\bf A\+V\+L\+Tree} (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$ \&\&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree_af975ce032bf12e7e952651df2430a153}
+
+
+Move constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & -\/ an rvalue reference to an \hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree} instance to be moved from. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_a_v_l_tree_aa679b2f120f33fda54e61ac9fe1fbfd1}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!````~A\+V\+L\+Tree@{$\sim$\+A\+V\+L\+Tree}}
+\index{````~A\+V\+L\+Tree@{$\sim$\+A\+V\+L\+Tree}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{$\sim$\+A\+V\+L\+Tree()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::$\sim${\bf A\+V\+L\+Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree_aa679b2f120f33fda54e61ac9fe1fbfd1}
+
+
+Destructor. Calls \+\_\+clear() to properly manage memory. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_a_v_l_tree_a65acff2e86e46d2a99b52df98f2a1713}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!begin@{begin}}
+\index{begin@{begin}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{begin()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type $>$ {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::iterator {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_a_v_l_tree_a65acff2e86e46d2a99b52df98f2a1713}
+
+
+Beginning element of the tree (lowest element). 
+
+\begin{DoxyReturn}{Returns}
+iterator to the first node in-\/order in the A\+V\+L tree.
+
+const\+\_\+iterator to the first node in-\/order in the A\+V\+L tree. 
+\end{DoxyReturn}
+\hypertarget{class_a_v_l_tree_a727c82149d7a4336c226befbdd6e2ae3}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!begin@{begin}}
+\index{begin@{begin}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{begin() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type $>$ {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::const\+\_\+iterator {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_a_v_l_tree_a727c82149d7a4336c226befbdd6e2ae3}
+\hypertarget{class_a_v_l_tree_ad79395d1467b80703d47e1c272024b9d}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!clear@{clear}}
+\index{clear@{clear}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{clear()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree_ad79395d1467b80703d47e1c272024b9d}
+
+
+Removes all elements in the tree. 
+
+\hypertarget{class_a_v_l_tree_a73c6aeccc0c4192ffa6fc469c10e852e}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!contains@{contains}}
+\index{contains@{contains}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{contains(const value\+\_\+type \&val)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::contains (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree_a73c6aeccc0c4192ffa6fc469c10e852e}
+
+
+Returns whether the tree is empty. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & -\/ a value to search for in the tree. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool whether the tree contains the value. 
+\end{DoxyReturn}
+\hypertarget{class_a_v_l_tree_a80576afed5890eb0295e98b60db75ab4}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!empty@{empty}}
+\index{empty@{empty}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{empty() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree_a80576afed5890eb0295e98b60db75ab4}
+
+
+Returns whether the tree is empty. 
+
+\begin{DoxyReturn}{Returns}
+bool whether tree is empty. 
+\end{DoxyReturn}
+\hypertarget{class_a_v_l_tree_af636ba0f814af8a79ed120bd5bfac310}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!end@{end}}
+\index{end@{end}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{end()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ const\+\_\+iterator {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree_af636ba0f814af8a79ed120bd5bfac310}
+
+
+Last position in tree (after max element). 
+
+\begin{DoxyReturn}{Returns}
+iterator to a nullptr.
+
+const\+\_\+iterator to a nullptr. 
+\end{DoxyReturn}
+\hypertarget{class_a_v_l_tree_a51190d0f736c44522292a6931e2a45f2}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!end@{end}}
+\index{end@{end}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{end() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ const\+\_\+iterator {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree_a51190d0f736c44522292a6931e2a45f2}
+\hypertarget{class_a_v_l_tree_a853f57000e0cf3f2d9ef5fbbc3223e60}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!find@{find}}
+\index{find@{find}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{find(const value\+\_\+type \&val)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::find (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree_a853f57000e0cf3f2d9ef5fbbc3223e60}
+
+
+Returns a value from the tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & -\/ a value to search for in the tree. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+iterator to a value in the tree or \hyperlink{class_a_v_l_tree_af636ba0f814af8a79ed120bd5bfac310}{end()} if it doesn\textquotesingle{}t exist.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em val} & -\/ a value to search for in the tree. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+const\+\_\+iterator to a value in the tree or \hyperlink{class_a_v_l_tree_af636ba0f814af8a79ed120bd5bfac310}{end()} if it doesn\textquotesingle{}t exist. 
+\end{DoxyReturn}
+\hypertarget{class_a_v_l_tree_a0b11c1f2ca86904dcfe4d7d710e253f1}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!find@{find}}
+\index{find@{find}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{find(const value\+\_\+type \&val) const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ const\+\_\+iterator {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::find (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{val}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree_a0b11c1f2ca86904dcfe4d7d710e253f1}
+\hypertarget{class_a_v_l_tree_a8da12b14718d64a6ddc6cd8e7470b03e}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!insert@{insert}}
+\index{insert@{insert}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{insert(const value\+\_\+type \&val)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::insert (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree_a8da12b14718d64a6ddc6cd8e7470b03e}
+
+
+Inserts an element of type value\+\_\+type into the list. 
+
+\hypertarget{class_a_v_l_tree_ab6e878dfa1a127b4f79be2d32f075d2e}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!operator=@{operator=}}
+\index{operator=@{operator=}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{operator=(\+A\+V\+L\+Tree copy)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type $>$ {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$ \& {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$}]{copy}
+\end{DoxyParamCaption}
+)}\label{class_a_v_l_tree_ab6e878dfa1a127b4f79be2d32f075d2e}
+
+
+Overloaded assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & -\/ an object reference to an \hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree} instance to be copied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to an \hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree} object. 
+\end{DoxyReturn}
+\hypertarget{class_a_v_l_tree_aae30d36bc9cb070787c1d0d97413eb86}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!size@{size}}
+\index{size@{size}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{size() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree_aae30d36bc9cb070787c1d0d97413eb86}
+
+
+Returns the size of the tree. 
+
+\begin{DoxyReturn}{Returns}
+size\+\_\+type representing the size of the tree. 
+\end{DoxyReturn}
+\hypertarget{class_a_v_l_tree_ae5f263d44778e8ca8a4035c53dbd4b40}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!swap@{swap}}
+\index{swap@{swap}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{swap(\+A\+V\+L\+Tree \&other)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type $>$ void {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::swap (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}\label{class_a_v_l_tree_ae5f263d44778e8ca8a4035c53dbd4b40}
+
+
+Swaps this with another A\+V\+L tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & -\/ the other A\+V\+L tree to swap this with. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_a_v_l_tree_afe091ef781f649e6f53c487b80a067f1}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ template$<$class , class $>$ friend class {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}\hspace{0.3cm}{\ttfamily [friend]}}\label{class_a_v_l_tree_afe091ef781f649e6f53c487b80a067f1}
+\hypertarget{class_a_v_l_tree_a3b97d3835e767e85b1cededfeefa9d84}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!A\+V\+L\+Tree\+\_\+iterator@{A\+V\+L\+Tree\+\_\+iterator}}
+\index{A\+V\+L\+Tree\+\_\+iterator@{A\+V\+L\+Tree\+\_\+iterator}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{A\+V\+L\+Tree\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ template$<$class , class $>$ friend class {\bf A\+V\+L\+Tree\+\_\+iterator}\hspace{0.3cm}{\ttfamily [friend]}}\label{class_a_v_l_tree_a3b97d3835e767e85b1cededfeefa9d84}
+\hypertarget{class_a_v_l_tree_a610d3e95f9713a58a8855da82215aab3}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$ \&}]{lhs, }
+\item[{{\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{class_a_v_l_tree_a610d3e95f9713a58a8855da82215aab3}
+
+
+Compares two A\+V\+L trees for inequality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & -\/ one A\+V\+L tree to compare. \\
+\hline
+{\em ptr} & -\/ second A\+V\+L tree to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether two trees are not equal. 
+\end{DoxyReturn}
+\hypertarget{class_a_v_l_tree_a39e9bd2267563dcefbe27caeef5b11f1}{}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!operator==@{operator==}}
+\index{operator==@{operator==}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$ \&}]{lhs, }
+\item[{{\bf A\+V\+L\+Tree}$<$ \+\_\+\+Type $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{class_a_v_l_tree_a39e9bd2267563dcefbe27caeef5b11f1}
+
+
+Compares two A\+V\+L trees for equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & -\/ one A\+V\+L tree to compare. \\
+\hline
+{\em ptr} & -\/ second A\+V\+L tree to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether two trees are equal. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_a_v_l_tree_8hpp}{A\+V\+L\+Tree.\+hpp}\end{DoxyCompactItemize}

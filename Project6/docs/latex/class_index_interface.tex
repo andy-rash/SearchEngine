@@ -1,0 +1,295 @@
+\hypertarget{class_index_interface}{}\section{Index\+Interface Class Reference}
+\label{class_index_interface}\index{Index\+Interface@{Index\+Interface}}
+
+
+Class for dealing with the index.  
+
+
+
+
+{\ttfamily \#include $<$Index\+Interface.\+hpp$>$}
+
+Inheritance diagram for Index\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_index_interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_index_interface_a7b1e7eae7faa652d2f63efeecf0ca2de}{Index\+Interface} ()
+\begin{DoxyCompactList}\small\item\em Initializes the member data with default values. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_index_interface_a3927fabe77a7da5845dc0495b2c1c2b2}{$\sim$\+Index\+Interface} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for proper memory management of this and child classes. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_index_interface_aa7601d76e8cc3f0657e800efdc4c127e}{add\+Document} (const std\+::string \&path)=0
+\begin{DoxyCompactList}\small\item\em Virtual function for adding a document. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_index_interface_aac36b4561598ee84c0c68958a1e3f82b}{clear\+Index} ()=0
+\begin{DoxyCompactList}\small\item\em Virtual function for clearing the index. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_index_interface_aaf90058a62e096bf607ea3dec2545ee4}{empty\+Index} () const  =0
+\begin{DoxyCompactList}\small\item\em Virtual function for returning whether the index is empty. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_token}{Token} \hyperlink{class_index_interface_aa0ea18e7daa9984240d108bd765b2816}{find\+Word} (std\+::string \&term)=0
+\begin{DoxyCompactList}\small\item\em Virtual function for finding a word in the index. \end{DoxyCompactList}\item 
+virtual const \hyperlink{class_document}{Document} \& \hyperlink{class_index_interface_aa694a3e8feb722519b45f7313281bfad}{get\+Document\+By\+I\+D} (const int \&doc\+I\+D)=0
+\begin{DoxyCompactList}\small\item\em Virtual function for getting a document pertaining to a given I\+D number. \end{DoxyCompactList}\item 
+int \hyperlink{class_index_interface_af5d7e170720c26b3d38499d4e5e1dd69}{get\+Num\+Docs} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of documents processed. \end{DoxyCompactList}\item 
+int \hyperlink{class_index_interface_a3260a1213d90bd6cb6fd33043fb28b44}{get\+Num\+Tokens} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of tokens processed. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_index_interface_a8ccd80a03123406cb4b1e2494349f9da}{has\+Word} (std\+::string \&term)=0
+\begin{DoxyCompactList}\small\item\em Virtual function for returning whether the index contains a given word. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_index_interface_ad8567919eafa87ac20c35928c929084d}{list\+Index} ()=0
+\begin{DoxyCompactList}\small\item\em Virtual function for writing the persistent index. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_index_interface_a006f773f4e143745474e847cfb9f27fc}{load\+Index} ()=0
+\begin{DoxyCompactList}\small\item\em Virtual function for loading an index in from persistent state. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_index_interface_a7b2ae510fa62eebb654708b90972c1b6}{make\+Index} (const std\+::string \&file\+Name)=0
+\begin{DoxyCompactList}\small\item\em Virtual function for creating the index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for dealing with the index. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_a_v_l_tree_index}{A\+V\+L\+Tree\+Index}. 
+
+\hyperlink{class_hash_table_index}{Hash\+Table\+Index}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_index_interface_a7b1e7eae7faa652d2f63efeecf0ca2de}{}\index{Index\+Interface@{Index\+Interface}!Index\+Interface@{Index\+Interface}}
+\index{Index\+Interface@{Index\+Interface}!Index\+Interface@{Index\+Interface}}
+\subsubsection[{Index\+Interface()}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Interface\+::\+Index\+Interface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_index_interface_a7b1e7eae7faa652d2f63efeecf0ca2de}
+
+
+Initializes the member data with default values. 
+
+\hypertarget{class_index_interface_a3927fabe77a7da5845dc0495b2c1c2b2}{}\index{Index\+Interface@{Index\+Interface}!````~Index\+Interface@{$\sim$\+Index\+Interface}}
+\index{````~Index\+Interface@{$\sim$\+Index\+Interface}!Index\+Interface@{Index\+Interface}}
+\subsubsection[{$\sim$\+Index\+Interface()}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Interface\+::$\sim$\+Index\+Interface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_index_interface_a3927fabe77a7da5845dc0495b2c1c2b2}
+
+
+Virtual destructor for proper memory management of this and child classes. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_index_interface_aa7601d76e8cc3f0657e800efdc4c127e}{}\index{Index\+Interface@{Index\+Interface}!add\+Document@{add\+Document}}
+\index{add\+Document@{add\+Document}!Index\+Interface@{Index\+Interface}}
+\subsubsection[{add\+Document(const std\+::string \&path)=0}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Interface\+::add\+Document (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_index_interface_aa7601d76e8cc3f0657e800efdc4c127e}
+
+
+Virtual function for adding a document. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & -\/ a path to a file to add to the index. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_hash_table_index_a5387a8b9f0e585105a79624a93cd6ec0}{Hash\+Table\+Index}, and \hyperlink{class_a_v_l_tree_index_a1f84720f7580bd785a11d0e0425bd537}{A\+V\+L\+Tree\+Index}.
+
+\hypertarget{class_index_interface_aac36b4561598ee84c0c68958a1e3f82b}{}\index{Index\+Interface@{Index\+Interface}!clear\+Index@{clear\+Index}}
+\index{clear\+Index@{clear\+Index}!Index\+Interface@{Index\+Interface}}
+\subsubsection[{clear\+Index()=0}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Interface\+::clear\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_index_interface_aac36b4561598ee84c0c68958a1e3f82b}
+
+
+Virtual function for clearing the index. 
+
+
+
+Implemented in \hyperlink{class_hash_table_index_a69b31cc0bb54877b628bd67dadc5973f}{Hash\+Table\+Index}, and \hyperlink{class_a_v_l_tree_index_a1a877f264d30b657f37c6ed070d2e250}{A\+V\+L\+Tree\+Index}.
+
+\hypertarget{class_index_interface_aaf90058a62e096bf607ea3dec2545ee4}{}\index{Index\+Interface@{Index\+Interface}!empty\+Index@{empty\+Index}}
+\index{empty\+Index@{empty\+Index}!Index\+Interface@{Index\+Interface}}
+\subsubsection[{empty\+Index() const  =0}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Interface\+::empty\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_index_interface_aaf90058a62e096bf607ea3dec2545ee4}
+
+
+Virtual function for returning whether the index is empty. 
+
+\begin{DoxyReturn}{Returns}
+boolean whether the index is empty. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_hash_table_index_a19b62a531429e670b25cd92be4333890}{Hash\+Table\+Index}, and \hyperlink{class_a_v_l_tree_index_a447e5741c289869d5a5188def065fb6c}{A\+V\+L\+Tree\+Index}.
+
+\hypertarget{class_index_interface_aa0ea18e7daa9984240d108bd765b2816}{}\index{Index\+Interface@{Index\+Interface}!find\+Word@{find\+Word}}
+\index{find\+Word@{find\+Word}!Index\+Interface@{Index\+Interface}}
+\subsubsection[{find\+Word(std\+::string \&term)=0}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Interface\+::find\+Word (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_index_interface_aa0ea18e7daa9984240d108bd765b2816}
+
+
+Virtual function for finding a word in the index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em term} & -\/ term to search for in the index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_token}{Token} (by value for \hyperlink{class_hash_table_index}{Hash\+Table\+Index} compatibility) representing the searched word. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_hash_table_index_a3d4c8e0244943cc44f33a35b742f7578}{Hash\+Table\+Index}, and \hyperlink{class_a_v_l_tree_index_ab549fb6b9fdf08926540f6652859d442}{A\+V\+L\+Tree\+Index}.
+
+\hypertarget{class_index_interface_aa694a3e8feb722519b45f7313281bfad}{}\index{Index\+Interface@{Index\+Interface}!get\+Document\+By\+I\+D@{get\+Document\+By\+I\+D}}
+\index{get\+Document\+By\+I\+D@{get\+Document\+By\+I\+D}!Index\+Interface@{Index\+Interface}}
+\subsubsection[{get\+Document\+By\+I\+D(const int \&doc\+I\+D)=0}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Interface\+::get\+Document\+By\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{doc\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_index_interface_aa694a3e8feb722519b45f7313281bfad}
+
+
+Virtual function for getting a document pertaining to a given I\+D number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doc\+I\+D} & -\/ a document I\+D number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_document}{Document} reference. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_hash_table_index_ac5cc9451bce6e13739af7c5f154eea0b}{Hash\+Table\+Index}, and \hyperlink{class_a_v_l_tree_index_a0716178493a342dd6b790cfa8d01b3fa}{A\+V\+L\+Tree\+Index}.
+
+\hypertarget{class_index_interface_af5d7e170720c26b3d38499d4e5e1dd69}{}\index{Index\+Interface@{Index\+Interface}!get\+Num\+Docs@{get\+Num\+Docs}}
+\index{get\+Num\+Docs@{get\+Num\+Docs}!Index\+Interface@{Index\+Interface}}
+\subsubsection[{get\+Num\+Docs() const }]{\setlength{\rightskip}{0pt plus 5cm}Index\+Interface\+::get\+Num\+Docs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_index_interface_af5d7e170720c26b3d38499d4e5e1dd69}
+
+
+Returns the number of documents processed. 
+
+\begin{DoxyReturn}{Returns}
+integer representing the number of documents processed. 
+\end{DoxyReturn}
+\hypertarget{class_index_interface_a3260a1213d90bd6cb6fd33043fb28b44}{}\index{Index\+Interface@{Index\+Interface}!get\+Num\+Tokens@{get\+Num\+Tokens}}
+\index{get\+Num\+Tokens@{get\+Num\+Tokens}!Index\+Interface@{Index\+Interface}}
+\subsubsection[{get\+Num\+Tokens() const }]{\setlength{\rightskip}{0pt plus 5cm}Index\+Interface\+::get\+Num\+Tokens (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_index_interface_a3260a1213d90bd6cb6fd33043fb28b44}
+
+
+Returns the number of tokens processed. 
+
+\begin{DoxyReturn}{Returns}
+integer representing the number of tokens processed. 
+\end{DoxyReturn}
+\hypertarget{class_index_interface_a8ccd80a03123406cb4b1e2494349f9da}{}\index{Index\+Interface@{Index\+Interface}!has\+Word@{has\+Word}}
+\index{has\+Word@{has\+Word}!Index\+Interface@{Index\+Interface}}
+\subsubsection[{has\+Word(std\+::string \&term)=0}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Interface\+::has\+Word (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_index_interface_a8ccd80a03123406cb4b1e2494349f9da}
+
+
+Virtual function for returning whether the index contains a given word. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em term} & -\/ a term to search the index for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether the index contains the word. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_hash_table_index_aea9366ff9299d41bd3447bc6c95a3960}{Hash\+Table\+Index}, and \hyperlink{class_a_v_l_tree_index_acb31068c39161358ec6545df5feaabc0}{A\+V\+L\+Tree\+Index}.
+
+\hypertarget{class_index_interface_ad8567919eafa87ac20c35928c929084d}{}\index{Index\+Interface@{Index\+Interface}!list\+Index@{list\+Index}}
+\index{list\+Index@{list\+Index}!Index\+Interface@{Index\+Interface}}
+\subsubsection[{list\+Index()=0}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Interface\+::list\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_index_interface_ad8567919eafa87ac20c35928c929084d}
+
+
+Virtual function for writing the persistent index. 
+
+
+
+Implemented in \hyperlink{class_hash_table_index_a42bbd9b325fb95b54a546c3c98c67624}{Hash\+Table\+Index}, and \hyperlink{class_a_v_l_tree_index_a603741ace3489018f33f5ba4282e3f0d}{A\+V\+L\+Tree\+Index}.
+
+\hypertarget{class_index_interface_a006f773f4e143745474e847cfb9f27fc}{}\index{Index\+Interface@{Index\+Interface}!load\+Index@{load\+Index}}
+\index{load\+Index@{load\+Index}!Index\+Interface@{Index\+Interface}}
+\subsubsection[{load\+Index()=0}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Interface\+::load\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_index_interface_a006f773f4e143745474e847cfb9f27fc}
+
+
+Virtual function for loading an index in from persistent state. 
+
+\begin{DoxyReturn}{Returns}
+boolean whether the index was successfully loaded. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_hash_table_index_a8c483a83b40b49b0f35be9fea0674501}{Hash\+Table\+Index}, and \hyperlink{class_a_v_l_tree_index_af161b8697db7e3f599abc78a36f8d145}{A\+V\+L\+Tree\+Index}.
+
+\hypertarget{class_index_interface_a7b2ae510fa62eebb654708b90972c1b6}{}\index{Index\+Interface@{Index\+Interface}!make\+Index@{make\+Index}}
+\index{make\+Index@{make\+Index}!Index\+Interface@{Index\+Interface}}
+\subsubsection[{make\+Index(const std\+::string \&file\+Name)=0}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Interface\+::make\+Index (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_index_interface_a7b2ae510fa62eebb654708b90972c1b6}
+
+
+Virtual function for creating the index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & -\/ a directory containing files to be put in the index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether the index was successfully created. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_hash_table_index_a5105f715d8c5fd3b74d6bec462cb0c38}{Hash\+Table\+Index}, and \hyperlink{class_a_v_l_tree_index_a37200f167e48a7b24cb012b9ff5cf44c}{A\+V\+L\+Tree\+Index}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_index_interface_8hpp}{Index\+Interface.\+hpp}\end{DoxyCompactItemize}

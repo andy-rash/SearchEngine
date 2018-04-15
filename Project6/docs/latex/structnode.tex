@@ -1,0 +1,241 @@
+\hypertarget{structnode}{}\section{node$<$ \+\_\+\+Type $>$ Struct Template Reference}
+\label{structnode}\index{node$<$ \+\_\+\+Type $>$@{node$<$ \+\_\+\+Type $>$}}
+
+
+A node for use in the A\+V\+L tree. Holds a value, height, and pointers to left and right child nodes.  
+
+
+
+
+{\ttfamily \#include $<$A\+V\+L\+Tree.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structnode_a07f56d66b295e3a51cd8e5771c505e2f}{node} ()
+\begin{DoxyCompactList}\small\item\em Initializes the member data with default values. \end{DoxyCompactList}\item 
+\hyperlink{structnode_a57d8701648d6e65867648f077add339b}{node} (const \hyperlink{structnode}{node} \&copy)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{structnode_ac422b5fa2f7dc1bfc6485373f4a37cf8}{node} (\hyperlink{structnode}{node} \&\&copy)
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\hyperlink{structnode_a48762381e551e35cb9ee0d515339dab0}{node} (const value\+\_\+type \&value, \hyperlink{structnode}{node} $\ast$parent, \hyperlink{structnode}{node} $\ast$left, \hyperlink{structnode}{node} $\ast$right)
+\begin{DoxyCompactList}\small\item\em Initializes the member data with a given value and pointers to a parent, left, and right child and a height of -\/1. \end{DoxyCompactList}\item 
+\hyperlink{structnode_a7eb8c2ea4c2dfeb90bef1ecee16aa0f9}{node} (const value\+\_\+type \&value, const int \&height, \hyperlink{structnode}{node} $\ast$parent, \hyperlink{structnode}{node} $\ast$left, \hyperlink{structnode}{node} $\ast$right)
+\item 
+\hyperlink{structnode_a527872acc0945cc69fdcc1237112ea40}{$\sim$node} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{structnode}{node} \& \hyperlink{structnode_a88b75549d8936a1cdafd77d1daf9f218}{operator=} (\hyperlink{structnode}{node} copy)
+\begin{DoxyCompactList}\small\item\em Assignment operator; uses copy-\/swap idiom. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+value\+\_\+type \hyperlink{structnode_a8353cf23af61f2a637764a1a46ca8eb6}{\+\_\+value}
+\begin{DoxyCompactList}\small\item\em Value stored in the node. \end{DoxyCompactList}\item 
+int \hyperlink{structnode_a3acd2c366e647bce759f961f71ebf5b3}{\+\_\+height}
+\begin{DoxyCompactList}\small\item\em Height of the node in the tree. \end{DoxyCompactList}\item 
+\hyperlink{structnode}{node} $\ast$ \hyperlink{structnode_ad045681eca718a3867a16a9644aac2a6}{\+\_\+parent}
+\begin{DoxyCompactList}\small\item\em A pointer to the parent of the node. \end{DoxyCompactList}\item 
+\hyperlink{structnode}{node} $\ast$ \hyperlink{structnode_af082014da104d7b72a3b7299d027ffbb}{\+\_\+left}
+\begin{DoxyCompactList}\small\item\em A pointer to the left child of the node. \end{DoxyCompactList}\item 
+\hyperlink{structnode}{node} $\ast$ \hyperlink{structnode_aa65c4746c7391fb99f06fec3400addce}{\+\_\+right}
+\begin{DoxyCompactList}\small\item\em A pointer to the right child of the node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+\+Type1 $>$ }\\void \hyperlink{structnode_ae91b864585481f95d662fe66839e3e42}{swap} (\hyperlink{structnode}{node}$<$ \+\_\+\+Type $>$ \&lhs, \hyperlink{structnode}{node}$<$ \+\_\+\+Type $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em friend swap function for external use. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+\+Type$>$struct node$<$ \+\_\+\+Type $>$}
+
+A node for use in the A\+V\+L tree. Holds a value, height, and pointers to left and right child nodes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+Type} & -\/ a type for the node template. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structnode_a07f56d66b295e3a51cd8e5771c505e2f}{}\index{node@{node}!node@{node}}
+\index{node@{node}!node@{node}}
+\subsubsection[{node()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf node}$<$ \+\_\+\+Type $>$\+::{\bf node} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structnode_a07f56d66b295e3a51cd8e5771c505e2f}
+
+
+Initializes the member data with default values. 
+
+\hypertarget{structnode_a57d8701648d6e65867648f077add339b}{}\index{node@{node}!node@{node}}
+\index{node@{node}!node@{node}}
+\subsubsection[{node(const node \&copy)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf node}$<$ \+\_\+\+Type $>$\+::{\bf node} (
+\begin{DoxyParamCaption}
+\item[{const {\bf node}$<$ \+\_\+\+Type $>$ \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structnode_a57d8701648d6e65867648f077add339b}
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & -\/ another node to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structnode_ac422b5fa2f7dc1bfc6485373f4a37cf8}{}\index{node@{node}!node@{node}}
+\index{node@{node}!node@{node}}
+\subsubsection[{node(node \&\&copy)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf node}$<$ \+\_\+\+Type $>$\+::{\bf node} (
+\begin{DoxyParamCaption}
+\item[{{\bf node}$<$ \+\_\+\+Type $>$ \&\&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structnode_ac422b5fa2f7dc1bfc6485373f4a37cf8}
+
+
+Move constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & -\/ another node to move from. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structnode_a48762381e551e35cb9ee0d515339dab0}{}\index{node@{node}!node@{node}}
+\index{node@{node}!node@{node}}
+\subsubsection[{node(const value\+\_\+type \&value, node $\ast$parent, node $\ast$left, node $\ast$right)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf node}$<$ \+\_\+\+Type $>$\+::{\bf node} (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{value, }
+\item[{{\bf node}$<$ \+\_\+\+Type $>$ $\ast$}]{parent, }
+\item[{{\bf node}$<$ \+\_\+\+Type $>$ $\ast$}]{left, }
+\item[{{\bf node}$<$ \+\_\+\+Type $>$ $\ast$}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structnode_a48762381e551e35cb9ee0d515339dab0}
+
+
+Initializes the member data with a given value and pointers to a parent, left, and right child and a height of -\/1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & -\/ a value of type value\+\_\+type. \\
+\hline
+{\em parent} & -\/ a pointer to the parent of the new node (should almost always be nullptr). \\
+\hline
+{\em left} & -\/ a pointer to the left child of the new node (should almost always be nullptr). \\
+\hline
+{\em right} & -\/ a pointer to the right child of the new node (should almost always be nullptr). \\
+\hline
+\end{DoxyParams}
+\hypertarget{structnode_a7eb8c2ea4c2dfeb90bef1ecee16aa0f9}{}\index{node@{node}!node@{node}}
+\index{node@{node}!node@{node}}
+\subsubsection[{node(const value\+\_\+type \&value, const int \&height, node $\ast$parent, node $\ast$left, node $\ast$right)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf node}$<$ \+\_\+\+Type $>$\+::{\bf node} (
+\begin{DoxyParamCaption}
+\item[{const value\+\_\+type \&}]{value, }
+\item[{const int \&}]{height, }
+\item[{{\bf node}$<$ \+\_\+\+Type $>$ $\ast$}]{parent, }
+\item[{{\bf node}$<$ \+\_\+\+Type $>$ $\ast$}]{left, }
+\item[{{\bf node}$<$ \+\_\+\+Type $>$ $\ast$}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structnode_a7eb8c2ea4c2dfeb90bef1ecee16aa0f9}
+\hypertarget{structnode_a527872acc0945cc69fdcc1237112ea40}{}\index{node@{node}!````~node@{$\sim$node}}
+\index{````~node@{$\sim$node}!node@{node}}
+\subsubsection[{$\sim$node()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf node}$<$ \+\_\+\+Type $>$\+::$\sim${\bf node} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structnode_a527872acc0945cc69fdcc1237112ea40}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structnode_a88b75549d8936a1cdafd77d1daf9f218}{}\index{node@{node}!operator=@{operator=}}
+\index{operator=@{operator=}!node@{node}}
+\subsubsection[{operator=(node copy)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf node}$<$ \+\_\+\+Type $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf node}$<$ \+\_\+\+Type $>$}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structnode_a88b75549d8936a1cdafd77d1daf9f218}
+
+
+Assignment operator; uses copy-\/swap idiom. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & -\/ a node passed by value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference to a node. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{structnode_ae91b864585481f95d662fe66839e3e42}{}\index{node@{node}!swap@{swap}}
+\index{swap@{swap}!node@{node}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ template$<$class \+\_\+\+Type1 $>$ {\bf node}$<$ \+\_\+\+Type $>$\+::swap (
+\begin{DoxyParamCaption}
+\item[{{\bf node}$<$ \+\_\+\+Type $>$ \&}]{lhs, }
+\item[{{\bf node}$<$ \+\_\+\+Type $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{structnode_ae91b864585481f95d662fe66839e3e42}
+
+
+friend swap function for external use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & -\/ first node to be swapped. \\
+\hline
+{\em rhs} & -\/ second node to be swapped. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structnode_a3acd2c366e647bce759f961f71ebf5b3}{}\index{node@{node}!\+\_\+height@{\+\_\+height}}
+\index{\+\_\+height@{\+\_\+height}!node@{node}}
+\subsubsection[{\+\_\+height}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ int {\bf node}$<$ \+\_\+\+Type $>$\+::\+\_\+height}\label{structnode_a3acd2c366e647bce759f961f71ebf5b3}
+
+
+Height of the node in the tree. 
+
+\hypertarget{structnode_af082014da104d7b72a3b7299d027ffbb}{}\index{node@{node}!\+\_\+left@{\+\_\+left}}
+\index{\+\_\+left@{\+\_\+left}!node@{node}}
+\subsubsection[{\+\_\+left}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf node}$\ast$ {\bf node}$<$ \+\_\+\+Type $>$\+::\+\_\+left}\label{structnode_af082014da104d7b72a3b7299d027ffbb}
+
+
+A pointer to the left child of the node. 
+
+\hypertarget{structnode_ad045681eca718a3867a16a9644aac2a6}{}\index{node@{node}!\+\_\+parent@{\+\_\+parent}}
+\index{\+\_\+parent@{\+\_\+parent}!node@{node}}
+\subsubsection[{\+\_\+parent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf node}$\ast$ {\bf node}$<$ \+\_\+\+Type $>$\+::\+\_\+parent}\label{structnode_ad045681eca718a3867a16a9644aac2a6}
+
+
+A pointer to the parent of the node. 
+
+\hypertarget{structnode_aa65c4746c7391fb99f06fec3400addce}{}\index{node@{node}!\+\_\+right@{\+\_\+right}}
+\index{\+\_\+right@{\+\_\+right}!node@{node}}
+\subsubsection[{\+\_\+right}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ {\bf node}$\ast$ {\bf node}$<$ \+\_\+\+Type $>$\+::\+\_\+right}\label{structnode_aa65c4746c7391fb99f06fec3400addce}
+
+
+A pointer to the right child of the node. 
+
+\hypertarget{structnode_a8353cf23af61f2a637764a1a46ca8eb6}{}\index{node@{node}!\+\_\+value@{\+\_\+value}}
+\index{\+\_\+value@{\+\_\+value}!node@{node}}
+\subsubsection[{\+\_\+value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type$>$ value\+\_\+type {\bf node}$<$ \+\_\+\+Type $>$\+::\+\_\+value}\label{structnode_a8353cf23af61f2a637764a1a46ca8eb6}
+
+
+Value stored in the node. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_a_v_l_tree_8hpp}{A\+V\+L\+Tree.\+hpp}\end{DoxyCompactItemize}

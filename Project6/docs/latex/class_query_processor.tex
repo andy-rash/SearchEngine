@@ -1,0 +1,110 @@
+\hypertarget{class_query_processor}{}\section{Query\+Processor Class Reference}
+\label{class_query_processor}\index{Query\+Processor@{Query\+Processor}}
+
+
+Class for parsing user queries and ranking results.  
+
+
+
+
+{\ttfamily \#include $<$Query\+Processor.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_query_processor_a32a6760ff0aab51b38fb8eb236e2e140}{Query\+Processor} ()
+\begin{DoxyCompactList}\small\item\em Initializes the member data with default values. \end{DoxyCompactList}\item 
+set\+\_\+type \hyperlink{class_query_processor_a24544d09490d3ef704acaae4f3d5d478}{process\+Terms} (std\+::vector$<$ std\+::string $>$ \&terms, \hyperlink{class_index_interface}{Index\+Interface} \&indexer)
+\begin{DoxyCompactList}\small\item\em parses the query based on boolean terms if any and returns a set of results if any. \end{DoxyCompactList}\item 
+void \hyperlink{class_query_processor_a08d7a42132998959c37e75ec61d5662c}{search} (std\+::string \&query, \hyperlink{class_index_interface}{Index\+Interface} \&indexer)
+\begin{DoxyCompactList}\small\item\em Performs a search based on the given query; sends the tokenized query to \hyperlink{class_query_processor_a24544d09490d3ef704acaae4f3d5d478}{process\+Terms()}; also outputs the results. \end{DoxyCompactList}\item 
+void \hyperlink{class_query_processor_a9bf3ee98ae9154d55ea70051ea199673}{set\+Num\+Docs} (const \hyperlink{class_index_interface}{Index\+Interface} \&indexer)
+\begin{DoxyCompactList}\small\item\em Sets the number of documents processed; for use in calculating tf-\/idf values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for parsing user queries and ranking results. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_index_interface}{Index\+Interface}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_query_processor_a32a6760ff0aab51b38fb8eb236e2e140}{}\index{Query\+Processor@{Query\+Processor}!Query\+Processor@{Query\+Processor}}
+\index{Query\+Processor@{Query\+Processor}!Query\+Processor@{Query\+Processor}}
+\subsubsection[{Query\+Processor()}]{\setlength{\rightskip}{0pt plus 5cm}Query\+Processor\+::\+Query\+Processor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_query_processor_a32a6760ff0aab51b38fb8eb236e2e140}
+
+
+Initializes the member data with default values. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_query_processor_a24544d09490d3ef704acaae4f3d5d478}{}\index{Query\+Processor@{Query\+Processor}!process\+Terms@{process\+Terms}}
+\index{process\+Terms@{process\+Terms}!Query\+Processor@{Query\+Processor}}
+\subsubsection[{process\+Terms(std\+::vector$<$ std\+::string $>$ \&terms, Index\+Interface \&indexer)}]{\setlength{\rightskip}{0pt plus 5cm}Query\+Processor\+::process\+Terms (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{terms, }
+\item[{{\bf Index\+Interface} \&}]{indexer}
+\end{DoxyParamCaption}
+)}\label{class_query_processor_a24544d09490d3ef704acaae4f3d5d478}
+
+
+parses the query based on boolean terms if any and returns a set of results if any. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em terms} & -\/ a std\+::vector containing the search terms to be processed. \\
+\hline
+{\em indexer} & -\/ an indexing object; one of either \hyperlink{class_a_v_l_tree_index}{A\+V\+L\+Tree\+Index} or \hyperlink{class_hash_table_index}{Hash\+Table\+Index}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a set\+\_\+type containing the search results. 
+\end{DoxyReturn}
+\hypertarget{class_query_processor_a08d7a42132998959c37e75ec61d5662c}{}\index{Query\+Processor@{Query\+Processor}!search@{search}}
+\index{search@{search}!Query\+Processor@{Query\+Processor}}
+\subsubsection[{search(std\+::string \&query, Index\+Interface \&indexer)}]{\setlength{\rightskip}{0pt plus 5cm}Query\+Processor\+::search (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{query, }
+\item[{{\bf Index\+Interface} \&}]{indexer}
+\end{DoxyParamCaption}
+)}\label{class_query_processor_a08d7a42132998959c37e75ec61d5662c}
+
+
+Performs a search based on the given query; sends the tokenized query to \hyperlink{class_query_processor_a24544d09490d3ef704acaae4f3d5d478}{process\+Terms()}; also outputs the results. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & -\/ a string to search the index for. \\
+\hline
+{\em indexer} & -\/ an indexing object; one of either \hyperlink{class_a_v_l_tree_index}{A\+V\+L\+Tree\+Index} or \hyperlink{class_hash_table_index}{Hash\+Table\+Index}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_query_processor_a9bf3ee98ae9154d55ea70051ea199673}{}\index{Query\+Processor@{Query\+Processor}!set\+Num\+Docs@{set\+Num\+Docs}}
+\index{set\+Num\+Docs@{set\+Num\+Docs}!Query\+Processor@{Query\+Processor}}
+\subsubsection[{set\+Num\+Docs(const Index\+Interface \&indexer)}]{\setlength{\rightskip}{0pt plus 5cm}Query\+Processor\+::set\+Num\+Docs (
+\begin{DoxyParamCaption}
+\item[{const {\bf Index\+Interface} \&}]{indexer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_query_processor_a9bf3ee98ae9154d55ea70051ea199673}
+
+
+Sets the number of documents processed; for use in calculating tf-\/idf values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indexer} & -\/ an indexing object; one of either \hyperlink{class_a_v_l_tree_index}{A\+V\+L\+Tree\+Index} or \hyperlink{class_hash_table_index}{Hash\+Table\+Index}. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_query_processor_8hpp}{Query\+Processor.\+hpp}\item 
+\hyperlink{_query_processor_8cpp}{Query\+Processor.\+cpp}\end{DoxyCompactItemize}

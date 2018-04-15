@@ -1,0 +1,577 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="classhash__table" kind="class" language="C++" prot="public">
+    <compoundname>hash_table</compoundname>
+    <includes refid="hash__table_8hpp" local="no">hash_table.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class _Type</type>
+      </param>
+      <param>
+        <type>class _Hash</type>
+      </param>
+      <param>
+        <type>class _Equal</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classhash__table_1a536a4f7db0e47e35283f8e04ea72e88c" prot="public" static="no">
+        <type>_Type</type>
+        <definition>typedef _Type hash_table&lt; _Type, _Hash, _Equal &gt;::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="404" column="1" bodyfile="hash_table.hpp" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhash__table_1a50374ab474440525f6739d9e45a851f9" prot="public" static="no">
+        <type>_Hash</type>
+        <definition>typedef _Hash hash_table&lt; _Type, _Hash, _Equal &gt;::hasher</definition>
+        <argsstring></argsstring>
+        <name>hasher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="405" column="1" bodyfile="hash_table.hpp" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhash__table_1a0261fc20ffaacd3a8b3f4562dd631beb" prot="public" static="no">
+        <type>_Equal</type>
+        <definition>typedef _Equal hash_table&lt; _Type, _Hash, _Equal &gt;::key_equal</definition>
+        <argsstring></argsstring>
+        <name>key_equal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="406" column="1" bodyfile="hash_table.hpp" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhash__table_1a92ee06d8c071e7a5b41861d2622e02de" prot="public" static="no">
+        <type><ref refid="classhash__table_1a536a4f7db0e47e35283f8e04ea72e88c" kindref="member">value_type</ref> &amp;</type>
+        <definition>typedef value_type&amp; hash_table&lt; _Type, _Hash, _Equal &gt;::reference</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="407" column="1" bodyfile="hash_table.hpp" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhash__table_1a84b60c6fc08ecba763d5e3cfa7065e8d" prot="public" static="no">
+        <type>const <ref refid="classhash__table_1a536a4f7db0e47e35283f8e04ea72e88c" kindref="member">value_type</ref> &amp;</type>
+        <definition>typedef const value_type&amp; hash_table&lt; _Type, _Hash, _Equal &gt;::const_reference</definition>
+        <argsstring></argsstring>
+        <name>const_reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="408" column="1" bodyfile="hash_table.hpp" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhash__table_1ad9e0d75b1e6756dc449ba917383d0dee" prot="public" static="no">
+        <type><ref refid="classhash__table_1a536a4f7db0e47e35283f8e04ea72e88c" kindref="member">value_type</ref> *</type>
+        <definition>typedef value_type* hash_table&lt; _Type, _Hash, _Equal &gt;::pointer</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="409" column="1" bodyfile="hash_table.hpp" bodystart="409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhash__table_1a8f09397b7443438bc50e7f6bfc9be9d6" prot="public" static="no">
+        <type>const <ref refid="classhash__table_1a536a4f7db0e47e35283f8e04ea72e88c" kindref="member">value_type</ref> *</type>
+        <definition>typedef const value_type* hash_table&lt; _Type, _Hash, _Equal &gt;::const_pointer</definition>
+        <argsstring></argsstring>
+        <name>const_pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="410" column="1" bodyfile="hash_table.hpp" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhash__table_1a8d85f5b55ee3116e6d40c1de62e62368" prot="public" static="no">
+        <type>std::size_t</type>
+        <definition>typedef std::size_t hash_table&lt; _Type, _Hash, _Equal &gt;::size_type</definition>
+        <argsstring></argsstring>
+        <name>size_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="411" column="1" bodyfile="hash_table.hpp" bodystart="411" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhash__table_1a7f48994c34ddc1f8a19ffa7dc3821b40" prot="public" static="no">
+        <type>std::ptrdiff_t</type>
+        <definition>typedef std::ptrdiff_t hash_table&lt; _Type, _Hash, _Equal &gt;::difference_type</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="412" column="1" bodyfile="hash_table.hpp" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhash__table_1a46df0d3f55f71d07f275abebec698098" prot="public" static="no">
+        <type>std::pointer_traits&lt; <ref refid="classhash__table_1ad9e0d75b1e6756dc449ba917383d0dee" kindref="member">pointer</ref> &gt;::template rebind&lt; void &gt;</type>
+        <definition>typedef std::pointer_traits&lt;pointer&gt;::template rebind&lt;void&gt; hash_table&lt; _Type, _Hash, _Equal &gt;::void_pointer</definition>
+        <argsstring></argsstring>
+        <name>void_pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="414" column="1" bodyfile="hash_table.hpp" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhash__table_1a0fec4f0d7cfac374e75932db352b7697" prot="public" static="no">
+        <type><ref refid="struct__hash__node" kindref="compound">_hash_node</ref>&lt; <ref refid="classhash__table_1a536a4f7db0e47e35283f8e04ea72e88c" kindref="member">value_type</ref>, <ref refid="classhash__table_1a46df0d3f55f71d07f275abebec698098" kindref="member">void_pointer</ref> &gt;</type>
+        <definition>typedef _hash_node&lt;value_type,void_pointer&gt; hash_table&lt; _Type, _Hash, _Equal &gt;::_node</definition>
+        <argsstring></argsstring>
+        <name>_node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="415" column="1" bodyfile="hash_table.hpp" bodystart="415" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhash__table_1a7e82c643192604e0bcb21b1d7208df28" prot="public" static="no">
+        <type><ref refid="classhash__table_1a0fec4f0d7cfac374e75932db352b7697" kindref="member">_node</ref> *</type>
+        <definition>typedef _node* hash_table&lt; _Type, _Hash, _Equal &gt;::_node_pointer</definition>
+        <argsstring></argsstring>
+        <name>_node_pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="416" column="1" bodyfile="hash_table.hpp" bodystart="416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhash__table_1a94de4cb648de7c459348be7df2c9ebd3" prot="public" static="no">
+        <type>const <ref refid="classhash__table_1a0fec4f0d7cfac374e75932db352b7697" kindref="member">_node</ref> *</type>
+        <definition>typedef const _node* hash_table&lt; _Type, _Hash, _Equal &gt;::_node_const_pointer</definition>
+        <argsstring></argsstring>
+        <name>_node_const_pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="417" column="1" bodyfile="hash_table.hpp" bodystart="417" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhash__table_1ae649e68085e4cd585c9dd7e72360a9f4" prot="public" static="no">
+        <type><ref refid="struct__hash__node__base" kindref="compound">_hash_node_base</ref>&lt; <ref refid="classhash__table_1a7e82c643192604e0bcb21b1d7208df28" kindref="member">_node_pointer</ref> &gt;</type>
+        <definition>typedef _hash_node_base&lt;_node_pointer&gt; hash_table&lt; _Type, _Hash, _Equal &gt;::_first_node</definition>
+        <argsstring></argsstring>
+        <name>_first_node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="418" column="1" bodyfile="hash_table.hpp" bodystart="418" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhash__table_1a424f6f949f9f5edb496d1d2571633ea1" prot="public" static="no">
+        <type>std::pointer_traits&lt; <ref refid="classhash__table_1a7e82c643192604e0bcb21b1d7208df28" kindref="member">_node_pointer</ref> &gt;::template rebind&lt; <ref refid="classhash__table_1ae649e68085e4cd585c9dd7e72360a9f4" kindref="member">_first_node</ref> &gt;</type>
+        <definition>typedef std::pointer_traits&lt;_node_pointer&gt;::template rebind&lt;_first_node&gt; hash_table&lt; _Type, _Hash, _Equal &gt;::_node_base_pointer</definition>
+        <argsstring></argsstring>
+        <name>_node_base_pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="419" column="1" bodyfile="hash_table.hpp" bodystart="419" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classhash__table_1a93914219fcd365227ffedba81b5149ce" prot="private" static="no">
+        <type>std::vector&lt; <ref refid="classhash__table_1a7e82c643192604e0bcb21b1d7208df28" kindref="member">_node_pointer</ref> &gt;</type>
+        <definition>typedef std::vector&lt;_node_pointer&gt; hash_table&lt; _Type, _Hash, _Equal &gt;::_bucket_list</definition>
+        <argsstring></argsstring>
+        <name>_bucket_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="423" column="1" bodyfile="hash_table.hpp" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhash__table_1aac00d6ea5bb89145ea194ac14bf2c320" prot="private" static="no" mutable="no">
+        <type>_bucket_list</type>
+        <definition>_bucket_list hash_table&lt; _Type, _Hash, _Equal &gt;::_bucket_list_</definition>
+        <argsstring></argsstring>
+        <name>_bucket_list_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="425" column="1" bodyfile="hash_table.hpp" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhash__table_1a4739c0bc95861c4392afbce53eb62e70" prot="private" static="no" mutable="no">
+        <type><ref refid="classhash__table_1ae649e68085e4cd585c9dd7e72360a9f4" kindref="member">_first_node</ref></type>
+        <definition>_first_node hash_table&lt; _Type, _Hash, _Equal &gt;::_first_node_</definition>
+        <argsstring></argsstring>
+        <name>_first_node_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="426" column="1" bodyfile="hash_table.hpp" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhash__table_1ac0752cb63b733de07d5abd987f8ba891" prot="private" static="no" mutable="no">
+        <type><ref refid="classhash__table_1a8d85f5b55ee3116e6d40c1de62e62368" kindref="member">size_type</ref></type>
+        <definition>size_type hash_table&lt; _Type, _Hash, _Equal &gt;::_sz</definition>
+        <argsstring></argsstring>
+        <name>_sz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="427" column="1" bodyfile="hash_table.hpp" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhash__table_1a653ab57b97fb1765b06af7141d63e809" prot="private" static="no" mutable="no">
+        <type><ref refid="classhash__table_1a50374ab474440525f6739d9e45a851f9" kindref="member">hasher</ref></type>
+        <definition>hasher hash_table&lt; _Type, _Hash, _Equal &gt;::_hasher</definition>
+        <argsstring></argsstring>
+        <name>_hasher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="428" column="1" bodyfile="hash_table.hpp" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhash__table_1a5b3bfdaa549e10c7c70bb1adcd468cb5" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hash_table&lt; _Type, _Hash, _Equal &gt;::_max_load_factor</definition>
+        <argsstring></argsstring>
+        <name>_max_load_factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="429" column="1" bodyfile="hash_table.hpp" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhash__table_1a35e6d403a11a7c98c1ccb084b478d9f8" prot="private" static="no" mutable="no">
+        <type><ref refid="classhash__table_1a0261fc20ffaacd3a8b3f4562dd631beb" kindref="member">key_equal</ref></type>
+        <definition>key_equal hash_table&lt; _Type, _Hash, _Equal &gt;::_key_equal</definition>
+        <argsstring></argsstring>
+        <name>_key_equal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="430" column="1" bodyfile="hash_table.hpp" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classhash__table_1a1fdabadb8bfad643d7576b8dcceec2c1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhash__table_1a8d85f5b55ee3116e6d40c1de62e62368" kindref="member">size_type</ref> &amp;</type>
+        <definition>size_type&amp; hash_table&lt; _Type, _Hash, _Equal &gt;::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="432" column="1" bodyfile="hash_table.hpp" bodystart="432" bodyend="432"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhash__table_1a0230402b435247b23c4898022c9aec5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hash_table&lt; _Type, _Hash, _Equal &gt;::hash_table</definition>
+        <argsstring>()</argsstring>
+        <name>hash_table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="441" column="1" bodyfile="hash_table.hpp" bodystart="480" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="classhash__table_1aceec87dc4c9abc44d7b68fe8203d3ce6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hash_table&lt; _Type, _Hash, _Equal &gt;::hash_table</definition>
+        <argsstring>(const hasher &amp;hf, const key_equal &amp;eql)</argsstring>
+        <name>hash_table</name>
+        <param>
+          <type>const <ref refid="classhash__table_1a50374ab474440525f6739d9e45a851f9" kindref="member">hasher</ref> &amp;</type>
+          <declname>hf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classhash__table_1a0261fc20ffaacd3a8b3f4562dd631beb" kindref="member">key_equal</ref> &amp;</type>
+          <declname>eql</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="443" column="1" bodyfile="hash_table.hpp" bodystart="486" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="classhash__table_1aefa871baa0421eef41e21b41d92b8243" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hash_table&lt; _Type, _Hash, _Equal &gt;::hash_table</definition>
+        <argsstring>(const hash_table &amp;copy)</argsstring>
+        <name>hash_table</name>
+        <param>
+          <type>const <ref refid="classhash__table" kindref="compound">hash_table</ref> &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="446" column="1" bodyfile="hash_table.hpp" bodystart="495" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="classhash__table_1aaba701f67012d269277871724daafac5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hash_table&lt; _Type, _Hash, _Equal &gt;::hash_table</definition>
+        <argsstring>(hash_table &amp;&amp;copy)</argsstring>
+        <name>hash_table</name>
+        <param>
+          <type><ref refid="classhash__table" kindref="compound">hash_table</ref> &amp;&amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="448" column="1" bodyfile="hash_table.hpp" bodystart="500" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="function" id="classhash__table_1a60e0f19084be4a67632f2b992de85402" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hash_table&lt; _Type, _Hash, _Equal &gt;::~hash_table</definition>
+        <argsstring>()</argsstring>
+        <name>~hash_table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="450" column="1" bodyfile="hash_table.hpp" bodystart="505" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="classhash__table_1a2192f10ce77baea09e73d46f8c5e8254" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhash__table" kindref="compound">hash_table</ref> &amp;</type>
+        <definition>hash_table &amp; hash_table&lt; _Type, _Hash, _Equal &gt;::operator=</definition>
+        <argsstring>(const hash_table &amp;copy)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classhash__table" kindref="compound">hash_table</ref> &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="452" column="1" bodyfile="hash_table.hpp" bodystart="510" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="classhash__table_1a74641c17369c448fdf63eab1d759e3c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhash__table" kindref="compound">hash_table</ref> &amp;</type>
+        <definition>hash_table &amp; hash_table&lt; _Type, _Hash, _Equal &gt;::operator=</definition>
+        <argsstring>(hash_table &amp;&amp;copy)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classhash__table" kindref="compound">hash_table</ref> &amp;&amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="454" column="1" bodyfile="hash_table.hpp" bodystart="515" bodyend="515"/>
+      </memberdef>
+      <memberdef kind="function" id="classhash__table_1ad92313e501faa8d583bc17aa2928e2b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhash__table_1a50374ab474440525f6739d9e45a851f9" kindref="member">hasher</ref> &amp;</type>
+        <definition>hasher&amp; hash_table&lt; _Type, _Hash, _Equal &gt;::hash_function</definition>
+        <argsstring>()</argsstring>
+        <name>hash_function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="461" column="1" bodyfile="hash_table.hpp" bodystart="461" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="function" id="classhash__table_1ad6722316ea6db15d511037d3083b1d41" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classhash__table_1a50374ab474440525f6739d9e45a851f9" kindref="member">hasher</ref> &amp;</type>
+        <definition>const hasher&amp; hash_table&lt; _Type, _Hash, _Equal &gt;::hash_function</definition>
+        <argsstring>() const </argsstring>
+        <name>hash_function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="463" column="1" bodyfile="hash_table.hpp" bodystart="463" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="classhash__table_1a360462913491830ed605a6e7694c087f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhash__table_1a0261fc20ffaacd3a8b3f4562dd631beb" kindref="member">key_equal</ref> &amp;</type>
+        <definition>key_equal&amp; hash_table&lt; _Type, _Hash, _Equal &gt;::key_eq</definition>
+        <argsstring>()</argsstring>
+        <name>key_eq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="465" column="1" bodyfile="hash_table.hpp" bodystart="465" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="classhash__table_1ac2fc819d64a284bba17fbf6a66110706" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classhash__table_1a0261fc20ffaacd3a8b3f4562dd631beb" kindref="member">key_equal</ref> &amp;</type>
+        <definition>const key_equal&amp; hash_table&lt; _Type, _Hash, _Equal &gt;::key_eq</definition>
+        <argsstring>() const </argsstring>
+        <name>key_eq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="467" column="1" bodyfile="hash_table.hpp" bodystart="467" bodyend="467"/>
+      </memberdef>
+      <memberdef kind="function" id="classhash__table_1a18411f20b0593f8c34230862b6a16397" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float &amp;</type>
+        <definition>float&amp; hash_table&lt; _Type, _Hash, _Equal &gt;::max_load_factor</definition>
+        <argsstring>()</argsstring>
+        <name>max_load_factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="469" column="1" bodyfile="hash_table.hpp" bodystart="469" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="classhash__table_1abd5414b8eaa7e8cfb733992d2ff940a9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float hash_table&lt; _Type, _Hash, _Equal &gt;::max_load_factor</definition>
+        <argsstring>() const </argsstring>
+        <name>max_load_factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="471" column="1" bodyfile="hash_table.hpp" bodystart="471" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="classhash__table_1a0e67f8c6828034c159ea597a7e31b3c1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhash__table_1a8d85f5b55ee3116e6d40c1de62e62368" kindref="member">size_type</ref></type>
+        <definition>size_type hash_table&lt; _Type, _Hash, _Equal &gt;::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="473" column="1" bodyfile="hash_table.hpp" bodystart="473" bodyend="473"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="hash_table.hpp" line="37" column="1" bodyfile="hash_table.hpp" bodystart="37" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classhash__table_1a93914219fcd365227ffedba81b5149ce" prot="private" virt="non-virtual"><scope>hash_table</scope><name>_bucket_list</name></member>
+      <member refid="classhash__table_1aac00d6ea5bb89145ea194ac14bf2c320" prot="private" virt="non-virtual"><scope>hash_table</scope><name>_bucket_list_</name></member>
+      <member refid="classhash__table_1ae649e68085e4cd585c9dd7e72360a9f4" prot="public" virt="non-virtual"><scope>hash_table</scope><name>_first_node</name></member>
+      <member refid="classhash__table_1a4739c0bc95861c4392afbce53eb62e70" prot="private" virt="non-virtual"><scope>hash_table</scope><name>_first_node_</name></member>
+      <member refid="classhash__table_1a653ab57b97fb1765b06af7141d63e809" prot="private" virt="non-virtual"><scope>hash_table</scope><name>_hasher</name></member>
+      <member refid="classhash__table_1a35e6d403a11a7c98c1ccb084b478d9f8" prot="private" virt="non-virtual"><scope>hash_table</scope><name>_key_equal</name></member>
+      <member refid="classhash__table_1a5b3bfdaa549e10c7c70bb1adcd468cb5" prot="private" virt="non-virtual"><scope>hash_table</scope><name>_max_load_factor</name></member>
+      <member refid="classhash__table_1a0fec4f0d7cfac374e75932db352b7697" prot="public" virt="non-virtual"><scope>hash_table</scope><name>_node</name></member>
+      <member refid="classhash__table_1a424f6f949f9f5edb496d1d2571633ea1" prot="public" virt="non-virtual"><scope>hash_table</scope><name>_node_base_pointer</name></member>
+      <member refid="classhash__table_1a94de4cb648de7c459348be7df2c9ebd3" prot="public" virt="non-virtual"><scope>hash_table</scope><name>_node_const_pointer</name></member>
+      <member refid="classhash__table_1a7e82c643192604e0bcb21b1d7208df28" prot="public" virt="non-virtual"><scope>hash_table</scope><name>_node_pointer</name></member>
+      <member refid="classhash__table_1ac0752cb63b733de07d5abd987f8ba891" prot="private" virt="non-virtual"><scope>hash_table</scope><name>_sz</name></member>
+      <member refid="classhash__table_1a8f09397b7443438bc50e7f6bfc9be9d6" prot="public" virt="non-virtual"><scope>hash_table</scope><name>const_pointer</name></member>
+      <member refid="classhash__table_1a84b60c6fc08ecba763d5e3cfa7065e8d" prot="public" virt="non-virtual"><scope>hash_table</scope><name>const_reference</name></member>
+      <member refid="classhash__table_1a7f48994c34ddc1f8a19ffa7dc3821b40" prot="public" virt="non-virtual"><scope>hash_table</scope><name>difference_type</name></member>
+      <member refid="classhash__table_1ad92313e501faa8d583bc17aa2928e2b9" prot="public" virt="non-virtual"><scope>hash_table</scope><name>hash_function</name></member>
+      <member refid="classhash__table_1ad6722316ea6db15d511037d3083b1d41" prot="public" virt="non-virtual"><scope>hash_table</scope><name>hash_function</name></member>
+      <member refid="classhash__table_1a0230402b435247b23c4898022c9aec5e" prot="public" virt="non-virtual"><scope>hash_table</scope><name>hash_table</name></member>
+      <member refid="classhash__table_1aceec87dc4c9abc44d7b68fe8203d3ce6" prot="public" virt="non-virtual"><scope>hash_table</scope><name>hash_table</name></member>
+      <member refid="classhash__table_1aefa871baa0421eef41e21b41d92b8243" prot="public" virt="non-virtual"><scope>hash_table</scope><name>hash_table</name></member>
+      <member refid="classhash__table_1aaba701f67012d269277871724daafac5" prot="public" virt="non-virtual"><scope>hash_table</scope><name>hash_table</name></member>
+      <member refid="classhash__table_1a50374ab474440525f6739d9e45a851f9" prot="public" virt="non-virtual"><scope>hash_table</scope><name>hasher</name></member>
+      <member refid="classhash__table_1a360462913491830ed605a6e7694c087f" prot="public" virt="non-virtual"><scope>hash_table</scope><name>key_eq</name></member>
+      <member refid="classhash__table_1ac2fc819d64a284bba17fbf6a66110706" prot="public" virt="non-virtual"><scope>hash_table</scope><name>key_eq</name></member>
+      <member refid="classhash__table_1a0261fc20ffaacd3a8b3f4562dd631beb" prot="public" virt="non-virtual"><scope>hash_table</scope><name>key_equal</name></member>
+      <member refid="classhash__table_1a18411f20b0593f8c34230862b6a16397" prot="public" virt="non-virtual"><scope>hash_table</scope><name>max_load_factor</name></member>
+      <member refid="classhash__table_1abd5414b8eaa7e8cfb733992d2ff940a9" prot="public" virt="non-virtual"><scope>hash_table</scope><name>max_load_factor</name></member>
+      <member refid="classhash__table_1a2192f10ce77baea09e73d46f8c5e8254" prot="public" virt="non-virtual"><scope>hash_table</scope><name>operator=</name></member>
+      <member refid="classhash__table_1a74641c17369c448fdf63eab1d759e3c3" prot="public" virt="non-virtual"><scope>hash_table</scope><name>operator=</name></member>
+      <member refid="classhash__table_1ad9e0d75b1e6756dc449ba917383d0dee" prot="public" virt="non-virtual"><scope>hash_table</scope><name>pointer</name></member>
+      <member refid="classhash__table_1a92ee06d8c071e7a5b41861d2622e02de" prot="public" virt="non-virtual"><scope>hash_table</scope><name>reference</name></member>
+      <member refid="classhash__table_1a1fdabadb8bfad643d7576b8dcceec2c1" prot="private" virt="non-virtual"><scope>hash_table</scope><name>size</name></member>
+      <member refid="classhash__table_1a0e67f8c6828034c159ea597a7e31b3c1" prot="public" virt="non-virtual"><scope>hash_table</scope><name>size</name></member>
+      <member refid="classhash__table_1a8d85f5b55ee3116e6d40c1de62e62368" prot="public" virt="non-virtual"><scope>hash_table</scope><name>size_type</name></member>
+      <member refid="classhash__table_1a536a4f7db0e47e35283f8e04ea72e88c" prot="public" virt="non-virtual"><scope>hash_table</scope><name>value_type</name></member>
+      <member refid="classhash__table_1a46df0d3f55f71d07f275abebec698098" prot="public" virt="non-virtual"><scope>hash_table</scope><name>void_pointer</name></member>
+      <member refid="classhash__table_1a60e0f19084be4a67632f2b992de85402" prot="public" virt="non-virtual"><scope>hash_table</scope><name>~hash_table</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

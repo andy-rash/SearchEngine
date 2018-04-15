@@ -1,0 +1,264 @@
+\hypertarget{class_hash_table_index}{}\section{Hash\+Table\+Index Class Reference}
+\label{class_hash_table_index}\index{Hash\+Table\+Index@{Hash\+Table\+Index}}
+
+
+Class for dealing with the index in hash table form.  
+
+
+
+
+{\ttfamily \#include $<$Hash\+Table\+Index.\+hpp$>$}
+
+Inheritance diagram for Hash\+Table\+Index\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hash_table_index}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_hash_table_index_a13c1c8deae84226c8bef382adf103b53}{Hash\+Table\+Index} ()
+\begin{DoxyCompactList}\small\item\em Initializes the member data with default values. \end{DoxyCompactList}\item 
+\hyperlink{class_hash_table_index_af4d2eeae8263c353f91140cb2583fb58}{$\sim$\+Hash\+Table\+Index} ()
+\begin{DoxyCompactList}\small\item\em Destructor for proper memory management of this and child classes. \end{DoxyCompactList}\item 
+void \hyperlink{class_hash_table_index_a5387a8b9f0e585105a79624a93cd6ec0}{add\+Document} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Function for adding a document. \end{DoxyCompactList}\item 
+void \hyperlink{class_hash_table_index_a69b31cc0bb54877b628bd67dadc5973f}{clear\+Index} ()
+\begin{DoxyCompactList}\small\item\em Function for clearing the index. \end{DoxyCompactList}\item 
+bool \hyperlink{class_hash_table_index_a19b62a531429e670b25cd92be4333890}{empty\+Index} () const 
+\begin{DoxyCompactList}\small\item\em Function for returning whether the index is empty. \end{DoxyCompactList}\item 
+\hyperlink{class_token}{Token} \hyperlink{class_hash_table_index_a3d4c8e0244943cc44f33a35b742f7578}{find\+Word} (std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em Function for finding a word in the index. \end{DoxyCompactList}\item 
+const \hyperlink{class_document}{Document} \& \hyperlink{class_hash_table_index_ac5cc9451bce6e13739af7c5f154eea0b}{get\+Document\+By\+I\+D} (const int \&doc\+I\+D)
+\begin{DoxyCompactList}\small\item\em Function for getting a document pertaining to a given I\+D number. \end{DoxyCompactList}\item 
+bool \hyperlink{class_hash_table_index_aea9366ff9299d41bd3447bc6c95a3960}{has\+Word} (std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em Function for returning whether the index contains a given word. \end{DoxyCompactList}\item 
+void \hyperlink{class_hash_table_index_a42bbd9b325fb95b54a546c3c98c67624}{list\+Index} ()
+\begin{DoxyCompactList}\small\item\em Function for writing the persistent index. \end{DoxyCompactList}\item 
+bool \hyperlink{class_hash_table_index_a8c483a83b40b49b0f35be9fea0674501}{load\+Index} ()
+\begin{DoxyCompactList}\small\item\em Function for loading an index in from persistent state. \end{DoxyCompactList}\item 
+bool \hyperlink{class_hash_table_index_a5105f715d8c5fd3b74d6bec462cb0c38}{make\+Index} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Function for creating the index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for dealing with the index in hash table form. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_a_v_l_tree_index}{A\+V\+L\+Tree\+Index}. 
+
+\hyperlink{class_index_interface}{Index\+Interface}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_hash_table_index_a13c1c8deae84226c8bef382adf103b53}{}\index{Hash\+Table\+Index@{Hash\+Table\+Index}!Hash\+Table\+Index@{Hash\+Table\+Index}}
+\index{Hash\+Table\+Index@{Hash\+Table\+Index}!Hash\+Table\+Index@{Hash\+Table\+Index}}
+\subsubsection[{Hash\+Table\+Index()}]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Table\+Index\+::\+Hash\+Table\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hash_table_index_a13c1c8deae84226c8bef382adf103b53}
+
+
+Initializes the member data with default values. 
+
+\hypertarget{class_hash_table_index_af4d2eeae8263c353f91140cb2583fb58}{}\index{Hash\+Table\+Index@{Hash\+Table\+Index}!````~Hash\+Table\+Index@{$\sim$\+Hash\+Table\+Index}}
+\index{````~Hash\+Table\+Index@{$\sim$\+Hash\+Table\+Index}!Hash\+Table\+Index@{Hash\+Table\+Index}}
+\subsubsection[{$\sim$\+Hash\+Table\+Index()}]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Table\+Index\+::$\sim$\+Hash\+Table\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hash_table_index_af4d2eeae8263c353f91140cb2583fb58}
+
+
+Destructor for proper memory management of this and child classes. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_hash_table_index_a5387a8b9f0e585105a79624a93cd6ec0}{}\index{Hash\+Table\+Index@{Hash\+Table\+Index}!add\+Document@{add\+Document}}
+\index{add\+Document@{add\+Document}!Hash\+Table\+Index@{Hash\+Table\+Index}}
+\subsubsection[{add\+Document(const std\+::string \&path)}]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Table\+Index\+::add\+Document (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hash_table_index_a5387a8b9f0e585105a79624a93cd6ec0}
+
+
+Function for adding a document. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & -\/ a path to a file to add to the index. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_index_interface_aa7601d76e8cc3f0657e800efdc4c127e}{Index\+Interface}.
+
+\hypertarget{class_hash_table_index_a69b31cc0bb54877b628bd67dadc5973f}{}\index{Hash\+Table\+Index@{Hash\+Table\+Index}!clear\+Index@{clear\+Index}}
+\index{clear\+Index@{clear\+Index}!Hash\+Table\+Index@{Hash\+Table\+Index}}
+\subsubsection[{clear\+Index()}]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Table\+Index\+::clear\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hash_table_index_a69b31cc0bb54877b628bd67dadc5973f}
+
+
+Function for clearing the index. 
+
+
+
+Implements \hyperlink{class_index_interface_aac36b4561598ee84c0c68958a1e3f82b}{Index\+Interface}.
+
+\hypertarget{class_hash_table_index_a19b62a531429e670b25cd92be4333890}{}\index{Hash\+Table\+Index@{Hash\+Table\+Index}!empty\+Index@{empty\+Index}}
+\index{empty\+Index@{empty\+Index}!Hash\+Table\+Index@{Hash\+Table\+Index}}
+\subsubsection[{empty\+Index() const }]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Table\+Index\+::empty\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hash_table_index_a19b62a531429e670b25cd92be4333890}
+
+
+Function for returning whether the index is empty. 
+
+\begin{DoxyReturn}{Returns}
+boolean whether the index is empty. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_index_interface_aaf90058a62e096bf607ea3dec2545ee4}{Index\+Interface}.
+
+\hypertarget{class_hash_table_index_a3d4c8e0244943cc44f33a35b742f7578}{}\index{Hash\+Table\+Index@{Hash\+Table\+Index}!find\+Word@{find\+Word}}
+\index{find\+Word@{find\+Word}!Hash\+Table\+Index@{Hash\+Table\+Index}}
+\subsubsection[{find\+Word(std\+::string \&term)}]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Table\+Index\+::find\+Word (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hash_table_index_a3d4c8e0244943cc44f33a35b742f7578}
+
+
+Function for finding a word in the index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em term} & -\/ term to search for in the index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_token}{Token} (by value for \hyperlink{class_hash_table_index}{Hash\+Table\+Index} compatibility) representing the searched word. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_index_interface_aa0ea18e7daa9984240d108bd765b2816}{Index\+Interface}.
+
+\hypertarget{class_hash_table_index_ac5cc9451bce6e13739af7c5f154eea0b}{}\index{Hash\+Table\+Index@{Hash\+Table\+Index}!get\+Document\+By\+I\+D@{get\+Document\+By\+I\+D}}
+\index{get\+Document\+By\+I\+D@{get\+Document\+By\+I\+D}!Hash\+Table\+Index@{Hash\+Table\+Index}}
+\subsubsection[{get\+Document\+By\+I\+D(const int \&doc\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Table\+Index\+::get\+Document\+By\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{doc\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hash_table_index_ac5cc9451bce6e13739af7c5f154eea0b}
+
+
+Function for getting a document pertaining to a given I\+D number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doc\+I\+D} & -\/ a document I\+D number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_document}{Document} reference. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_index_interface_aa694a3e8feb722519b45f7313281bfad}{Index\+Interface}.
+
+\hypertarget{class_hash_table_index_aea9366ff9299d41bd3447bc6c95a3960}{}\index{Hash\+Table\+Index@{Hash\+Table\+Index}!has\+Word@{has\+Word}}
+\index{has\+Word@{has\+Word}!Hash\+Table\+Index@{Hash\+Table\+Index}}
+\subsubsection[{has\+Word(std\+::string \&term)}]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Table\+Index\+::has\+Word (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hash_table_index_aea9366ff9299d41bd3447bc6c95a3960}
+
+
+Function for returning whether the index contains a given word. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em term} & -\/ a term to search the index for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether the index contains the word. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_index_interface_a8ccd80a03123406cb4b1e2494349f9da}{Index\+Interface}.
+
+\hypertarget{class_hash_table_index_a42bbd9b325fb95b54a546c3c98c67624}{}\index{Hash\+Table\+Index@{Hash\+Table\+Index}!list\+Index@{list\+Index}}
+\index{list\+Index@{list\+Index}!Hash\+Table\+Index@{Hash\+Table\+Index}}
+\subsubsection[{list\+Index()}]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Table\+Index\+::list\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hash_table_index_a42bbd9b325fb95b54a546c3c98c67624}
+
+
+Function for writing the persistent index. 
+
+
+
+Implements \hyperlink{class_index_interface_ad8567919eafa87ac20c35928c929084d}{Index\+Interface}.
+
+\hypertarget{class_hash_table_index_a8c483a83b40b49b0f35be9fea0674501}{}\index{Hash\+Table\+Index@{Hash\+Table\+Index}!load\+Index@{load\+Index}}
+\index{load\+Index@{load\+Index}!Hash\+Table\+Index@{Hash\+Table\+Index}}
+\subsubsection[{load\+Index()}]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Table\+Index\+::load\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hash_table_index_a8c483a83b40b49b0f35be9fea0674501}
+
+
+Function for loading an index in from persistent state. 
+
+\begin{DoxyReturn}{Returns}
+boolean whether the index was successfully loaded. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_index_interface_a006f773f4e143745474e847cfb9f27fc}{Index\+Interface}.
+
+\hypertarget{class_hash_table_index_a5105f715d8c5fd3b74d6bec462cb0c38}{}\index{Hash\+Table\+Index@{Hash\+Table\+Index}!make\+Index@{make\+Index}}
+\index{make\+Index@{make\+Index}!Hash\+Table\+Index@{Hash\+Table\+Index}}
+\subsubsection[{make\+Index(const std\+::string \&file\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Table\+Index\+::make\+Index (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hash_table_index_a5105f715d8c5fd3b74d6bec462cb0c38}
+
+
+Function for creating the index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & -\/ a directory containing files to be put in the index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether the index was successfully created. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_index_interface_a7b2ae510fa62eebb654708b90972c1b6}{Index\+Interface}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_hash_table_index_8hpp}{Hash\+Table\+Index.\+hpp}\item 
+\hyperlink{_hash_table_index_8cpp}{Hash\+Table\+Index.\+cpp}\end{DoxyCompactItemize}

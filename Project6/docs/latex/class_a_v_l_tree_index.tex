@@ -1,0 +1,264 @@
+\hypertarget{class_a_v_l_tree_index}{}\section{A\+V\+L\+Tree\+Index Class Reference}
+\label{class_a_v_l_tree_index}\index{A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}}
+
+
+Class for dealing with the index in A\+V\+L tree form.  
+
+
+
+
+{\ttfamily \#include $<$A\+V\+L\+Tree\+Index.\+hpp$>$}
+
+Inheritance diagram for A\+V\+L\+Tree\+Index\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_v_l_tree_index}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_v_l_tree_index_aba8dc551ea4963a8082991f52bb19c25}{A\+V\+L\+Tree\+Index} ()
+\begin{DoxyCompactList}\small\item\em Initializes the member data with default values. \end{DoxyCompactList}\item 
+\hyperlink{class_a_v_l_tree_index_a33cfafc8516541f0d135c707955588f7}{$\sim$\+A\+V\+L\+Tree\+Index} ()
+\begin{DoxyCompactList}\small\item\em Destructor for proper memory management. \end{DoxyCompactList}\item 
+void \hyperlink{class_a_v_l_tree_index_a1f84720f7580bd785a11d0e0425bd537}{add\+Document} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Function for adding a document. \end{DoxyCompactList}\item 
+void \hyperlink{class_a_v_l_tree_index_a1a877f264d30b657f37c6ed070d2e250}{clear\+Index} ()
+\begin{DoxyCompactList}\small\item\em Function for clearing the index. \end{DoxyCompactList}\item 
+bool \hyperlink{class_a_v_l_tree_index_a447e5741c289869d5a5188def065fb6c}{empty\+Index} () const 
+\begin{DoxyCompactList}\small\item\em Function for returning whether the index is empty. \end{DoxyCompactList}\item 
+\hyperlink{class_token}{Token} \hyperlink{class_a_v_l_tree_index_ab549fb6b9fdf08926540f6652859d442}{find\+Word} (std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em Function for finding a word in the index. \end{DoxyCompactList}\item 
+const \hyperlink{class_document}{Document} \& \hyperlink{class_a_v_l_tree_index_a0716178493a342dd6b790cfa8d01b3fa}{get\+Document\+By\+I\+D} (const int \&doc\+I\+D)
+\begin{DoxyCompactList}\small\item\em Function for getting a document pertaining to a given I\+D number. \end{DoxyCompactList}\item 
+bool \hyperlink{class_a_v_l_tree_index_acb31068c39161358ec6545df5feaabc0}{has\+Word} (std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em Function for returning whether the index contains a given word. \end{DoxyCompactList}\item 
+void \hyperlink{class_a_v_l_tree_index_a603741ace3489018f33f5ba4282e3f0d}{list\+Index} ()
+\begin{DoxyCompactList}\small\item\em Function for writing the persistent index. \end{DoxyCompactList}\item 
+bool \hyperlink{class_a_v_l_tree_index_af161b8697db7e3f599abc78a36f8d145}{load\+Index} ()
+\begin{DoxyCompactList}\small\item\em Function for loading an index in from persistent state. \end{DoxyCompactList}\item 
+bool \hyperlink{class_a_v_l_tree_index_a37200f167e48a7b24cb012b9ff5cf44c}{make\+Index} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Function for creating the index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for dealing with the index in A\+V\+L tree form. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_hash_table_index}{Hash\+Table\+Index}. 
+
+\hyperlink{class_index_interface}{Index\+Interface}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_a_v_l_tree_index_aba8dc551ea4963a8082991f52bb19c25}{}\index{A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}!A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}}
+\index{A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}!A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}}
+\subsubsection[{A\+V\+L\+Tree\+Index()}]{\setlength{\rightskip}{0pt plus 5cm}A\+V\+L\+Tree\+Index\+::\+A\+V\+L\+Tree\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_a_v_l_tree_index_aba8dc551ea4963a8082991f52bb19c25}
+
+
+Initializes the member data with default values. 
+
+\hypertarget{class_a_v_l_tree_index_a33cfafc8516541f0d135c707955588f7}{}\index{A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}!````~A\+V\+L\+Tree\+Index@{$\sim$\+A\+V\+L\+Tree\+Index}}
+\index{````~A\+V\+L\+Tree\+Index@{$\sim$\+A\+V\+L\+Tree\+Index}!A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}}
+\subsubsection[{$\sim$\+A\+V\+L\+Tree\+Index()}]{\setlength{\rightskip}{0pt plus 5cm}A\+V\+L\+Tree\+Index\+::$\sim$\+A\+V\+L\+Tree\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_a_v_l_tree_index_a33cfafc8516541f0d135c707955588f7}
+
+
+Destructor for proper memory management. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_a_v_l_tree_index_a1f84720f7580bd785a11d0e0425bd537}{}\index{A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}!add\+Document@{add\+Document}}
+\index{add\+Document@{add\+Document}!A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}}
+\subsubsection[{add\+Document(const std\+::string \&path)}]{\setlength{\rightskip}{0pt plus 5cm}A\+V\+L\+Tree\+Index\+::add\+Document (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_a_v_l_tree_index_a1f84720f7580bd785a11d0e0425bd537}
+
+
+Function for adding a document. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & -\/ a path to a file to add to the index. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_index_interface_aa7601d76e8cc3f0657e800efdc4c127e}{Index\+Interface}.
+
+\hypertarget{class_a_v_l_tree_index_a1a877f264d30b657f37c6ed070d2e250}{}\index{A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}!clear\+Index@{clear\+Index}}
+\index{clear\+Index@{clear\+Index}!A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}}
+\subsubsection[{clear\+Index()}]{\setlength{\rightskip}{0pt plus 5cm}A\+V\+L\+Tree\+Index\+::clear\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_a_v_l_tree_index_a1a877f264d30b657f37c6ed070d2e250}
+
+
+Function for clearing the index. 
+
+
+
+Implements \hyperlink{class_index_interface_aac36b4561598ee84c0c68958a1e3f82b}{Index\+Interface}.
+
+\hypertarget{class_a_v_l_tree_index_a447e5741c289869d5a5188def065fb6c}{}\index{A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}!empty\+Index@{empty\+Index}}
+\index{empty\+Index@{empty\+Index}!A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}}
+\subsubsection[{empty\+Index() const }]{\setlength{\rightskip}{0pt plus 5cm}A\+V\+L\+Tree\+Index\+::empty\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_a_v_l_tree_index_a447e5741c289869d5a5188def065fb6c}
+
+
+Function for returning whether the index is empty. 
+
+\begin{DoxyReturn}{Returns}
+boolean whether the index is empty. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_index_interface_aaf90058a62e096bf607ea3dec2545ee4}{Index\+Interface}.
+
+\hypertarget{class_a_v_l_tree_index_ab549fb6b9fdf08926540f6652859d442}{}\index{A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}!find\+Word@{find\+Word}}
+\index{find\+Word@{find\+Word}!A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}}
+\subsubsection[{find\+Word(std\+::string \&term)}]{\setlength{\rightskip}{0pt plus 5cm}A\+V\+L\+Tree\+Index\+::find\+Word (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_a_v_l_tree_index_ab549fb6b9fdf08926540f6652859d442}
+
+
+Function for finding a word in the index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em term} & -\/ term to search for in the index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_token}{Token} (by value for \hyperlink{class_hash_table_index}{Hash\+Table\+Index} compatibility) representing the searched word. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_index_interface_aa0ea18e7daa9984240d108bd765b2816}{Index\+Interface}.
+
+\hypertarget{class_a_v_l_tree_index_a0716178493a342dd6b790cfa8d01b3fa}{}\index{A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}!get\+Document\+By\+I\+D@{get\+Document\+By\+I\+D}}
+\index{get\+Document\+By\+I\+D@{get\+Document\+By\+I\+D}!A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}}
+\subsubsection[{get\+Document\+By\+I\+D(const int \&doc\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}A\+V\+L\+Tree\+Index\+::get\+Document\+By\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{doc\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_a_v_l_tree_index_a0716178493a342dd6b790cfa8d01b3fa}
+
+
+Function for getting a document pertaining to a given I\+D number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doc\+I\+D} & -\/ a document I\+D number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_document}{Document} reference. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_index_interface_aa694a3e8feb722519b45f7313281bfad}{Index\+Interface}.
+
+\hypertarget{class_a_v_l_tree_index_acb31068c39161358ec6545df5feaabc0}{}\index{A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}!has\+Word@{has\+Word}}
+\index{has\+Word@{has\+Word}!A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}}
+\subsubsection[{has\+Word(std\+::string \&term)}]{\setlength{\rightskip}{0pt plus 5cm}A\+V\+L\+Tree\+Index\+::has\+Word (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_a_v_l_tree_index_acb31068c39161358ec6545df5feaabc0}
+
+
+Function for returning whether the index contains a given word. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em term} & -\/ a term to search the index for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether the index contains the word. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_index_interface_a8ccd80a03123406cb4b1e2494349f9da}{Index\+Interface}.
+
+\hypertarget{class_a_v_l_tree_index_a603741ace3489018f33f5ba4282e3f0d}{}\index{A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}!list\+Index@{list\+Index}}
+\index{list\+Index@{list\+Index}!A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}}
+\subsubsection[{list\+Index()}]{\setlength{\rightskip}{0pt plus 5cm}A\+V\+L\+Tree\+Index\+::list\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_a_v_l_tree_index_a603741ace3489018f33f5ba4282e3f0d}
+
+
+Function for writing the persistent index. 
+
+
+
+Implements \hyperlink{class_index_interface_ad8567919eafa87ac20c35928c929084d}{Index\+Interface}.
+
+\hypertarget{class_a_v_l_tree_index_af161b8697db7e3f599abc78a36f8d145}{}\index{A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}!load\+Index@{load\+Index}}
+\index{load\+Index@{load\+Index}!A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}}
+\subsubsection[{load\+Index()}]{\setlength{\rightskip}{0pt plus 5cm}A\+V\+L\+Tree\+Index\+::load\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_a_v_l_tree_index_af161b8697db7e3f599abc78a36f8d145}
+
+
+Function for loading an index in from persistent state. 
+
+\begin{DoxyReturn}{Returns}
+boolean whether the index was successfully loaded. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_index_interface_a006f773f4e143745474e847cfb9f27fc}{Index\+Interface}.
+
+\hypertarget{class_a_v_l_tree_index_a37200f167e48a7b24cb012b9ff5cf44c}{}\index{A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}!make\+Index@{make\+Index}}
+\index{make\+Index@{make\+Index}!A\+V\+L\+Tree\+Index@{A\+V\+L\+Tree\+Index}}
+\subsubsection[{make\+Index(const std\+::string \&file\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}A\+V\+L\+Tree\+Index\+::make\+Index (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_a_v_l_tree_index_a37200f167e48a7b24cb012b9ff5cf44c}
+
+
+Function for creating the index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & -\/ a directory containing files to be put in the index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether the index was successfully created. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_index_interface_a7b2ae510fa62eebb654708b90972c1b6}{Index\+Interface}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_a_v_l_tree_index_8hpp}{A\+V\+L\+Tree\+Index.\+hpp}\item 
+\hyperlink{_a_v_l_tree_index_8cpp}{A\+V\+L\+Tree\+Index.\+cpp}\end{DoxyCompactItemize}

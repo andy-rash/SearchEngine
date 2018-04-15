@@ -1,0 +1,128 @@
+\hypertarget{class_search_engine}{}\section{Search\+Engine Class Reference}
+\label{class_search_engine}\index{Search\+Engine@{Search\+Engine}}
+
+
+Class for performing U\+I functionality.  
+
+
+
+
+{\ttfamily \#include $<$Search\+Engine.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_search_engine_ab129d2c96c29c6dcf4a28abbe4168f6c}{Search\+Engine} ()
+\begin{DoxyCompactList}\small\item\em Initializes the member data with default values and loads in the last created index file. \end{DoxyCompactList}\item 
+\hyperlink{class_search_engine_a863ab87efd742b9a8f20b87774ab570f}{$\sim$\+Search\+Engine} ()
+\begin{DoxyCompactList}\small\item\em Deletes the pointer to the indexer if it has been initialized. \end{DoxyCompactList}\item 
+void \hyperlink{class_search_engine_a9ea46878a950ecad2f9f4af265ab3ace}{add\+Document} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Adds a new document to the index. \end{DoxyCompactList}\item 
+void \hyperlink{class_search_engine_a5418e11e3626e8a72d697346051c44fd}{clear\+Index} ()
+\begin{DoxyCompactList}\small\item\em Clears the index. \end{DoxyCompactList}\item 
+void \hyperlink{class_search_engine_a76393f870a6ce5591b140b81df9c5fac}{interactive} ()
+\begin{DoxyCompactList}\small\item\em Displays the interactive menu. \end{DoxyCompactList}\item 
+void \hyperlink{class_search_engine_ac492e86eaba0b6c7c270ee88e2d6d0ab}{launch\+U\+I} ()
+\begin{DoxyCompactList}\small\item\em Displays the main menu. \end{DoxyCompactList}\item 
+void \hyperlink{class_search_engine_ad269ece849be36f3be5b315e0a32a120}{maintenance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for performing U\+I functionality. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_index_interface}{Index\+Interface}. 
+
+\hyperlink{class_query_processor}{Query\+Processor}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_search_engine_ab129d2c96c29c6dcf4a28abbe4168f6c}{}\index{Search\+Engine@{Search\+Engine}!Search\+Engine@{Search\+Engine}}
+\index{Search\+Engine@{Search\+Engine}!Search\+Engine@{Search\+Engine}}
+\subsubsection[{Search\+Engine()}]{\setlength{\rightskip}{0pt plus 5cm}Search\+Engine\+::\+Search\+Engine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_search_engine_ab129d2c96c29c6dcf4a28abbe4168f6c}
+
+
+Initializes the member data with default values and loads in the last created index file. 
+
+\hypertarget{class_search_engine_a863ab87efd742b9a8f20b87774ab570f}{}\index{Search\+Engine@{Search\+Engine}!````~Search\+Engine@{$\sim$\+Search\+Engine}}
+\index{````~Search\+Engine@{$\sim$\+Search\+Engine}!Search\+Engine@{Search\+Engine}}
+\subsubsection[{$\sim$\+Search\+Engine()}]{\setlength{\rightskip}{0pt plus 5cm}Search\+Engine\+::$\sim$\+Search\+Engine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_search_engine_a863ab87efd742b9a8f20b87774ab570f}
+
+
+Deletes the pointer to the indexer if it has been initialized. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_search_engine_a9ea46878a950ecad2f9f4af265ab3ace}{}\index{Search\+Engine@{Search\+Engine}!add\+Document@{add\+Document}}
+\index{add\+Document@{add\+Document}!Search\+Engine@{Search\+Engine}}
+\subsubsection[{add\+Document(const std\+::string \&path)}]{\setlength{\rightskip}{0pt plus 5cm}Search\+Engine\+::add\+Document (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)}\label{class_search_engine_a9ea46878a950ecad2f9f4af265ab3ace}
+
+
+Adds a new document to the index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & -\/ path to a file containing properly formatted X\+M\+L to parse. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_search_engine_a5418e11e3626e8a72d697346051c44fd}{}\index{Search\+Engine@{Search\+Engine}!clear\+Index@{clear\+Index}}
+\index{clear\+Index@{clear\+Index}!Search\+Engine@{Search\+Engine}}
+\subsubsection[{clear\+Index()}]{\setlength{\rightskip}{0pt plus 5cm}Search\+Engine\+::clear\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_search_engine_a5418e11e3626e8a72d697346051c44fd}
+
+
+Clears the index. 
+
+\hypertarget{class_search_engine_a76393f870a6ce5591b140b81df9c5fac}{}\index{Search\+Engine@{Search\+Engine}!interactive@{interactive}}
+\index{interactive@{interactive}!Search\+Engine@{Search\+Engine}}
+\subsubsection[{interactive()}]{\setlength{\rightskip}{0pt plus 5cm}Search\+Engine\+::interactive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_search_engine_a76393f870a6ce5591b140b81df9c5fac}
+
+
+Displays the interactive menu. 
+
+Displays the maintenance menu. \hypertarget{class_search_engine_ac492e86eaba0b6c7c270ee88e2d6d0ab}{}\index{Search\+Engine@{Search\+Engine}!launch\+U\+I@{launch\+U\+I}}
+\index{launch\+U\+I@{launch\+U\+I}!Search\+Engine@{Search\+Engine}}
+\subsubsection[{launch\+U\+I()}]{\setlength{\rightskip}{0pt plus 5cm}Search\+Engine\+::launch\+U\+I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_search_engine_ac492e86eaba0b6c7c270ee88e2d6d0ab}
+
+
+Displays the main menu. 
+
+\hypertarget{class_search_engine_ad269ece849be36f3be5b315e0a32a120}{}\index{Search\+Engine@{Search\+Engine}!maintenance@{maintenance}}
+\index{maintenance@{maintenance}!Search\+Engine@{Search\+Engine}}
+\subsubsection[{maintenance()}]{\setlength{\rightskip}{0pt plus 5cm}void Search\+Engine\+::maintenance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_search_engine_ad269ece849be36f3be5b315e0a32a120}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_search_engine_8hpp}{Search\+Engine.\+hpp}\item 
+\hyperlink{_search_engine_8cpp}{Search\+Engine.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_index_interface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IndexInterface</compoundname>
+    <derivedcompoundref refid="class_a_v_l_tree_index" prot="public" virt="non-virtual">AVLTreeIndex</derivedcompoundref>
+    <derivedcompoundref refid="class_hash_table_index" prot="public" virt="non-virtual">HashTableIndex</derivedcompoundref>
+    <includes refid="_index_interface_8hpp" local="no">IndexInterface.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_index_interface_1a752bff152d0a7b370256dc532b273f4f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_document_processor" kindref="compound">DocumentProcessor</ref></type>
+        <definition>DocumentProcessor IndexInterface::docProc</definition>
+        <argsstring></argsstring>
+        <name>docProc</name>
+        <briefdescription>
+<para>A <ref refid="class_document_processor" kindref="compound">DocumentProcessor</ref> object for parsing and processing source documents. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexInterface.hpp" line="27" column="1" bodyfile="IndexInterface.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_index_interface_1a6dcf83f08cc162f7e1a1ada77fd9645a" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream IndexInterface::outputFile</definition>
+        <argsstring></argsstring>
+        <name>outputFile</name>
+        <briefdescription>
+<para>A std::ofstream object for outputting the index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexInterface.hpp" line="28" column="1" bodyfile="IndexInterface.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_index_interface_1ab3d5b59b8b3f495fc7b450e7e4b374cf" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IndexInterface::numDocs</definition>
+        <argsstring></argsstring>
+        <name>numDocs</name>
+        <briefdescription>
+<para>An integer for containing the number of documents processed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexInterface.hpp" line="29" column="1" bodyfile="IndexInterface.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_index_interface_1aa6a6922ae1a882158234c5e0fb382ad2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IndexInterface::numTokens</definition>
+        <argsstring></argsstring>
+        <name>numTokens</name>
+        <briefdescription>
+<para>An integer for containing the number of tokens processed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexInterface.hpp" line="30" column="1" bodyfile="IndexInterface.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_index_interface_1a7b1e7eae7faa652d2f63efeecf0ca2de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndexInterface::IndexInterface</definition>
+        <argsstring>()</argsstring>
+        <name>IndexInterface</name>
+        <briefdescription>
+<para>Initializes the member data with default values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexInterface.hpp" line="39" column="1" bodyfile="IndexInterface.hpp" bodystart="39" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_interface_1a3927fabe77a7da5845dc0495b2c1c2b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>IndexInterface::~IndexInterface</definition>
+        <argsstring>()</argsstring>
+        <name>~IndexInterface</name>
+        <briefdescription>
+<para>Virtual destructor for proper memory management of this and child classes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexInterface.hpp" line="48" column="1" bodyfile="IndexInterface.hpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_interface_1aa7601d76e8cc3f0657e800efdc4c127e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>IndexInterface::addDocument</definition>
+        <argsstring>(const std::string &amp;path)=0</argsstring>
+        <name>addDocument</name>
+        <reimplementedby refid="class_a_v_l_tree_index_1a1f84720f7580bd785a11d0e0425bd537">addDocument</reimplementedby>
+        <reimplementedby refid="class_hash_table_index_1a5387a8b9f0e585105a79624a93cd6ec0">addDocument</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Virtual function for adding a document. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a path to a file to add to the index. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexInterface.hpp" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_interface_1aac36b4561598ee84c0c68958a1e3f82b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>IndexInterface::clearIndex</definition>
+        <argsstring>()=0</argsstring>
+        <name>clearIndex</name>
+        <reimplementedby refid="class_a_v_l_tree_index_1a1a877f264d30b657f37c6ed070d2e250">clearIndex</reimplementedby>
+        <reimplementedby refid="class_hash_table_index_1a69b31cc0bb54877b628bd67dadc5973f">clearIndex</reimplementedby>
+        <briefdescription>
+<para>Virtual function for clearing the index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexInterface.hpp" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_interface_1aaf90058a62e096bf607ea3dec2545ee4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>IndexInterface::emptyIndex</definition>
+        <argsstring>() const  =0</argsstring>
+        <name>emptyIndex</name>
+        <reimplementedby refid="class_a_v_l_tree_index_1a447e5741c289869d5a5188def065fb6c">emptyIndex</reimplementedby>
+        <reimplementedby refid="class_hash_table_index_1a19b62a531429e670b25cd92be4333890">emptyIndex</reimplementedby>
+        <briefdescription>
+<para>Virtual function for returning whether the index is empty. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>boolean whether the index is empty. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexInterface.hpp" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_interface_1aa0ea18e7daa9984240d108bd765b2816" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_token" kindref="compound">Token</ref></type>
+        <definition>IndexInterface::findWord</definition>
+        <argsstring>(std::string &amp;term)=0</argsstring>
+        <name>findWord</name>
+        <reimplementedby refid="class_a_v_l_tree_index_1ab549fb6b9fdf08926540f6652859d442">findWord</reimplementedby>
+        <reimplementedby refid="class_hash_table_index_1a3d4c8e0244943cc44f33a35b742f7578">findWord</reimplementedby>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>Virtual function for finding a word in the index. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>term</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- term to search for in the index. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_token" kindref="compound">Token</ref> (by value for <ref refid="class_hash_table_index" kindref="compound">HashTableIndex</ref> compatibility) representing the searched word. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexInterface.hpp" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_interface_1aa694a3e8feb722519b45f7313281bfad" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>const <ref refid="class_document" kindref="compound">Document</ref> &amp;</type>
+        <definition>IndexInterface::getDocumentByID</definition>
+        <argsstring>(const int &amp;docID)=0</argsstring>
+        <name>getDocumentByID</name>
+        <reimplementedby refid="class_a_v_l_tree_index_1a0716178493a342dd6b790cfa8d01b3fa">getDocumentByID</reimplementedby>
+        <reimplementedby refid="class_hash_table_index_1ac5cc9451bce6e13739af7c5f154eea0b">getDocumentByID</reimplementedby>
+        <param>
+          <type>const int &amp;</type>
+          <declname>docID</declname>
+        </param>
+        <briefdescription>
+<para>Virtual function for getting a document pertaining to a given ID number. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>docID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a document ID number. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_document" kindref="compound">Document</ref> reference. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexInterface.hpp" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_interface_1af5d7e170720c26b3d38499d4e5e1dd69" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>IndexInterface::getNumDocs</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumDocs</name>
+        <briefdescription>
+<para>Returns the number of documents processed. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>integer representing the number of documents processed. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexInterface.hpp" line="102" column="1" bodyfile="IndexInterface.hpp" bodystart="102" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_interface_1a3260a1213d90bd6cb6fd33043fb28b44" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>IndexInterface::getNumTokens</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumTokens</name>
+        <briefdescription>
+<para>Returns the number of tokens processed. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>integer representing the number of tokens processed. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexInterface.hpp" line="110" column="1" bodyfile="IndexInterface.hpp" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_interface_1a8ccd80a03123406cb4b1e2494349f9da" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>IndexInterface::hasWord</definition>
+        <argsstring>(std::string &amp;term)=0</argsstring>
+        <name>hasWord</name>
+        <reimplementedby refid="class_a_v_l_tree_index_1acb31068c39161358ec6545df5feaabc0">hasWord</reimplementedby>
+        <reimplementedby refid="class_hash_table_index_1aea9366ff9299d41bd3447bc6c95a3960">hasWord</reimplementedby>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>Virtual function for returning whether the index contains a given word. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>term</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a term to search the index for. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean whether the index contains the word. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexInterface.hpp" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_interface_1ad8567919eafa87ac20c35928c929084d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>IndexInterface::listIndex</definition>
+        <argsstring>()=0</argsstring>
+        <name>listIndex</name>
+        <reimplementedby refid="class_a_v_l_tree_index_1a603741ace3489018f33f5ba4282e3f0d">listIndex</reimplementedby>
+        <reimplementedby refid="class_hash_table_index_1a42bbd9b325fb95b54a546c3c98c67624">listIndex</reimplementedby>
+        <briefdescription>
+<para>Virtual function for writing the persistent index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexInterface.hpp" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_interface_1a006f773f4e143745474e847cfb9f27fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>IndexInterface::loadIndex</definition>
+        <argsstring>()=0</argsstring>
+        <name>loadIndex</name>
+        <reimplementedby refid="class_a_v_l_tree_index_1af161b8697db7e3f599abc78a36f8d145">loadIndex</reimplementedby>
+        <reimplementedby refid="class_hash_table_index_1a8c483a83b40b49b0f35be9fea0674501">loadIndex</reimplementedby>
+        <briefdescription>
+<para>Virtual function for loading an index in from persistent state. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>boolean whether the index was successfully loaded. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexInterface.hpp" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_interface_1a7b2ae510fa62eebb654708b90972c1b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>IndexInterface::makeIndex</definition>
+        <argsstring>(const std::string &amp;fileName)=0</argsstring>
+        <name>makeIndex</name>
+        <reimplementedby refid="class_a_v_l_tree_index_1a37200f167e48a7b24cb012b9ff5cf44c">makeIndex</reimplementedby>
+        <reimplementedby refid="class_hash_table_index_1a5105f715d8c5fd3b74d6bec462cb0c38">makeIndex</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>Virtual function for creating the index. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a directory containing files to be put in the index. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean whether the index was successfully created. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexInterface.hpp" line="147" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for dealing with the index. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_a_v_l_tree_index" kindref="compound">AVLTreeIndex</ref>. </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_hash_table_index" kindref="compound">HashTableIndex</ref>. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="23">
+        <label>AVLTreeIndex</label>
+        <link refid="class_a_v_l_tree_index"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>IndexInterface</label>
+        <link refid="class_index_interface"/>
+      </node>
+      <node id="24">
+        <label>HashTableIndex</label>
+        <link refid="class_hash_table_index"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="IndexInterface.hpp" line="23" column="1" bodyfile="IndexInterface.hpp" bodystart="23" bodyend="149"/>
+    <listofallmembers>
+      <member refid="class_index_interface_1aa7601d76e8cc3f0657e800efdc4c127e" prot="public" virt="pure-virtual"><scope>IndexInterface</scope><name>addDocument</name></member>
+      <member refid="class_index_interface_1aac36b4561598ee84c0c68958a1e3f82b" prot="public" virt="pure-virtual"><scope>IndexInterface</scope><name>clearIndex</name></member>
+      <member refid="class_index_interface_1a752bff152d0a7b370256dc532b273f4f" prot="private" virt="non-virtual"><scope>IndexInterface</scope><name>docProc</name></member>
+      <member refid="class_index_interface_1aaf90058a62e096bf607ea3dec2545ee4" prot="public" virt="pure-virtual"><scope>IndexInterface</scope><name>emptyIndex</name></member>
+      <member refid="class_index_interface_1aa0ea18e7daa9984240d108bd765b2816" prot="public" virt="pure-virtual"><scope>IndexInterface</scope><name>findWord</name></member>
+      <member refid="class_index_interface_1aa694a3e8feb722519b45f7313281bfad" prot="public" virt="pure-virtual"><scope>IndexInterface</scope><name>getDocumentByID</name></member>
+      <member refid="class_index_interface_1af5d7e170720c26b3d38499d4e5e1dd69" prot="public" virt="non-virtual"><scope>IndexInterface</scope><name>getNumDocs</name></member>
+      <member refid="class_index_interface_1a3260a1213d90bd6cb6fd33043fb28b44" prot="public" virt="non-virtual"><scope>IndexInterface</scope><name>getNumTokens</name></member>
+      <member refid="class_index_interface_1a8ccd80a03123406cb4b1e2494349f9da" prot="public" virt="pure-virtual"><scope>IndexInterface</scope><name>hasWord</name></member>
+      <member refid="class_index_interface_1a7b1e7eae7faa652d2f63efeecf0ca2de" prot="public" virt="non-virtual"><scope>IndexInterface</scope><name>IndexInterface</name></member>
+      <member refid="class_index_interface_1ad8567919eafa87ac20c35928c929084d" prot="public" virt="pure-virtual"><scope>IndexInterface</scope><name>listIndex</name></member>
+      <member refid="class_index_interface_1a006f773f4e143745474e847cfb9f27fc" prot="public" virt="pure-virtual"><scope>IndexInterface</scope><name>loadIndex</name></member>
+      <member refid="class_index_interface_1a7b2ae510fa62eebb654708b90972c1b6" prot="public" virt="pure-virtual"><scope>IndexInterface</scope><name>makeIndex</name></member>
+      <member refid="class_index_interface_1ab3d5b59b8b3f495fc7b450e7e4b374cf" prot="private" virt="non-virtual"><scope>IndexInterface</scope><name>numDocs</name></member>
+      <member refid="class_index_interface_1aa6a6922ae1a882158234c5e0fb382ad2" prot="private" virt="non-virtual"><scope>IndexInterface</scope><name>numTokens</name></member>
+      <member refid="class_index_interface_1a6dcf83f08cc162f7e1a1ada77fd9645a" prot="private" virt="non-virtual"><scope>IndexInterface</scope><name>outputFile</name></member>
+      <member refid="class_index_interface_1a3927fabe77a7da5845dc0495b2c1c2b2" prot="public" virt="virtual"><scope>IndexInterface</scope><name>~IndexInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

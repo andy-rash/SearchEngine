@@ -1,0 +1,22 @@
+\section{A\+V\+L\+Tree.\+hpp File Reference}
+\label{_a_v_l_tree_8hpp}\index{A\+V\+L\+Tree.\+hpp@{A\+V\+L\+Tree.\+hpp}}
+
+
+Templated interface and implementation of an A\+V\+L tree.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+Include dependency graph for A\+V\+L\+Tree.\+hpp\+:
+% FIG 0
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf node$<$ \+\_\+\+Type $>$}
+\begin{DoxyCompactList}\small\item\em A node for use in the A\+V\+L tree. \end{DoxyCompactList}\item 
+class {\bf A\+V\+L\+Tree$<$ \+\_\+\+Type $>$}
+\begin{DoxyCompactList}\small\item\em An A\+V\+L Tree of type $<$\+\_\+\+Type$>$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Templated interface and implementation of an A\+V\+L tree. 
+

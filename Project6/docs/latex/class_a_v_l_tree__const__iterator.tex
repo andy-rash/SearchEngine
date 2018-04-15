@@ -1,0 +1,308 @@
+\hypertarget{class_a_v_l_tree__const__iterator}{}\section{A\+V\+L\+Tree\+\_\+const\+\_\+iterator$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$ Class Template Reference}
+\label{class_a_v_l_tree__const__iterator}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$}}
+
+
+A constant iterator that iterates through the tree in-\/order.  
+
+
+
+
+{\ttfamily \#include $<$A\+V\+L\+Tree.\+hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::forward\+\_\+iterator\+\_\+tag \hyperlink{class_a_v_l_tree__const__iterator_aa2d12330a9ba748729e42d8fc882c98e}{iterator\+\_\+category}
+\item 
+typedef std\+::pointer\+\_\+traits$<$ \+\_\+node\+\_\+pointer $>$\+::element\+\_\+type\+::value\+\_\+type \hyperlink{class_a_v_l_tree__const__iterator_abff96c9a253b234068c5d34f7471751d}{value\+\_\+type}
+\item 
+typedef \hyperlink{class_a_v_l_tree__const__iterator_abff96c9a253b234068c5d34f7471751d}{value\+\_\+type} \& \hyperlink{class_a_v_l_tree__const__iterator_a60f81dd86cc602fcc95a298df957990b}{reference}
+\item 
+typedef \hyperlink{class_a_v_l_tree__const__iterator_abff96c9a253b234068c5d34f7471751d}{value\+\_\+type} $\ast$ \hyperlink{class_a_v_l_tree__const__iterator_a0fbfdccc80380ae68a44281dcc18e770}{pointer}
+\item 
+typedef std\+::ptrdiff\+\_\+t \hyperlink{class_a_v_l_tree__const__iterator_a4373b7d2f957d78030ee9dbd86fc307e}{difference\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_v_l_tree__const__iterator_aebe2a178aeadf813a978f9cdb8ff96d3}{A\+V\+L\+Tree\+\_\+const\+\_\+iterator} ()
+\begin{DoxyCompactList}\small\item\em Initializes the member data with default values. \end{DoxyCompactList}\item 
+\hyperlink{class_a_v_l_tree__const__iterator_aa9555f1f662455ec6af572f9350ade37}{A\+V\+L\+Tree\+\_\+const\+\_\+iterator} (const \hyperlink{class_a_v_l_tree__iterator}{A\+V\+L\+Tree\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+node\+\_\+pointer $>$ \&copy)
+\begin{DoxyCompactList}\small\item\em Initializes the member data with values from the copy object. \end{DoxyCompactList}\item 
+\hyperlink{class_a_v_l_tree__const__iterator_a32243cde4217f623dc9522b130874be7}{A\+V\+L\+Tree\+\_\+const\+\_\+iterator} (const \hyperlink{class_a_v_l_tree__const__iterator}{A\+V\+L\+Tree\+\_\+const\+\_\+iterator} \&copy)
+\begin{DoxyCompactList}\small\item\em Initializes the member data with values from the copy object. \end{DoxyCompactList}\item 
+\hyperlink{class_a_v_l_tree__const__iterator_a592ad3ce6efbfcafe4ecaf41b1f30f85}{$\sim$\+A\+V\+L\+Tree\+\_\+const\+\_\+iterator} ()
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_a_v_l_tree__const__iterator}{A\+V\+L\+Tree\+\_\+const\+\_\+iterator} \& \hyperlink{class_a_v_l_tree__const__iterator_ad4cd511f243d194f804659bd6be65cbf}{operator=} (const \hyperlink{class_a_v_l_tree__const__iterator}{A\+V\+L\+Tree\+\_\+const\+\_\+iterator} \&copy)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\hyperlink{class_a_v_l_tree__const__iterator_a60f81dd86cc602fcc95a298df957990b}{reference} \hyperlink{class_a_v_l_tree__const__iterator_afcbc171c8f59cfda44b0063f99177e56}{operator$\ast$} () const 
+\begin{DoxyCompactList}\small\item\em Dereference operator. \end{DoxyCompactList}\item 
+\hyperlink{class_a_v_l_tree__const__iterator_a0fbfdccc80380ae68a44281dcc18e770}{pointer} \hyperlink{class_a_v_l_tree__const__iterator_afcff074e299c45ae42196b5e4b4be8d0}{operator-\/$>$} () const 
+\begin{DoxyCompactList}\small\item\em Arrow operator. \end{DoxyCompactList}\item 
+\hyperlink{class_a_v_l_tree__const__iterator}{A\+V\+L\+Tree\+\_\+const\+\_\+iterator} \& \hyperlink{class_a_v_l_tree__const__iterator_ad881a06d60c2f8481d1b3f08ba32e3fa}{operator++} ()
+\begin{DoxyCompactList}\small\item\em Pre-\/increment operator. \end{DoxyCompactList}\item 
+\hyperlink{class_a_v_l_tree__const__iterator}{A\+V\+L\+Tree\+\_\+const\+\_\+iterator} \hyperlink{class_a_v_l_tree__const__iterator_a4d43deacd7fe153f00031da0f5b9597e}{operator++} (int)
+\begin{DoxyCompactList}\small\item\em Post-\/increment operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+node\+\_\+pointer \hyperlink{class_a_v_l_tree__const__iterator_ad8477a42408fd130992d2cfcb42dcb5d}{\+\_\+ptr}
+\begin{DoxyCompactList}\small\item\em A pointer to the nodes in the A\+V\+L tree. \end{DoxyCompactList}\item 
+\+\_\+\+A\+V\+L\+Tree \hyperlink{class_a_v_l_tree__const__iterator_ad7a12b75802e659f5991bcf31cbf8acb}{\+\_\+ref}
+\begin{DoxyCompactList}\small\item\em A reference A\+V\+L tree pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class $>$ }\\class \hyperlink{class_a_v_l_tree__const__iterator_aa926bd8d1e26ee32ade14a311ebf8df5}{A\+V\+L\+Tree}
+\item 
+{\footnotesize template$<$class , class $>$ }\\class \hyperlink{class_a_v_l_tree__const__iterator_a3b97d3835e767e85b1cededfeefa9d84}{A\+V\+L\+Tree\+\_\+iterator}
+\item 
+bool \hyperlink{class_a_v_l_tree__const__iterator_aa8f8a38cc48dccdbf336f2e44dbf084c}{operator==} (const \hyperlink{class_a_v_l_tree__const__iterator}{A\+V\+L\+Tree\+\_\+const\+\_\+iterator} \&lhs, const \hyperlink{class_a_v_l_tree__const__iterator}{A\+V\+L\+Tree\+\_\+const\+\_\+iterator} \&rhs)
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\item 
+bool \hyperlink{class_a_v_l_tree__const__iterator_affd846c45384c4c538ae133d9723ffa4}{operator!=} (const \hyperlink{class_a_v_l_tree__const__iterator}{A\+V\+L\+Tree\+\_\+const\+\_\+iterator} \&lhs, const \hyperlink{class_a_v_l_tree__const__iterator}{A\+V\+L\+Tree\+\_\+const\+\_\+iterator} \&rhs)
+\begin{DoxyCompactList}\small\item\em Inequality operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+\+Type, class \+\_\+\+Node\+Ptr$>$class A\+V\+L\+Tree\+\_\+const\+\_\+iterator$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$}
+
+A constant iterator that iterates through the tree in-\/order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+Type} & -\/ a type for the node pointer. \\
+\hline
+{\em \+\_\+\+Node\+Ptr} & -\/ a pointer to the nodes to be iterated through. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_a_v_l_tree}{A\+V\+L\+Tree}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_a_v_l_tree__const__iterator_a4373b7d2f957d78030ee9dbd86fc307e}{}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!difference\+\_\+type@{difference\+\_\+type}}
+\index{difference\+\_\+type@{difference\+\_\+type}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\subsubsection[{difference\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Node\+Ptr $>$ typedef std\+::ptrdiff\+\_\+t {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$\+::{\bf difference\+\_\+type}}\label{class_a_v_l_tree__const__iterator_a4373b7d2f957d78030ee9dbd86fc307e}
+\hypertarget{class_a_v_l_tree__const__iterator_aa2d12330a9ba748729e42d8fc882c98e}{}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!iterator\+\_\+category@{iterator\+\_\+category}}
+\index{iterator\+\_\+category@{iterator\+\_\+category}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\subsubsection[{iterator\+\_\+category}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Node\+Ptr $>$ typedef std\+::forward\+\_\+iterator\+\_\+tag {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$\+::{\bf iterator\+\_\+category}}\label{class_a_v_l_tree__const__iterator_aa2d12330a9ba748729e42d8fc882c98e}
+\hypertarget{class_a_v_l_tree__const__iterator_a0fbfdccc80380ae68a44281dcc18e770}{}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!pointer@{pointer}}
+\index{pointer@{pointer}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\subsubsection[{pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Node\+Ptr $>$ typedef {\bf value\+\_\+type}$\ast$ {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$\+::{\bf pointer}}\label{class_a_v_l_tree__const__iterator_a0fbfdccc80380ae68a44281dcc18e770}
+\hypertarget{class_a_v_l_tree__const__iterator_a60f81dd86cc602fcc95a298df957990b}{}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!reference@{reference}}
+\index{reference@{reference}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\subsubsection[{reference}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Node\+Ptr $>$ typedef {\bf value\+\_\+type}\& {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$\+::{\bf reference}}\label{class_a_v_l_tree__const__iterator_a60f81dd86cc602fcc95a298df957990b}
+\hypertarget{class_a_v_l_tree__const__iterator_abff96c9a253b234068c5d34f7471751d}{}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\subsubsection[{value\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Node\+Ptr $>$ typedef std\+::pointer\+\_\+traits$<$\+\_\+node\+\_\+pointer$>$\+::element\+\_\+type\+::value\+\_\+type {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$\+::{\bf value\+\_\+type}}\label{class_a_v_l_tree__const__iterator_abff96c9a253b234068c5d34f7471751d}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_a_v_l_tree__const__iterator_aebe2a178aeadf813a978f9cdb8ff96d3}{}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\subsubsection[{A\+V\+L\+Tree\+\_\+const\+\_\+iterator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Node\+Ptr $>$ {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$\+::{\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree__const__iterator_aebe2a178aeadf813a978f9cdb8ff96d3}
+
+
+Initializes the member data with default values. 
+
+\hypertarget{class_a_v_l_tree__const__iterator_aa9555f1f662455ec6af572f9350ade37}{}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\subsubsection[{A\+V\+L\+Tree\+\_\+const\+\_\+iterator(const A\+V\+L\+Tree\+\_\+iterator$<$ \+\_\+\+Type, \+\_\+node\+\_\+pointer $>$ \&copy)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Node\+Ptr $>$ {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$\+::{\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator} (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+V\+L\+Tree\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+node\+\_\+pointer $>$ \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree__const__iterator_aa9555f1f662455ec6af572f9350ade37}
+
+
+Initializes the member data with values from the copy object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & -\/ an A\+V\+L tree object to be copied. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_a_v_l_tree__const__iterator_a32243cde4217f623dc9522b130874be7}{}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\subsubsection[{A\+V\+L\+Tree\+\_\+const\+\_\+iterator(const A\+V\+L\+Tree\+\_\+const\+\_\+iterator \&copy)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Node\+Ptr $>$ {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$\+::{\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator} (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$ \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree__const__iterator_a32243cde4217f623dc9522b130874be7}
+
+
+Initializes the member data with values from the copy object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & -\/ an A\+V\+L tree object to be copied. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_a_v_l_tree__const__iterator_a592ad3ce6efbfcafe4ecaf41b1f30f85}{}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!````~A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{$\sim$\+A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\index{````~A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{$\sim$\+A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\subsubsection[{$\sim$\+A\+V\+L\+Tree\+\_\+const\+\_\+iterator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Node\+Ptr $>$ {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$\+::$\sim${\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree__const__iterator_a592ad3ce6efbfcafe4ecaf41b1f30f85}
+
+
+Default destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_a_v_l_tree__const__iterator_afcbc171c8f59cfda44b0063f99177e56}{}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\subsubsection[{operator$\ast$() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Node\+Ptr $>$ {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree__const__iterator_afcbc171c8f59cfda44b0063f99177e56}
+
+
+Dereference operator. 
+
+\begin{DoxyReturn}{Returns}
+reference to the value contained in the node. 
+\end{DoxyReturn}
+\hypertarget{class_a_v_l_tree__const__iterator_ad881a06d60c2f8481d1b3f08ba32e3fa}{}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\subsubsection[{operator++()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Node\+Ptr $>$ {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$\+::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree__const__iterator_ad881a06d60c2f8481d1b3f08ba32e3fa}
+
+
+Pre-\/increment operator. 
+
+\begin{DoxyReturn}{Returns}
+incremented iterator reference. 
+\end{DoxyReturn}
+\hypertarget{class_a_v_l_tree__const__iterator_a4d43deacd7fe153f00031da0f5b9597e}{}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\subsubsection[{operator++(int)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Node\+Ptr $>$ {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$\+::operator++ (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree__const__iterator_a4d43deacd7fe153f00031da0f5b9597e}
+
+
+Post-\/increment operator. 
+
+\begin{DoxyReturn}{Returns}
+an iterator value that points to the iterator pre-\/increment. 
+\end{DoxyReturn}
+\hypertarget{class_a_v_l_tree__const__iterator_afcff074e299c45ae42196b5e4b4be8d0}{}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\subsubsection[{operator-\/$>$() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Node\+Ptr $>$ {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree__const__iterator_afcff074e299c45ae42196b5e4b4be8d0}
+
+
+Arrow operator. 
+
+\begin{DoxyReturn}{Returns}
+pointer to the node. 
+\end{DoxyReturn}
+\hypertarget{class_a_v_l_tree__const__iterator_ad4cd511f243d194f804659bd6be65cbf}{}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!operator=@{operator=}}
+\index{operator=@{operator=}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\subsubsection[{operator=(const A\+V\+L\+Tree\+\_\+const\+\_\+iterator \&copy)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Node\+Ptr $>$ {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$ \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_v_l_tree__const__iterator_ad4cd511f243d194f804659bd6be65cbf}
+
+
+Assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & -\/ an A\+V\+L tree object to be copied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to the new A\+V\+L tree object. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_a_v_l_tree__const__iterator_aa926bd8d1e26ee32ade14a311ebf8df5}{}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\subsubsection[{A\+V\+L\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Node\+Ptr $>$ template$<$class $>$ friend class {\bf A\+V\+L\+Tree}\hspace{0.3cm}{\ttfamily [friend]}}\label{class_a_v_l_tree__const__iterator_aa926bd8d1e26ee32ade14a311ebf8df5}
+\hypertarget{class_a_v_l_tree__const__iterator_a3b97d3835e767e85b1cededfeefa9d84}{}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!A\+V\+L\+Tree\+\_\+iterator@{A\+V\+L\+Tree\+\_\+iterator}}
+\index{A\+V\+L\+Tree\+\_\+iterator@{A\+V\+L\+Tree\+\_\+iterator}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\subsubsection[{A\+V\+L\+Tree\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Node\+Ptr $>$ template$<$class , class $>$ friend class {\bf A\+V\+L\+Tree\+\_\+iterator}\hspace{0.3cm}{\ttfamily [friend]}}\label{class_a_v_l_tree__const__iterator_a3b97d3835e767e85b1cededfeefa9d84}
+\hypertarget{class_a_v_l_tree__const__iterator_affd846c45384c4c538ae133d9723ffa4}{}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Node\+Ptr $>$ {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$ \&}]{lhs, }
+\item[{const {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{class_a_v_l_tree__const__iterator_affd846c45384c4c538ae133d9723ffa4}
+
+
+Inequality operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & -\/ first operand to be compared. \\
+\hline
+{\em rhs} & -\/ second operand to be compared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean value whether the iterators are not equal. 
+\end{DoxyReturn}
+\hypertarget{class_a_v_l_tree__const__iterator_aa8f8a38cc48dccdbf336f2e44dbf084c}{}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Node\+Ptr $>$ {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$ \&}]{lhs, }
+\item[{const {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{class_a_v_l_tree__const__iterator_aa8f8a38cc48dccdbf336f2e44dbf084c}
+
+
+Equality operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & -\/ first operand to be compared. \\
+\hline
+{\em rhs} & -\/ second operand to be compared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean value whether the iterators are equal. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_a_v_l_tree__const__iterator_ad8477a42408fd130992d2cfcb42dcb5d}{}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!\+\_\+ptr@{\+\_\+ptr}}
+\index{\+\_\+ptr@{\+\_\+ptr}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\subsubsection[{\+\_\+ptr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Node\+Ptr $>$ \+\_\+node\+\_\+pointer {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$\+::\+\_\+ptr}\label{class_a_v_l_tree__const__iterator_ad8477a42408fd130992d2cfcb42dcb5d}
+
+
+A pointer to the nodes in the A\+V\+L tree. 
+
+\hypertarget{class_a_v_l_tree__const__iterator_ad7a12b75802e659f5991bcf31cbf8acb}{}\index{A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}!\+\_\+ref@{\+\_\+ref}}
+\index{\+\_\+ref@{\+\_\+ref}!A\+V\+L\+Tree\+\_\+const\+\_\+iterator@{A\+V\+L\+Tree\+\_\+const\+\_\+iterator}}
+\subsubsection[{\+\_\+ref}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Node\+Ptr $>$ \+\_\+\+A\+V\+L\+Tree {\bf A\+V\+L\+Tree\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Type, \+\_\+\+Node\+Ptr $>$\+::\+\_\+ref}\label{class_a_v_l_tree__const__iterator_ad7a12b75802e659f5991bcf31cbf8acb}
+
+
+A reference A\+V\+L tree pointer. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_a_v_l_tree_8hpp}{A\+V\+L\+Tree.\+hpp}\end{DoxyCompactItemize}

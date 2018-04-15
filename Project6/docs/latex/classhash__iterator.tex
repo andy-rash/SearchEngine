@@ -1,0 +1,159 @@
+\hypertarget{classhash__iterator}{}\section{hash\+\_\+iterator$<$ \+\_\+\+Node\+Ptr $>$ Class Template Reference}
+\label{classhash__iterator}\index{hash\+\_\+iterator$<$ \+\_\+\+Node\+Ptr $>$@{hash\+\_\+iterator$<$ \+\_\+\+Node\+Ptr $>$}}
+
+
+{\ttfamily \#include $<$hash\+\_\+table.\+hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::forward\+\_\+iterator\+\_\+tag \hyperlink{classhash__iterator_ac7f22b21b9e812be82ff6e2d22aa5b22}{iterator\+\_\+category}
+\item 
+typedef std\+::pointer\+\_\+traits$<$ node\+\_\+pointer $>$\+::element\+\_\+type\+::value\+\_\+type \hyperlink{classhash__iterator_a2fe8b2e7a76ef651b9e3dd75e176d708}{value\+\_\+type}
+\item 
+typedef std\+::pointer\+\_\+traits$<$ node\+\_\+pointer $>$\+::\hyperlink{classhash__iterator_a594d7f0375d027ee463e7ab5d72cfe50}{difference\+\_\+type} \hyperlink{classhash__iterator_a594d7f0375d027ee463e7ab5d72cfe50}{difference\+\_\+type}
+\item 
+typedef \hyperlink{classhash__iterator_a2fe8b2e7a76ef651b9e3dd75e176d708}{value\+\_\+type} \& \hyperlink{classhash__iterator_aaa355159b91ef00385b0c4256e9a9eaf}{reference}
+\item 
+typedef std\+::pointer\+\_\+traits$<$ node\+\_\+pointer $>$\+::template rebind$<$ \hyperlink{classhash__iterator_a2fe8b2e7a76ef651b9e3dd75e176d708}{value\+\_\+type} $>$ \hyperlink{classhash__iterator_a7e43a9eb7cc16f1e13c47e3b76762bb7}{pointer}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classhash__iterator_ad0f7235a73c26d87f377e0263e597fd5}{hash\+\_\+iterator} ()
+\item 
+\hyperlink{classhash__iterator_ae7fa00c1d11ed898074461d91fd6f0c8}{hash\+\_\+iterator} (const \hyperlink{classhash__iterator}{hash\+\_\+iterator} \&copy)
+\item 
+\hyperlink{classhash__iterator_a9bdd951d9dfabdb244c5abcdd2e34255}{$\sim$hash\+\_\+iterator} ()
+\item 
+\hyperlink{classhash__iterator}{hash\+\_\+iterator} \& \hyperlink{classhash__iterator_a8915109ae1efcefb8fd9d23ccdafcf11}{operator=} (const \hyperlink{classhash__iterator}{hash\+\_\+iterator} \&copy)
+\item 
+\hyperlink{classhash__iterator_aaa355159b91ef00385b0c4256e9a9eaf}{reference} \hyperlink{classhash__iterator_a36d9980c71a1da8e85c225ffe5c6ee19}{operator$\ast$} ()
+\item 
+\hyperlink{classhash__iterator_a7e43a9eb7cc16f1e13c47e3b76762bb7}{pointer} \hyperlink{classhash__iterator_ad3099e64ec3d4c9627c2203b0cc6cdc1}{operator-\/$>$} ()
+\item 
+\hyperlink{classhash__iterator}{hash\+\_\+iterator} \& \hyperlink{classhash__iterator_a2ba5444dbf9ee440994fa4f2266512f2}{operator++} ()
+\item 
+\hyperlink{classhash__iterator}{hash\+\_\+iterator} \hyperlink{classhash__iterator_ac4ad4e8f01e526a6ccef90764224a09a}{operator++} (int)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class , class , class $>$ }\\class \hyperlink{classhash__iterator_a39f140c37d8ec7b0c08b23083c94562e}{hash\+\_\+table}
+\item 
+{\footnotesize template$<$class $>$ }\\class \hyperlink{classhash__iterator_ab1e3d7f01b4a220194ffa3e42ab260dd}{hash\+\_\+const\+\_\+iterator}
+\item 
+bool \hyperlink{classhash__iterator_a1333d4e2a00e08b19d4efb85faabfb1d}{operator==} (const \hyperlink{classhash__iterator}{hash\+\_\+iterator} \&lhs, const \hyperlink{classhash__iterator}{hash\+\_\+iterator} \&rhs)
+\item 
+bool \hyperlink{classhash__iterator_a309d75f119087716a5713beaa07fe247}{operator!=} (const \hyperlink{classhash__iterator}{hash\+\_\+iterator} \&lhs, const \hyperlink{classhash__iterator}{hash\+\_\+iterator} \&rhs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classhash__iterator_a594d7f0375d027ee463e7ab5d72cfe50}{}\index{hash\+\_\+iterator@{hash\+\_\+iterator}!difference\+\_\+type@{difference\+\_\+type}}
+\index{difference\+\_\+type@{difference\+\_\+type}!hash\+\_\+iterator@{hash\+\_\+iterator}}
+\subsubsection[{difference\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Node\+Ptr $>$ typedef std\+::pointer\+\_\+traits$<$node\+\_\+pointer$>$\+::{\bf difference\+\_\+type} {\bf hash\+\_\+iterator}$<$ \+\_\+\+Node\+Ptr $>$\+::{\bf difference\+\_\+type}}\label{classhash__iterator_a594d7f0375d027ee463e7ab5d72cfe50}
+\hypertarget{classhash__iterator_ac7f22b21b9e812be82ff6e2d22aa5b22}{}\index{hash\+\_\+iterator@{hash\+\_\+iterator}!iterator\+\_\+category@{iterator\+\_\+category}}
+\index{iterator\+\_\+category@{iterator\+\_\+category}!hash\+\_\+iterator@{hash\+\_\+iterator}}
+\subsubsection[{iterator\+\_\+category}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Node\+Ptr $>$ typedef std\+::forward\+\_\+iterator\+\_\+tag {\bf hash\+\_\+iterator}$<$ \+\_\+\+Node\+Ptr $>$\+::{\bf iterator\+\_\+category}}\label{classhash__iterator_ac7f22b21b9e812be82ff6e2d22aa5b22}
+\hypertarget{classhash__iterator_a7e43a9eb7cc16f1e13c47e3b76762bb7}{}\index{hash\+\_\+iterator@{hash\+\_\+iterator}!pointer@{pointer}}
+\index{pointer@{pointer}!hash\+\_\+iterator@{hash\+\_\+iterator}}
+\subsubsection[{pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Node\+Ptr $>$ typedef std\+::pointer\+\_\+traits$<$node\+\_\+pointer$>$\+::template rebind$<${\bf value\+\_\+type}$>$ {\bf hash\+\_\+iterator}$<$ \+\_\+\+Node\+Ptr $>$\+::{\bf pointer}}\label{classhash__iterator_a7e43a9eb7cc16f1e13c47e3b76762bb7}
+\hypertarget{classhash__iterator_aaa355159b91ef00385b0c4256e9a9eaf}{}\index{hash\+\_\+iterator@{hash\+\_\+iterator}!reference@{reference}}
+\index{reference@{reference}!hash\+\_\+iterator@{hash\+\_\+iterator}}
+\subsubsection[{reference}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Node\+Ptr $>$ typedef {\bf value\+\_\+type}\& {\bf hash\+\_\+iterator}$<$ \+\_\+\+Node\+Ptr $>$\+::{\bf reference}}\label{classhash__iterator_aaa355159b91ef00385b0c4256e9a9eaf}
+\hypertarget{classhash__iterator_a2fe8b2e7a76ef651b9e3dd75e176d708}{}\index{hash\+\_\+iterator@{hash\+\_\+iterator}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!hash\+\_\+iterator@{hash\+\_\+iterator}}
+\subsubsection[{value\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Node\+Ptr $>$ typedef std\+::pointer\+\_\+traits$<$node\+\_\+pointer$>$\+::element\+\_\+type\+::value\+\_\+type {\bf hash\+\_\+iterator}$<$ \+\_\+\+Node\+Ptr $>$\+::{\bf value\+\_\+type}}\label{classhash__iterator_a2fe8b2e7a76ef651b9e3dd75e176d708}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classhash__iterator_ad0f7235a73c26d87f377e0263e597fd5}{}\index{hash\+\_\+iterator@{hash\+\_\+iterator}!hash\+\_\+iterator@{hash\+\_\+iterator}}
+\index{hash\+\_\+iterator@{hash\+\_\+iterator}!hash\+\_\+iterator@{hash\+\_\+iterator}}
+\subsubsection[{hash\+\_\+iterator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Node\+Ptr $>$ {\bf hash\+\_\+iterator}$<$ \+\_\+\+Node\+Ptr $>$\+::{\bf hash\+\_\+iterator} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classhash__iterator_ad0f7235a73c26d87f377e0263e597fd5}
+\hypertarget{classhash__iterator_ae7fa00c1d11ed898074461d91fd6f0c8}{}\index{hash\+\_\+iterator@{hash\+\_\+iterator}!hash\+\_\+iterator@{hash\+\_\+iterator}}
+\index{hash\+\_\+iterator@{hash\+\_\+iterator}!hash\+\_\+iterator@{hash\+\_\+iterator}}
+\subsubsection[{hash\+\_\+iterator(const hash\+\_\+iterator \&copy)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Node\+Ptr $>$ {\bf hash\+\_\+iterator}$<$ \+\_\+\+Node\+Ptr $>$\+::{\bf hash\+\_\+iterator} (
+\begin{DoxyParamCaption}
+\item[{const {\bf hash\+\_\+iterator}$<$ \+\_\+\+Node\+Ptr $>$ \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classhash__iterator_ae7fa00c1d11ed898074461d91fd6f0c8}
+\hypertarget{classhash__iterator_a9bdd951d9dfabdb244c5abcdd2e34255}{}\index{hash\+\_\+iterator@{hash\+\_\+iterator}!````~hash\+\_\+iterator@{$\sim$hash\+\_\+iterator}}
+\index{````~hash\+\_\+iterator@{$\sim$hash\+\_\+iterator}!hash\+\_\+iterator@{hash\+\_\+iterator}}
+\subsubsection[{$\sim$hash\+\_\+iterator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Node\+Ptr $>$ {\bf hash\+\_\+iterator}$<$ \+\_\+\+Node\+Ptr $>$\+::$\sim${\bf hash\+\_\+iterator} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classhash__iterator_a9bdd951d9dfabdb244c5abcdd2e34255}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classhash__iterator_a36d9980c71a1da8e85c225ffe5c6ee19}{}\index{hash\+\_\+iterator@{hash\+\_\+iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!hash\+\_\+iterator@{hash\+\_\+iterator}}
+\subsubsection[{operator$\ast$()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Node\+Ptr $>$ {\bf reference} {\bf hash\+\_\+iterator}$<$ \+\_\+\+Node\+Ptr $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classhash__iterator_a36d9980c71a1da8e85c225ffe5c6ee19}
+\hypertarget{classhash__iterator_a2ba5444dbf9ee440994fa4f2266512f2}{}\index{hash\+\_\+iterator@{hash\+\_\+iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!hash\+\_\+iterator@{hash\+\_\+iterator}}
+\subsubsection[{operator++()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Node\+Ptr $>$ {\bf hash\+\_\+iterator}\& {\bf hash\+\_\+iterator}$<$ \+\_\+\+Node\+Ptr $>$\+::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classhash__iterator_a2ba5444dbf9ee440994fa4f2266512f2}
+\hypertarget{classhash__iterator_ac4ad4e8f01e526a6ccef90764224a09a}{}\index{hash\+\_\+iterator@{hash\+\_\+iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!hash\+\_\+iterator@{hash\+\_\+iterator}}
+\subsubsection[{operator++(int)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Node\+Ptr $>$ {\bf hash\+\_\+iterator} {\bf hash\+\_\+iterator}$<$ \+\_\+\+Node\+Ptr $>$\+::operator++ (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classhash__iterator_ac4ad4e8f01e526a6ccef90764224a09a}
+\hypertarget{classhash__iterator_ad3099e64ec3d4c9627c2203b0cc6cdc1}{}\index{hash\+\_\+iterator@{hash\+\_\+iterator}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!hash\+\_\+iterator@{hash\+\_\+iterator}}
+\subsubsection[{operator-\/$>$()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Node\+Ptr $>$ {\bf pointer} {\bf hash\+\_\+iterator}$<$ \+\_\+\+Node\+Ptr $>$\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classhash__iterator_ad3099e64ec3d4c9627c2203b0cc6cdc1}
+\hypertarget{classhash__iterator_a8915109ae1efcefb8fd9d23ccdafcf11}{}\index{hash\+\_\+iterator@{hash\+\_\+iterator}!operator=@{operator=}}
+\index{operator=@{operator=}!hash\+\_\+iterator@{hash\+\_\+iterator}}
+\subsubsection[{operator=(const hash\+\_\+iterator \&copy)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Node\+Ptr $>$ {\bf hash\+\_\+iterator}\& {\bf hash\+\_\+iterator}$<$ \+\_\+\+Node\+Ptr $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf hash\+\_\+iterator}$<$ \+\_\+\+Node\+Ptr $>$ \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classhash__iterator_a8915109ae1efcefb8fd9d23ccdafcf11}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classhash__iterator_ab1e3d7f01b4a220194ffa3e42ab260dd}{}\index{hash\+\_\+iterator@{hash\+\_\+iterator}!hash\+\_\+const\+\_\+iterator@{hash\+\_\+const\+\_\+iterator}}
+\index{hash\+\_\+const\+\_\+iterator@{hash\+\_\+const\+\_\+iterator}!hash\+\_\+iterator@{hash\+\_\+iterator}}
+\subsubsection[{hash\+\_\+const\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Node\+Ptr $>$ template$<$class $>$ friend class {\bf hash\+\_\+const\+\_\+iterator}\hspace{0.3cm}{\ttfamily [friend]}}\label{classhash__iterator_ab1e3d7f01b4a220194ffa3e42ab260dd}
+\hypertarget{classhash__iterator_a39f140c37d8ec7b0c08b23083c94562e}{}\index{hash\+\_\+iterator@{hash\+\_\+iterator}!hash\+\_\+table@{hash\+\_\+table}}
+\index{hash\+\_\+table@{hash\+\_\+table}!hash\+\_\+iterator@{hash\+\_\+iterator}}
+\subsubsection[{hash\+\_\+table}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Node\+Ptr $>$ template$<$class , class , class $>$ friend class {\bf hash\+\_\+table}\hspace{0.3cm}{\ttfamily [friend]}}\label{classhash__iterator_a39f140c37d8ec7b0c08b23083c94562e}
+\hypertarget{classhash__iterator_a309d75f119087716a5713beaa07fe247}{}\index{hash\+\_\+iterator@{hash\+\_\+iterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!hash\+\_\+iterator@{hash\+\_\+iterator}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Node\+Ptr $>$ bool operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf hash\+\_\+iterator}$<$ \+\_\+\+Node\+Ptr $>$ \&}]{lhs, }
+\item[{const {\bf hash\+\_\+iterator}$<$ \+\_\+\+Node\+Ptr $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classhash__iterator_a309d75f119087716a5713beaa07fe247}
+\hypertarget{classhash__iterator_a1333d4e2a00e08b19d4efb85faabfb1d}{}\index{hash\+\_\+iterator@{hash\+\_\+iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!hash\+\_\+iterator@{hash\+\_\+iterator}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Node\+Ptr $>$ bool operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf hash\+\_\+iterator}$<$ \+\_\+\+Node\+Ptr $>$ \&}]{lhs, }
+\item[{const {\bf hash\+\_\+iterator}$<$ \+\_\+\+Node\+Ptr $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classhash__iterator_a1333d4e2a00e08b19d4efb85faabfb1d}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{hash__table_8hpp}{hash\+\_\+table.\+hpp}\end{DoxyCompactItemize}

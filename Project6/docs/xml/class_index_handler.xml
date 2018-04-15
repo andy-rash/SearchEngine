@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_index_handler" kind="class" language="C++" prot="public">
+    <compoundname>IndexHandler</compoundname>
+    <includes refid="_index_handler_8hpp" local="no">IndexHandler.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_index_handler_1ab6ae050be57090c92949fd8186a58fbc" prot="private" static="no" mutable="no">
+        <type><ref refid="class_document_processor" kindref="compound">DocumentProcessor</ref></type>
+        <definition>DocumentProcessor IndexHandler::docProc</definition>
+        <argsstring></argsstring>
+        <name>docProc</name>
+        <briefdescription>
+<para><ref refid="class_document_processor" kindref="compound">DocumentProcessor</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexHandler.hpp" line="33" column="1" bodyfile="IndexHandler.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_index_handler_1a0b9bee63462901392bdb938819f20bc9" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream IndexHandler::outputFile</definition>
+        <argsstring></argsstring>
+        <name>outputFile</name>
+        <briefdescription>
+<para>std::ofstream object for outputting the persistent index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexHandler.hpp" line="35" column="1" bodyfile="IndexHandler.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_index_handler_1a2f9a84d10825863fad3bb52d69aa1619" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_v_l_tree" kindref="compound">AVLTree</ref>&lt; <ref refid="class_token" kindref="compound">Token</ref> &gt;</type>
+        <definition>AVLTree&lt;Token&gt; IndexHandler::tokens</definition>
+        <argsstring></argsstring>
+        <name>tokens</name>
+        <briefdescription>
+<para>AVL tree to contain the tokens (one form of the index). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexHandler.hpp" line="36" column="1" bodyfile="IndexHandler.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_index_handler_1a5d807f074fc01ca2d21636fa1eaaa283" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IndexHandler::numDocs</definition>
+        <argsstring></argsstring>
+        <name>numDocs</name>
+        <briefdescription>
+<para>Number of documents processed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexHandler.hpp" line="37" column="1" bodyfile="IndexHandler.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_index_handler_1ad3f5fa0610dc22219ceb2f025d618546" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IndexHandler::numTokens</definition>
+        <argsstring></argsstring>
+        <name>numTokens</name>
+        <briefdescription>
+<para>Number of tokens created. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexHandler.hpp" line="38" column="1" bodyfile="IndexHandler.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_index_handler_1a27748387661142a2eb545be6f0499996" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndexHandler::IndexHandler</definition>
+        <argsstring>()</argsstring>
+        <name>IndexHandler</name>
+        <briefdescription>
+<para>Initializes the member data with default values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexHandler.hpp" line="47" column="1" bodyfile="IndexHandler.hpp" bodystart="47" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_handler_1a59b96a28cc87ee0ee4e9e36b021952b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndexHandler::addDocument</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>addDocument</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexHandler.hpp" line="50" column="1" bodyfile="IndexHandler.cpp" bodystart="8" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_handler_1a6bf96d298c05a661245313a44d65d109" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>IndexHandler::clearIndex</definition>
+        <argsstring>()</argsstring>
+        <name>clearIndex</name>
+        <briefdescription>
+<para>Completely clears the index, be it hash table or AVL tree. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexHandler.hpp" line="57" column="1" bodyfile="IndexHandler.cpp" bodystart="17" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_handler_1a5b9c45db93955ffa813bb3467e253f66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>IndexHandler::emptyIndexAVL</definition>
+        <argsstring>()</argsstring>
+        <name>emptyIndexAVL</name>
+        <briefdescription>
+<para>Returns whether the index (AVL) is empty. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>boolean whether the index is empty. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexHandler.hpp" line="65" column="1" bodyfile="IndexHandler.cpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_handler_1af1b5de0f985fe2b203e337baf6aa3bd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_token" kindref="compound">Token</ref> &amp;</type>
+        <definition>IndexHandler::findWord</definition>
+        <argsstring>(std::string &amp;term)</argsstring>
+        <name>findWord</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>Finds a word in the index and returns a <ref refid="class_token" kindref="compound">Token</ref> containing its document/document frequencies. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>term</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a single search term. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_token" kindref="compound">Token</ref> reference that matches the search term. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexHandler.hpp" line="84" column="1" bodyfile="IndexHandler.cpp" bodystart="34" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_handler_1a99ae2a9f65e44cb1b83b3cb865cbc81c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_document" kindref="compound">Document</ref> &amp;</type>
+        <definition>const Document &amp; IndexHandler::getDocumentByID</definition>
+        <argsstring>(const int &amp;docID)</argsstring>
+        <name>getDocumentByID</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>docID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexHandler.hpp" line="86" column="1" bodyfile="IndexHandler.cpp" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_handler_1a342414794783dc47d71b7a3034356d46" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>IndexHandler::getNumDocs</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumDocs</name>
+        <briefdescription>
+<para>Returns the number of documents processed. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>integer representing the number of documents processed. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexHandler.hpp" line="94" column="1" bodyfile="IndexHandler.cpp" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_handler_1a3bad0c158a41fa574d3507af6cc7267e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>IndexHandler::getNumTokens</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumTokens</name>
+        <briefdescription>
+<para>Returns the number of tokens created. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>integer representing the number of tokens created. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexHandler.hpp" line="102" column="1" bodyfile="IndexHandler.cpp" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_handler_1a78bae3a45ea4d4e09e576b482bf58f78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>IndexHandler::hasWord</definition>
+        <argsstring>(std::string &amp;term)</argsstring>
+        <name>hasWord</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether a word is contained within the index. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>term</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a single search term. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean whether the index contains the term. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexHandler.hpp" line="111" column="1" bodyfile="IndexHandler.cpp" bodystart="49" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_handler_1ad05b01f580d6d13d879d805750dfb4d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>IndexHandler::listIndexAVL</definition>
+        <argsstring>()</argsstring>
+        <name>listIndexAVL</name>
+        <briefdescription>
+<para>Writes the index (AVL) to a persistent file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexHandler.hpp" line="118" column="1" bodyfile="IndexHandler.cpp" bodystart="58" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_handler_1a5b56a244de1d63699ab5ba1ca8606544" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>IndexHandler::loadIndexAVL</definition>
+        <argsstring>()</argsstring>
+        <name>loadIndexAVL</name>
+        <briefdescription>
+<para>Loads the index into an AVL tree from a persistent index file. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>boolean whether the operation was successful. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexHandler.hpp" line="135" column="1" bodyfile="IndexHandler.cpp" bodystart="126" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="class_index_handler_1a6dc7f45d95d8c3b9fe11056296c9de3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>IndexHandler::makeIndexAVL</definition>
+        <argsstring>(const std::string &amp;fileName)</argsstring>
+        <name>makeIndexAVL</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>Makes the index from files in a given directory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a path to a directory containing files to be parsed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean whether the operation was successful. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IndexHandler.hpp" line="154" column="1" bodyfile="IndexHandler.cpp" bodystart="192" bodyend="205"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Reads and writes to the main index. </para>    </briefdescription>
+    <detaileddescription>
+<para>Searches the index based on a request from the query processor. </para>    </detaileddescription>
+    <location file="IndexHandler.hpp" line="29" column="1" bodyfile="IndexHandler.hpp" bodystart="29" bodyend="167"/>
+    <listofallmembers>
+      <member refid="class_index_handler_1a59b96a28cc87ee0ee4e9e36b021952b0" prot="public" virt="non-virtual"><scope>IndexHandler</scope><name>addDocument</name></member>
+      <member refid="class_index_handler_1a6bf96d298c05a661245313a44d65d109" prot="public" virt="non-virtual"><scope>IndexHandler</scope><name>clearIndex</name></member>
+      <member refid="class_index_handler_1ab6ae050be57090c92949fd8186a58fbc" prot="private" virt="non-virtual"><scope>IndexHandler</scope><name>docProc</name></member>
+      <member refid="class_index_handler_1a5b9c45db93955ffa813bb3467e253f66" prot="public" virt="non-virtual"><scope>IndexHandler</scope><name>emptyIndexAVL</name></member>
+      <member refid="class_index_handler_1af1b5de0f985fe2b203e337baf6aa3bd2" prot="public" virt="non-virtual"><scope>IndexHandler</scope><name>findWord</name></member>
+      <member refid="class_index_handler_1a99ae2a9f65e44cb1b83b3cb865cbc81c" prot="public" virt="non-virtual"><scope>IndexHandler</scope><name>getDocumentByID</name></member>
+      <member refid="class_index_handler_1a342414794783dc47d71b7a3034356d46" prot="public" virt="non-virtual"><scope>IndexHandler</scope><name>getNumDocs</name></member>
+      <member refid="class_index_handler_1a3bad0c158a41fa574d3507af6cc7267e" prot="public" virt="non-virtual"><scope>IndexHandler</scope><name>getNumTokens</name></member>
+      <member refid="class_index_handler_1a78bae3a45ea4d4e09e576b482bf58f78" prot="public" virt="non-virtual"><scope>IndexHandler</scope><name>hasWord</name></member>
+      <member refid="class_index_handler_1a27748387661142a2eb545be6f0499996" prot="public" virt="non-virtual"><scope>IndexHandler</scope><name>IndexHandler</name></member>
+      <member refid="class_index_handler_1ad05b01f580d6d13d879d805750dfb4d0" prot="public" virt="non-virtual"><scope>IndexHandler</scope><name>listIndexAVL</name></member>
+      <member refid="class_index_handler_1a5b56a244de1d63699ab5ba1ca8606544" prot="public" virt="non-virtual"><scope>IndexHandler</scope><name>loadIndexAVL</name></member>
+      <member refid="class_index_handler_1a6dc7f45d95d8c3b9fe11056296c9de3d" prot="public" virt="non-virtual"><scope>IndexHandler</scope><name>makeIndexAVL</name></member>
+      <member refid="class_index_handler_1a5d807f074fc01ca2d21636fa1eaaa283" prot="private" virt="non-virtual"><scope>IndexHandler</scope><name>numDocs</name></member>
+      <member refid="class_index_handler_1ad3f5fa0610dc22219ceb2f025d618546" prot="private" virt="non-virtual"><scope>IndexHandler</scope><name>numTokens</name></member>
+      <member refid="class_index_handler_1a0b9bee63462901392bdb938819f20bc9" prot="private" virt="non-virtual"><scope>IndexHandler</scope><name>outputFile</name></member>
+      <member refid="class_index_handler_1a2f9a84d10825863fad3bb52d69aa1619" prot="private" virt="non-virtual"><scope>IndexHandler</scope><name>tokens</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

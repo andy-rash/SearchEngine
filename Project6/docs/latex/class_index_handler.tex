@@ -1,0 +1,215 @@
+\hypertarget{class_index_handler}{}\section{Index\+Handler Class Reference}
+\label{class_index_handler}\index{Index\+Handler@{Index\+Handler}}
+
+
+Reads and writes to the main index.  
+
+
+
+
+{\ttfamily \#include $<$Index\+Handler.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_index_handler_a27748387661142a2eb545be6f0499996}{Index\+Handler} ()
+\begin{DoxyCompactList}\small\item\em Initializes the member data with default values. \end{DoxyCompactList}\item 
+void \hyperlink{class_index_handler_a59b96a28cc87ee0ee4e9e36b021952b0}{add\+Document} (const std\+::string \&path)
+\item 
+void \hyperlink{class_index_handler_a6bf96d298c05a661245313a44d65d109}{clear\+Index} ()
+\begin{DoxyCompactList}\small\item\em Completely clears the index, be it hash table or A\+V\+L tree. \end{DoxyCompactList}\item 
+bool \hyperlink{class_index_handler_a5b9c45db93955ffa813bb3467e253f66}{empty\+Index\+A\+V\+L} ()
+\begin{DoxyCompactList}\small\item\em Returns whether the index (A\+V\+L) is empty. \end{DoxyCompactList}\item 
+\hyperlink{class_token}{Token} \& \hyperlink{class_index_handler_af1b5de0f985fe2b203e337baf6aa3bd2}{find\+Word} (std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em Finds a word in the index and returns a \hyperlink{class_token}{Token} containing its document/document frequencies. \end{DoxyCompactList}\item 
+const \hyperlink{class_document}{Document} \& \hyperlink{class_index_handler_a99ae2a9f65e44cb1b83b3cb865cbc81c}{get\+Document\+By\+I\+D} (const int \&doc\+I\+D)
+\item 
+int \hyperlink{class_index_handler_a342414794783dc47d71b7a3034356d46}{get\+Num\+Docs} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of documents processed. \end{DoxyCompactList}\item 
+int \hyperlink{class_index_handler_a3bad0c158a41fa574d3507af6cc7267e}{get\+Num\+Tokens} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of tokens created. \end{DoxyCompactList}\item 
+bool \hyperlink{class_index_handler_a78bae3a45ea4d4e09e576b482bf58f78}{has\+Word} (std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em Returns whether a word is contained within the index. \end{DoxyCompactList}\item 
+void \hyperlink{class_index_handler_ad05b01f580d6d13d879d805750dfb4d0}{list\+Index\+A\+V\+L} ()
+\begin{DoxyCompactList}\small\item\em Writes the index (A\+V\+L) to a persistent file. \end{DoxyCompactList}\item 
+bool \hyperlink{class_index_handler_a5b56a244de1d63699ab5ba1ca8606544}{load\+Index\+A\+V\+L} ()
+\begin{DoxyCompactList}\small\item\em Loads the index into an A\+V\+L tree from a persistent index file. \end{DoxyCompactList}\item 
+bool \hyperlink{class_index_handler_a6dc7f45d95d8c3b9fe11056296c9de3d}{make\+Index\+A\+V\+L} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Makes the index from files in a given directory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Reads and writes to the main index. 
+
+Searches the index based on a request from the query processor. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_index_handler_a27748387661142a2eb545be6f0499996}{}\index{Index\+Handler@{Index\+Handler}!Index\+Handler@{Index\+Handler}}
+\index{Index\+Handler@{Index\+Handler}!Index\+Handler@{Index\+Handler}}
+\subsubsection[{Index\+Handler()}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Handler\+::\+Index\+Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_index_handler_a27748387661142a2eb545be6f0499996}
+
+
+Initializes the member data with default values. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_index_handler_a59b96a28cc87ee0ee4e9e36b021952b0}{}\index{Index\+Handler@{Index\+Handler}!add\+Document@{add\+Document}}
+\index{add\+Document@{add\+Document}!Index\+Handler@{Index\+Handler}}
+\subsubsection[{add\+Document(const std\+::string \&path)}]{\setlength{\rightskip}{0pt plus 5cm}void Index\+Handler\+::add\+Document (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)}\label{class_index_handler_a59b96a28cc87ee0ee4e9e36b021952b0}
+\hypertarget{class_index_handler_a6bf96d298c05a661245313a44d65d109}{}\index{Index\+Handler@{Index\+Handler}!clear\+Index@{clear\+Index}}
+\index{clear\+Index@{clear\+Index}!Index\+Handler@{Index\+Handler}}
+\subsubsection[{clear\+Index()}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Handler\+::clear\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_index_handler_a6bf96d298c05a661245313a44d65d109}
+
+
+Completely clears the index, be it hash table or A\+V\+L tree. 
+
+\hypertarget{class_index_handler_a5b9c45db93955ffa813bb3467e253f66}{}\index{Index\+Handler@{Index\+Handler}!empty\+Index\+A\+V\+L@{empty\+Index\+A\+V\+L}}
+\index{empty\+Index\+A\+V\+L@{empty\+Index\+A\+V\+L}!Index\+Handler@{Index\+Handler}}
+\subsubsection[{empty\+Index\+A\+V\+L()}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Handler\+::empty\+Index\+A\+V\+L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_index_handler_a5b9c45db93955ffa813bb3467e253f66}
+
+
+Returns whether the index (A\+V\+L) is empty. 
+
+\begin{DoxyReturn}{Returns}
+boolean whether the index is empty. 
+\end{DoxyReturn}
+\hypertarget{class_index_handler_af1b5de0f985fe2b203e337baf6aa3bd2}{}\index{Index\+Handler@{Index\+Handler}!find\+Word@{find\+Word}}
+\index{find\+Word@{find\+Word}!Index\+Handler@{Index\+Handler}}
+\subsubsection[{find\+Word(std\+::string \&term)}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Handler\+::find\+Word (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)}\label{class_index_handler_af1b5de0f985fe2b203e337baf6aa3bd2}
+
+
+Finds a word in the index and returns a \hyperlink{class_token}{Token} containing its document/document frequencies. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em term} & -\/ a single search term. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_token}{Token} reference that matches the search term. 
+\end{DoxyReturn}
+\hypertarget{class_index_handler_a99ae2a9f65e44cb1b83b3cb865cbc81c}{}\index{Index\+Handler@{Index\+Handler}!get\+Document\+By\+I\+D@{get\+Document\+By\+I\+D}}
+\index{get\+Document\+By\+I\+D@{get\+Document\+By\+I\+D}!Index\+Handler@{Index\+Handler}}
+\subsubsection[{get\+Document\+By\+I\+D(const int \&doc\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Document} \& Index\+Handler\+::get\+Document\+By\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{doc\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_index_handler_a99ae2a9f65e44cb1b83b3cb865cbc81c}
+\hypertarget{class_index_handler_a342414794783dc47d71b7a3034356d46}{}\index{Index\+Handler@{Index\+Handler}!get\+Num\+Docs@{get\+Num\+Docs}}
+\index{get\+Num\+Docs@{get\+Num\+Docs}!Index\+Handler@{Index\+Handler}}
+\subsubsection[{get\+Num\+Docs() const }]{\setlength{\rightskip}{0pt plus 5cm}Index\+Handler\+::get\+Num\+Docs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_index_handler_a342414794783dc47d71b7a3034356d46}
+
+
+Returns the number of documents processed. 
+
+\begin{DoxyReturn}{Returns}
+integer representing the number of documents processed. 
+\end{DoxyReturn}
+\hypertarget{class_index_handler_a3bad0c158a41fa574d3507af6cc7267e}{}\index{Index\+Handler@{Index\+Handler}!get\+Num\+Tokens@{get\+Num\+Tokens}}
+\index{get\+Num\+Tokens@{get\+Num\+Tokens}!Index\+Handler@{Index\+Handler}}
+\subsubsection[{get\+Num\+Tokens() const }]{\setlength{\rightskip}{0pt plus 5cm}Index\+Handler\+::get\+Num\+Tokens (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_index_handler_a3bad0c158a41fa574d3507af6cc7267e}
+
+
+Returns the number of tokens created. 
+
+\begin{DoxyReturn}{Returns}
+integer representing the number of tokens created. 
+\end{DoxyReturn}
+\hypertarget{class_index_handler_a78bae3a45ea4d4e09e576b482bf58f78}{}\index{Index\+Handler@{Index\+Handler}!has\+Word@{has\+Word}}
+\index{has\+Word@{has\+Word}!Index\+Handler@{Index\+Handler}}
+\subsubsection[{has\+Word(std\+::string \&term)}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Handler\+::has\+Word (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)}\label{class_index_handler_a78bae3a45ea4d4e09e576b482bf58f78}
+
+
+Returns whether a word is contained within the index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em term} & -\/ a single search term. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether the index contains the term. 
+\end{DoxyReturn}
+\hypertarget{class_index_handler_ad05b01f580d6d13d879d805750dfb4d0}{}\index{Index\+Handler@{Index\+Handler}!list\+Index\+A\+V\+L@{list\+Index\+A\+V\+L}}
+\index{list\+Index\+A\+V\+L@{list\+Index\+A\+V\+L}!Index\+Handler@{Index\+Handler}}
+\subsubsection[{list\+Index\+A\+V\+L()}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Handler\+::list\+Index\+A\+V\+L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_index_handler_ad05b01f580d6d13d879d805750dfb4d0}
+
+
+Writes the index (A\+V\+L) to a persistent file. 
+
+\hypertarget{class_index_handler_a5b56a244de1d63699ab5ba1ca8606544}{}\index{Index\+Handler@{Index\+Handler}!load\+Index\+A\+V\+L@{load\+Index\+A\+V\+L}}
+\index{load\+Index\+A\+V\+L@{load\+Index\+A\+V\+L}!Index\+Handler@{Index\+Handler}}
+\subsubsection[{load\+Index\+A\+V\+L()}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Handler\+::load\+Index\+A\+V\+L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_index_handler_a5b56a244de1d63699ab5ba1ca8606544}
+
+
+Loads the index into an A\+V\+L tree from a persistent index file. 
+
+\begin{DoxyReturn}{Returns}
+boolean whether the operation was successful. 
+\end{DoxyReturn}
+\hypertarget{class_index_handler_a6dc7f45d95d8c3b9fe11056296c9de3d}{}\index{Index\+Handler@{Index\+Handler}!make\+Index\+A\+V\+L@{make\+Index\+A\+V\+L}}
+\index{make\+Index\+A\+V\+L@{make\+Index\+A\+V\+L}!Index\+Handler@{Index\+Handler}}
+\subsubsection[{make\+Index\+A\+V\+L(const std\+::string \&file\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}Index\+Handler\+::make\+Index\+A\+V\+L (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file\+Name}
+\end{DoxyParamCaption}
+)}\label{class_index_handler_a6dc7f45d95d8c3b9fe11056296c9de3d}
+
+
+Makes the index from files in a given directory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & -\/ a path to a directory containing files to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether the operation was successful. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_index_handler_8hpp}{Index\+Handler.\+hpp}\item 
+\hyperlink{_index_handler_8cpp}{Index\+Handler.\+cpp}\end{DoxyCompactItemize}

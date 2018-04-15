@@ -1,0 +1,314 @@
+\hypertarget{class_document}{}\section{Document Class Reference}
+\label{class_document}\index{Document@{Document}}
+
+
+Class for holding the information contained in a single page from Wiki\+Books.  
+
+
+
+
+{\ttfamily \#include $<$Document.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_document_acdbcbe550084e8c20f4f67eb229ad66a}{Document} ()
+\begin{DoxyCompactList}\small\item\em Initializes the member data with default values. \end{DoxyCompactList}\item 
+\hyperlink{class_document_a37880d88667c09cc39ef46937f2cf6e4}{Document} (const std\+::string \&\hyperlink{class_document_a878497826a1ca34e778ef05f1a809d1a}{body}, const std\+::string \&\hyperlink{class_document_a1185d78c1c5c5ea69572c20d1c8e552a}{date}, const std\+::string \&\hyperlink{class_document_afda77c47efd90655ba5bb2ab8bf9ba00}{time}, const std\+::string \&\hyperlink{class_document_a4aac8266d0fea88e39ee390159130787}{title}, const std\+::string \&\hyperlink{class_document_a52990ba26536e2e3a08593444e0ccdf3}{username}, int \hyperlink{class_document_acda3a6caa3bc958024aa795cde6c7081}{id})
+\item 
+\hyperlink{class_document}{Document} \& \hyperlink{class_document_ad90511280d1b3815e57ed78003002ea1}{operator=} (const \hyperlink{class_document}{Document} \&copy)
+\item 
+const std\+::string \& \hyperlink{class_document_a878497826a1ca34e778ef05f1a809d1a}{body} () const 
+\item 
+void \hyperlink{class_document_a239171caccf983622b557898846c46e5}{body} (const std\+::string \&body)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{class_document}{Document}\textquotesingle{}s body text. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{class_document_a1185d78c1c5c5ea69572c20d1c8e552a}{date} () const 
+\item 
+void \hyperlink{class_document_a7e1af2cd6cb30c92b5f434863898019e}{date} (const std\+::string \&date)
+\begin{DoxyCompactList}\small\item\em date the \hyperlink{class_document}{Document}\textquotesingle{}s date. \end{DoxyCompactList}\item 
+const int \& \hyperlink{class_document_acda3a6caa3bc958024aa795cde6c7081}{id} () const 
+\item 
+void \hyperlink{class_document_ab538b0d75fd467eea80868917c63fbe5}{id} (const int \&id)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{class_document}{Document}\textquotesingle{}s I\+D number. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{class_document_afda77c47efd90655ba5bb2ab8bf9ba00}{time} () const 
+\item 
+void \hyperlink{class_document_a351642ea8074b80657d34a034797e53c}{time} (const std\+::string \&time)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{class_document}{Document}\textquotesingle{}s time. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{class_document_a4aac8266d0fea88e39ee390159130787}{title} () const 
+\item 
+void \hyperlink{class_document_ae586532a45e61a77afd0c0cfe95089ab}{title} (const std\+::string \&title)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{class_document}{Document}\textquotesingle{}s title. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{class_document_a52990ba26536e2e3a08593444e0ccdf3}{username} () const 
+\item 
+void \hyperlink{class_document_a24faf5e067badd65b55330535dec8c6a}{username} (const std\+::string \&username)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{class_document}{Document}\textquotesingle{}s username. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{class_document_ac81fac7a8d9ba85529addc5b3299f2ff}{std\+::hash$<$ Document $>$}
+\item 
+bool \hyperlink{class_document_ad4716fc286025a1c6b8020e517833e03}{operator==} (const \hyperlink{class_document}{Document} \&lhs, const \hyperlink{class_document}{Document} \&rhs)
+\begin{DoxyCompactList}\small\item\em Compares two \hyperlink{class_document}{Document} objects for equality. \end{DoxyCompactList}\item 
+bool \hyperlink{class_document_a333a5550c36ff69a94c749828fcf0165}{operator!=} (const \hyperlink{class_document}{Document} \&lhs, const \hyperlink{class_document}{Document} \&rhs)
+\begin{DoxyCompactList}\small\item\em Compares two \hyperlink{class_document}{Document} objects for inequality. \end{DoxyCompactList}\item 
+bool \hyperlink{class_document_a180fade9b73b45b1619be1e857b5b39e}{operator$<$} (const \hyperlink{class_document}{Document} \&lhs, const \hyperlink{class_document}{Document} \&rhs)
+\begin{DoxyCompactList}\small\item\em Returns whether one \hyperlink{class_document}{Document} is less than another. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for holding the information contained in a single page from Wiki\+Books. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_document_processor}{Document\+Processor}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_document_acdbcbe550084e8c20f4f67eb229ad66a}{}\index{Document@{Document}!Document@{Document}}
+\index{Document@{Document}!Document@{Document}}
+\subsubsection[{Document()}]{\setlength{\rightskip}{0pt plus 5cm}Document\+::\+Document (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_document_acdbcbe550084e8c20f4f67eb229ad66a}
+
+
+Initializes the member data with default values. 
+
+\hypertarget{class_document_a37880d88667c09cc39ef46937f2cf6e4}{}\index{Document@{Document}!Document@{Document}}
+\index{Document@{Document}!Document@{Document}}
+\subsubsection[{Document(const std\+::string \&body, const std\+::string \&date, const std\+::string \&time, const std\+::string \&title, const std\+::string \&username, int id)}]{\setlength{\rightskip}{0pt plus 5cm}Document\+::\+Document (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{body, }
+\item[{const std\+::string \&}]{date, }
+\item[{const std\+::string \&}]{time, }
+\item[{const std\+::string \&}]{title, }
+\item[{const std\+::string \&}]{username, }
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_document_a37880d88667c09cc39ef46937f2cf6e4}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_document_a878497826a1ca34e778ef05f1a809d1a}{}\index{Document@{Document}!body@{body}}
+\index{body@{body}!Document@{Document}}
+\subsubsection[{body() const }]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& Document\+::body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_document_a878497826a1ca34e778ef05f1a809d1a}
+\hypertarget{class_document_a239171caccf983622b557898846c46e5}{}\index{Document@{Document}!body@{body}}
+\index{body@{body}!Document@{Document}}
+\subsubsection[{body(const std\+::string \&body)}]{\setlength{\rightskip}{0pt plus 5cm}Document\+::body (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{body}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_document_a239171caccf983622b557898846c46e5}
+
+
+Sets the \hyperlink{class_document}{Document}\textquotesingle{}s body text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em body} & -\/ a string to set the \hyperlink{class_document}{Document} body text to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_document_a1185d78c1c5c5ea69572c20d1c8e552a}{}\index{Document@{Document}!date@{date}}
+\index{date@{date}!Document@{Document}}
+\subsubsection[{date() const }]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& Document\+::date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_document_a1185d78c1c5c5ea69572c20d1c8e552a}
+\hypertarget{class_document_a7e1af2cd6cb30c92b5f434863898019e}{}\index{Document@{Document}!date@{date}}
+\index{date@{date}!Document@{Document}}
+\subsubsection[{date(const std\+::string \&date)}]{\setlength{\rightskip}{0pt plus 5cm}Document\+::date (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{date}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_document_a7e1af2cd6cb30c92b5f434863898019e}
+
+
+date the \hyperlink{class_document}{Document}\textquotesingle{}s date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em body} & -\/ a string to set the \hyperlink{class_document}{Document} date to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_document_acda3a6caa3bc958024aa795cde6c7081}{}\index{Document@{Document}!id@{id}}
+\index{id@{id}!Document@{Document}}
+\subsubsection[{id() const }]{\setlength{\rightskip}{0pt plus 5cm}const int\& Document\+::id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_document_acda3a6caa3bc958024aa795cde6c7081}
+\hypertarget{class_document_ab538b0d75fd467eea80868917c63fbe5}{}\index{Document@{Document}!id@{id}}
+\index{id@{id}!Document@{Document}}
+\subsubsection[{id(const int \&id)}]{\setlength{\rightskip}{0pt plus 5cm}Document\+::id (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_document_ab538b0d75fd467eea80868917c63fbe5}
+
+
+Sets the \hyperlink{class_document}{Document}\textquotesingle{}s I\+D number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & -\/ an integer to set the \hyperlink{class_document}{Document} I\+D to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_document_ad90511280d1b3815e57ed78003002ea1}{}\index{Document@{Document}!operator=@{operator=}}
+\index{operator=@{operator=}!Document@{Document}}
+\subsubsection[{operator=(const Document \&copy)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Document}\& Document\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Document} \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_document_ad90511280d1b3815e57ed78003002ea1}
+\hypertarget{class_document_afda77c47efd90655ba5bb2ab8bf9ba00}{}\index{Document@{Document}!time@{time}}
+\index{time@{time}!Document@{Document}}
+\subsubsection[{time() const }]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& Document\+::time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_document_afda77c47efd90655ba5bb2ab8bf9ba00}
+\hypertarget{class_document_a351642ea8074b80657d34a034797e53c}{}\index{Document@{Document}!time@{time}}
+\index{time@{time}!Document@{Document}}
+\subsubsection[{time(const std\+::string \&time)}]{\setlength{\rightskip}{0pt plus 5cm}Document\+::time (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_document_a351642ea8074b80657d34a034797e53c}
+
+
+Sets the \hyperlink{class_document}{Document}\textquotesingle{}s time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & -\/ a string to set the \hyperlink{class_document}{Document} time to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_document_a4aac8266d0fea88e39ee390159130787}{}\index{Document@{Document}!title@{title}}
+\index{title@{title}!Document@{Document}}
+\subsubsection[{title() const }]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& Document\+::title (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_document_a4aac8266d0fea88e39ee390159130787}
+\hypertarget{class_document_ae586532a45e61a77afd0c0cfe95089ab}{}\index{Document@{Document}!title@{title}}
+\index{title@{title}!Document@{Document}}
+\subsubsection[{title(const std\+::string \&title)}]{\setlength{\rightskip}{0pt plus 5cm}Document\+::title (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{title}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_document_ae586532a45e61a77afd0c0cfe95089ab}
+
+
+Sets the \hyperlink{class_document}{Document}\textquotesingle{}s title. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & -\/ a string to set the \hyperlink{class_document}{Document} title to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_document_a52990ba26536e2e3a08593444e0ccdf3}{}\index{Document@{Document}!username@{username}}
+\index{username@{username}!Document@{Document}}
+\subsubsection[{username() const }]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& Document\+::username (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_document_a52990ba26536e2e3a08593444e0ccdf3}
+\hypertarget{class_document_a24faf5e067badd65b55330535dec8c6a}{}\index{Document@{Document}!username@{username}}
+\index{username@{username}!Document@{Document}}
+\subsubsection[{username(const std\+::string \&username)}]{\setlength{\rightskip}{0pt plus 5cm}Document\+::username (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{username}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_document_a24faf5e067badd65b55330535dec8c6a}
+
+
+Sets the \hyperlink{class_document}{Document}\textquotesingle{}s username. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & -\/ a string to set the \hyperlink{class_document}{Document} username to. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_document_a333a5550c36ff69a94c749828fcf0165}{}\index{Document@{Document}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Document@{Document}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}Document\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Document} \&}]{lhs, }
+\item[{const {\bf Document} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{class_document_a333a5550c36ff69a94c749828fcf0165}
+
+
+Compares two \hyperlink{class_document}{Document} objects for inequality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & -\/ A constant \hyperlink{class_document}{Document} reference. \\
+\hline
+{\em rhs} & -\/ A constant \hyperlink{class_document}{Document} reference. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether two Tokens are not the same. 
+\end{DoxyReturn}
+\hypertarget{class_document_a180fade9b73b45b1619be1e857b5b39e}{}\index{Document@{Document}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Document@{Document}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}Document\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Document} \&}]{lhs, }
+\item[{const {\bf Document} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{class_document_a180fade9b73b45b1619be1e857b5b39e}
+
+
+Returns whether one \hyperlink{class_document}{Document} is less than another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & -\/ A constant \hyperlink{class_document}{Document} reference. \\
+\hline
+{\em rhs} & -\/ A constant \hyperlink{class_document}{Document} reference. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether one \hyperlink{class_token}{Token} is less than another. 
+\end{DoxyReturn}
+\hypertarget{class_document_ad4716fc286025a1c6b8020e517833e03}{}\index{Document@{Document}!operator==@{operator==}}
+\index{operator==@{operator==}!Document@{Document}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}Document\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Document} \&}]{lhs, }
+\item[{const {\bf Document} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{class_document_ad4716fc286025a1c6b8020e517833e03}
+
+
+Compares two \hyperlink{class_document}{Document} objects for equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & -\/ A constant \hyperlink{class_document}{Document} reference. \\
+\hline
+{\em rhs} & -\/ A constant \hyperlink{class_document}{Document} reference. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether two Tokens are the same. 
+\end{DoxyReturn}
+\hypertarget{class_document_ac81fac7a8d9ba85529addc5b3299f2ff}{}\index{Document@{Document}!std\+::hash$<$ Document $>$@{std\+::hash$<$ Document $>$}}
+\index{std\+::hash$<$ Document $>$@{std\+::hash$<$ Document $>$}!Document@{Document}}
+\subsubsection[{std\+::hash$<$ Document $>$}]{\setlength{\rightskip}{0pt plus 5cm}friend struct std\+::hash$<$ {\bf Document} $>$\hspace{0.3cm}{\ttfamily [friend]}}\label{class_document_ac81fac7a8d9ba85529addc5b3299f2ff}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_document_8hpp}{Document.\+hpp}\end{DoxyCompactItemize}

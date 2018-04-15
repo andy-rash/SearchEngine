@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_search_engine" kind="class" language="C++" prot="public">
+    <compoundname>SearchEngine</compoundname>
+    <includes refid="_search_engine_8hpp" local="no">SearchEngine.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_search_engine_1a04a47a0447c5a90739aeed0ee559cd21" prot="private" static="no" mutable="no">
+        <type><ref refid="class_index_interface" kindref="compound">IndexInterface</ref> *</type>
+        <definition>IndexInterface* SearchEngine::indexer</definition>
+        <argsstring></argsstring>
+        <name>indexer</name>
+        <briefdescription>
+<para>A pointer to an <ref refid="class_index_interface" kindref="compound">IndexInterface</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SearchEngine.hpp" line="30" column="1" bodyfile="SearchEngine.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_search_engine_1ad07b0844a46bac4bc7de771c94ae3581" prot="private" static="no" mutable="no">
+        <type><ref refid="class_query_processor" kindref="compound">QueryProcessor</ref></type>
+        <definition>QueryProcessor SearchEngine::query</definition>
+        <argsstring></argsstring>
+        <name>query</name>
+        <briefdescription>
+<para>A <ref refid="class_query_processor" kindref="compound">QueryProcessor</ref> object for processing search queries. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SearchEngine.hpp" line="31" column="1" bodyfile="SearchEngine.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_search_engine_1ae16ece5ef11d85ee82f2d34a9c2ae6ce" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SearchEngine::numDocs</definition>
+        <argsstring></argsstring>
+        <name>numDocs</name>
+        <briefdescription>
+<para>An integer for holding the number of documents processed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SearchEngine.hpp" line="32" column="1" bodyfile="SearchEngine.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_search_engine_1a7610a93376fd97cbf2a0ca3a9ea55cf6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SearchEngine::numTokens</definition>
+        <argsstring></argsstring>
+        <name>numTokens</name>
+        <briefdescription>
+<para>An integer for holding the number of tokens processed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SearchEngine.hpp" line="33" column="1" bodyfile="SearchEngine.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_search_engine_1ab129d2c96c29c6dcf4a28abbe4168f6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SearchEngine::SearchEngine</definition>
+        <argsstring>()</argsstring>
+        <name>SearchEngine</name>
+        <briefdescription>
+<para>Initializes the member data with default values and loads in the last created index file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SearchEngine.hpp" line="42" column="1" bodyfile="SearchEngine.cpp" bodystart="8" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_search_engine_1a863ab87efd742b9a8f20b87774ab570f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SearchEngine::~SearchEngine</definition>
+        <argsstring>()</argsstring>
+        <name>~SearchEngine</name>
+        <briefdescription>
+<para>Deletes the pointer to the indexer if it has been initialized. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SearchEngine.hpp" line="49" column="1" bodyfile="SearchEngine.cpp" bodystart="21" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_search_engine_1a9ea46878a950ecad2f9f4af265ab3ace" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>SearchEngine::addDocument</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>addDocument</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Adds a new document to the index. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- path to a file containing properly formatted XML to parse. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SearchEngine.hpp" line="57" column="1" bodyfile="SearchEngine.cpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_search_engine_1a5418e11e3626e8a72d697346051c44fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>SearchEngine::clearIndex</definition>
+        <argsstring>()</argsstring>
+        <name>clearIndex</name>
+        <briefdescription>
+<para>Clears the index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SearchEngine.hpp" line="64" column="1" bodyfile="SearchEngine.cpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_search_engine_1a76393f870a6ce5591b140b81df9c5fac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>SearchEngine::interactive</definition>
+        <argsstring>()</argsstring>
+        <name>interactive</name>
+        <briefdescription>
+<para>Displays the interactive menu. </para>        </briefdescription>
+        <detaileddescription>
+<para>Displays the maintenance menu. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SearchEngine.hpp" line="71" column="1" bodyfile="SearchEngine.cpp" bodystart="32" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="class_search_engine_1ac492e86eaba0b6c7c270ee88e2d6d0ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>SearchEngine::launchUI</definition>
+        <argsstring>()</argsstring>
+        <name>launchUI</name>
+        <briefdescription>
+<para>Displays the main menu. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SearchEngine.hpp" line="78" column="1" bodyfile="SearchEngine.cpp" bodystart="271" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="class_search_engine_1ad269ece849be36f3be5b315e0a32a120" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SearchEngine::maintenance</definition>
+        <argsstring>()</argsstring>
+        <name>maintenance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SearchEngine.hpp" line="85" column="1" bodyfile="SearchEngine.cpp" bodystart="341" bodyend="430"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for performing UI functionality. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_index_interface" kindref="compound">IndexInterface</ref>. </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_query_processor" kindref="compound">QueryProcessor</ref>. </para></simplesect>
+</para>    </detaileddescription>
+    <location file="SearchEngine.hpp" line="26" column="1" bodyfile="SearchEngine.hpp" bodystart="26" bodyend="87"/>
+    <listofallmembers>
+      <member refid="class_search_engine_1a9ea46878a950ecad2f9f4af265ab3ace" prot="public" virt="non-virtual"><scope>SearchEngine</scope><name>addDocument</name></member>
+      <member refid="class_search_engine_1a5418e11e3626e8a72d697346051c44fd" prot="public" virt="non-virtual"><scope>SearchEngine</scope><name>clearIndex</name></member>
+      <member refid="class_search_engine_1a04a47a0447c5a90739aeed0ee559cd21" prot="private" virt="non-virtual"><scope>SearchEngine</scope><name>indexer</name></member>
+      <member refid="class_search_engine_1a76393f870a6ce5591b140b81df9c5fac" prot="public" virt="non-virtual"><scope>SearchEngine</scope><name>interactive</name></member>
+      <member refid="class_search_engine_1ac492e86eaba0b6c7c270ee88e2d6d0ab" prot="public" virt="non-virtual"><scope>SearchEngine</scope><name>launchUI</name></member>
+      <member refid="class_search_engine_1ad269ece849be36f3be5b315e0a32a120" prot="public" virt="non-virtual"><scope>SearchEngine</scope><name>maintenance</name></member>
+      <member refid="class_search_engine_1ae16ece5ef11d85ee82f2d34a9c2ae6ce" prot="private" virt="non-virtual"><scope>SearchEngine</scope><name>numDocs</name></member>
+      <member refid="class_search_engine_1a7610a93376fd97cbf2a0ca3a9ea55cf6" prot="private" virt="non-virtual"><scope>SearchEngine</scope><name>numTokens</name></member>
+      <member refid="class_search_engine_1ad07b0844a46bac4bc7de771c94ae3581" prot="private" virt="non-virtual"><scope>SearchEngine</scope><name>query</name></member>
+      <member refid="class_search_engine_1ab129d2c96c29c6dcf4a28abbe4168f6c" prot="public" virt="non-virtual"><scope>SearchEngine</scope><name>SearchEngine</name></member>
+      <member refid="class_search_engine_1a863ab87efd742b9a8f20b87774ab570f" prot="public" virt="non-virtual"><scope>SearchEngine</scope><name>~SearchEngine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

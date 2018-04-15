@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_a_v_l_tree_index_8hpp" kind="file" language="C++">
+    <compoundname>AVLTreeIndex.hpp</compoundname>
+    <includes refid="_a_v_l_tree_8hpp" local="yes">AVLTree.hpp</includes>
+    <includes refid="_index_interface_8hpp" local="yes">IndexInterface.hpp</includes>
+    <includes refid="_token_8hpp" local="yes">Token.hpp</includes>
+    <includedby refid="_a_v_l_tree_index_8cpp" local="yes">AVLTreeIndex.cpp</includedby>
+    <includedby refid="_search_engine_8hpp" local="yes">SearchEngine.hpp</includedby>
+    <includedby refid="_query_processor_8hpp" local="yes">QueryProcessor.hpp</includedby>
+    <incdepgraph>
+      <node id="83">
+        <label>locale</label>
+      </node>
+      <node id="90">
+        <label>functional</label>
+      </node>
+      <node id="79">
+        <label>DocumentProcessor.hpp</label>
+        <link refid="_document_processor_8hpp"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>iterator</label>
+      </node>
+      <node id="76">
+        <label>IndexInterface.hpp</label>
+        <link refid="_index_interface_8hpp"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>AVLTreeIndex.hpp</label>
+        <link refid="AVLTreeIndex.hpp"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>cmath</label>
+      </node>
+      <node id="82">
+        <label>errno.h</label>
+      </node>
+      <node id="74">
+        <label>stdexcept</label>
+      </node>
+      <node id="91">
+        <label>Token.hpp</label>
+        <link refid="_token_8hpp"/>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>string</label>
+      </node>
+      <node id="86">
+        <label>unordered_set</label>
+      </node>
+      <node id="77">
+        <label>fstream</label>
+      </node>
+      <node id="93">
+        <label>./Resources/pugixml-1.7/src/pugixml.hpp</label>
+      </node>
+      <node id="85">
+        <label>sys/types.h</label>
+      </node>
+      <node id="88">
+        <label>vector</label>
+      </node>
+      <node id="75">
+        <label>utility</label>
+      </node>
+      <node id="84">
+        <label>sstream</label>
+      </node>
+      <node id="80">
+        <label>codecvt</label>
+      </node>
+      <node id="89">
+        <label>Document.hpp</label>
+        <link refid="_document_8hpp"/>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>iostream</label>
+      </node>
+      <node id="87">
+        <label>unordered_map</label>
+      </node>
+      <node id="70">
+        <label>AVLTree.hpp</label>
+        <link refid="_a_v_l_tree_8hpp"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>algorithm</label>
+      </node>
+      <node id="94">
+        <label>./Resources/Oleander/stemming/english_stem.h</label>
+      </node>
+      <node id="81">
+        <label>dirent.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="98">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="95">
+        <label>AVLTreeIndex.hpp</label>
+        <link refid="AVLTreeIndex.hpp"/>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>QueryProcessor.hpp</label>
+        <link refid="_query_processor_8hpp"/>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>AVLTreeIndex.cpp</label>
+        <link refid="_a_v_l_tree_index_8cpp"/>
+      </node>
+      <node id="101">
+        <label>QueryProcessor.cpp</label>
+        <link refid="_query_processor_8cpp"/>
+      </node>
+      <node id="97">
+        <label>SearchEngine.hpp</label>
+        <link refid="_search_engine_8hpp"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>SearchEngine.cpp</label>
+        <link refid="_search_engine_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_a_v_l_tree_index" prot="public">AVLTreeIndex</innerclass>
+    <briefdescription>
+<para>Contains the interface for <ref refid="class_a_v_l_tree_index" kindref="compound">AVLTreeIndex</ref> objects. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>AVLTREEINDEX_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVLTREEINDEX_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_a_v_l_tree_8hpp" kindref="compound">AVLTree.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_index_interface_8hpp" kindref="compound">IndexInterface.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_token_8hpp" kindref="compound">Token.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_a_v_l_tree_index" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_a_v_l_tree_index" kindref="compound">AVLTreeIndex</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_index_interface" kindref="compound">IndexInterface</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_v_l_tree" kindref="compound">AVLTree&lt;Token&gt;</ref><sp/>tokens;<sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_v_l_tree_index_1aba8dc551ea4963a8082991f52bb19c25" kindref="member">AVLTreeIndex</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_v_l_tree_index_1a33cfafc8516541f0d135c707955588f7" kindref="member">~AVLTreeIndex</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_v_l_tree_index_1a1f84720f7580bd785a11d0e0425bd537" kindref="member">addDocument</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>path);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_v_l_tree_index_1a1a877f264d30b657f37c6ed070d2e250" kindref="member">clearIndex</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_a_v_l_tree_index_1a447e5741c289869d5a5188def065fb6c" kindref="member">emptyIndex</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_token" kindref="compound">Token</ref><sp/><ref refid="class_a_v_l_tree_index_1ab549fb6b9fdf08926540f6652859d442" kindref="member">findWord</ref>(std::string&amp;<sp/>term);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_document" kindref="compound">Document</ref>&amp;<sp/><ref refid="class_a_v_l_tree_index_1a0716178493a342dd6b790cfa8d01b3fa" kindref="member">getDocumentByID</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>docID);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_a_v_l_tree_index_1acb31068c39161358ec6545df5feaabc0" kindref="member">hasWord</ref>(std::string&amp;<sp/>term);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_v_l_tree_index_1a603741ace3489018f33f5ba4282e3f0d" kindref="member">listIndex</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_a_v_l_tree_index_1af161b8697db7e3f599abc78a36f8d145" kindref="member">loadIndex</ref>();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_a_v_l_tree_index_1a37200f167e48a7b24cb012b9ff5cf44c" kindref="member">makeIndex</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>fileName);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVLTREEINDEX_HPP<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="AVLTreeIndex.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,323 @@
+\hypertarget{class_token}{}\section{Token Class Reference}
+\label{class_token}\index{Token@{Token}}
+
+
+Class for representing each token in the corpus.  
+
+
+
+
+{\ttfamily \#include $<$Token.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_token_aa3c5868ba4115f3189df6b2ac5b36f39}{Token} ()
+\begin{DoxyCompactList}\small\item\em Initializes the member data with default values. \end{DoxyCompactList}\item 
+\hyperlink{class_token_afbdab46261b6980bebf75e1c910d19ec}{Token} (const std\+::string \&\hyperlink{class_token_a518dac411db3279a9b2f4ce38e46d199}{payload})
+\begin{DoxyCompactList}\small\item\em Initializes the member data with a given payload and default values for the rest of the data members. \end{DoxyCompactList}\item 
+\hyperlink{class_token_a1385cdd373c4f869067bcf4e4549b35e}{Token} (std\+::string \&\&\hyperlink{class_token_a518dac411db3279a9b2f4ce38e46d199}{payload})
+\begin{DoxyCompactList}\small\item\em Initializes the member data with a given payload and default values for the rest of the data members. \end{DoxyCompactList}\item 
+void \hyperlink{class_token_a3c9d92534dea1cf1664b049bbc497631}{add\+Doc\+Pair} (const std\+::pair$<$ int, int $>$ \&doc)
+\item 
+void \hyperlink{class_token_a98fb92871af9b32ec5dc5b1b16a3b92d}{calculate\+Ranks} (const int \&num\+Docs)
+\begin{DoxyCompactList}\small\item\em Calculates the tf-\/idf values for a \hyperlink{class_token}{Token} for all documents that contain that \hyperlink{class_token}{Token}. \end{DoxyCompactList}\item 
+int \& \hyperlink{class_token_a2f643ffd68e0d9f6fc3a812337cba728}{corpus\+Frequency} ()
+\item 
+void \hyperlink{class_token_a96f7a2357460942a79f4c83edfc5328e}{corpus\+Frequency} (const int \&corp\+Freq)
+\item 
+std\+::unordered\+\_\+map$<$ int, std\+::pair$<$ int, float $>$ $>$ \& \hyperlink{class_token_ae6baab69fb2340897f5a96a824b59296}{doc\+Freqs} ()
+\item 
+void \hyperlink{class_token_ad72b4a41e4b59f38a60749f4f5f7d839}{doc\+Freqs} (const std\+::unordered\+\_\+map$<$ int, std\+::pair$<$ int, float $>$$>$ \&docs)
+\begin{DoxyCompactList}\small\item\em Sets doc\+Freqs to a given value. \end{DoxyCompactList}\item 
+bool \hyperlink{class_token_ae3802c4c2b1a3daf2de8e72eee09fb57}{has\+Doc\+Pair} (const std\+::pair$<$ int, int $>$ \&doc\+I\+D) const 
+\item 
+void \hyperlink{class_token_a7131e0dbc8f28dd91b0adfb40064addc}{incr\+Corp\+Freq} ()
+\item 
+void \hyperlink{class_token_a9624e44c95f3c6a1eaca03b384d96ed3}{incr\+Corp\+Freq} (const int \&corp\+Freq)
+\item 
+void \hyperlink{class_token_a067a9966459518c42bdeff937b5e25c8}{incr\+Doc\+Pair} (const std\+::pair$<$ int, int $>$ \&doc\+I\+D)
+\item 
+std\+::string \& \hyperlink{class_token_a518dac411db3279a9b2f4ce38e46d199}{payload} ()
+\begin{DoxyCompactList}\small\item\em Returns a \hyperlink{class_token}{Token}\textquotesingle{}s payload. \end{DoxyCompactList}\item 
+void \hyperlink{class_token_a434580f0f776406d65ecd0985acd1f34}{payload} (const std\+::string \&payload)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{class_token}{Token}\textquotesingle{}s payload. \end{DoxyCompactList}\item 
+void \hyperlink{class_token_ab4ef7da254223df781029a400d928350}{payload} (std\+::string \&\&payload)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{class_token}{Token}\textquotesingle{}s payload using an rvalue reference. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_token_af48fd5b021b89a22f25aec6ae884f205}{operator==} (const \hyperlink{class_token}{Token} \&lhs, const \hyperlink{class_token}{Token} \&rhs)
+\begin{DoxyCompactList}\small\item\em Compares two \hyperlink{class_token}{Token} objects for equality. \end{DoxyCompactList}\item 
+bool \hyperlink{class_token_a720aad55f2d8469a52550be65d947562}{operator!=} (const \hyperlink{class_token}{Token} \&lhs, const \hyperlink{class_token}{Token} \&rhs)
+\begin{DoxyCompactList}\small\item\em Compares two \hyperlink{class_token}{Token} objects for inequality. \end{DoxyCompactList}\item 
+bool \hyperlink{class_token_a9b5081d21f0f5dda0c237d0e7622c271}{operator$<$} (const \hyperlink{class_token}{Token} \&lhs, const \hyperlink{class_token}{Token} \&rhs)
+\begin{DoxyCompactList}\small\item\em Returns whether one \hyperlink{class_token}{Token} is less than another. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for representing each token in the corpus. 
+
+Also maintains information pertaining to the relationship between the token and its frequencies. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_document}{Document}. 
+
+\hyperlink{class_document_processor}{Document\+Processor}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_token_aa3c5868ba4115f3189df6b2ac5b36f39}{}\index{Token@{Token}!Token@{Token}}
+\index{Token@{Token}!Token@{Token}}
+\subsubsection[{Token()}]{\setlength{\rightskip}{0pt plus 5cm}Token\+::\+Token (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_token_aa3c5868ba4115f3189df6b2ac5b36f39}
+
+
+Initializes the member data with default values. 
+
+\hypertarget{class_token_afbdab46261b6980bebf75e1c910d19ec}{}\index{Token@{Token}!Token@{Token}}
+\index{Token@{Token}!Token@{Token}}
+\subsubsection[{Token(const std\+::string \&payload)}]{\setlength{\rightskip}{0pt plus 5cm}Token\+::\+Token (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{payload}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_token_afbdab46261b6980bebf75e1c910d19ec}
+
+
+Initializes the member data with a given payload and default values for the rest of the data members. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload} & -\/ a payload to initialize the \hyperlink{class_token}{Token} with. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_token_a1385cdd373c4f869067bcf4e4549b35e}{}\index{Token@{Token}!Token@{Token}}
+\index{Token@{Token}!Token@{Token}}
+\subsubsection[{Token(std\+::string \&\&payload)}]{\setlength{\rightskip}{0pt plus 5cm}Token\+::\+Token (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&\&}]{payload}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_token_a1385cdd373c4f869067bcf4e4549b35e}
+
+
+Initializes the member data with a given payload and default values for the rest of the data members. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload} & -\/ an rvalue payload to initialize the \hyperlink{class_token}{Token} with. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_token_a3c9d92534dea1cf1664b049bbc497631}{}\index{Token@{Token}!add\+Doc\+Pair@{add\+Doc\+Pair}}
+\index{add\+Doc\+Pair@{add\+Doc\+Pair}!Token@{Token}}
+\subsubsection[{add\+Doc\+Pair(const std\+::pair$<$ int, int $>$ \&doc)}]{\setlength{\rightskip}{0pt plus 5cm}void Token\+::add\+Doc\+Pair (
+\begin{DoxyParamCaption}
+\item[{const std\+::pair$<$ int, int $>$ \&}]{doc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_token_a3c9d92534dea1cf1664b049bbc497631}
+\hypertarget{class_token_a98fb92871af9b32ec5dc5b1b16a3b92d}{}\index{Token@{Token}!calculate\+Ranks@{calculate\+Ranks}}
+\index{calculate\+Ranks@{calculate\+Ranks}!Token@{Token}}
+\subsubsection[{calculate\+Ranks(const int \&num\+Docs)}]{\setlength{\rightskip}{0pt plus 5cm}Token\+::calculate\+Ranks (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{num\+Docs}
+\end{DoxyParamCaption}
+)}\label{class_token_a98fb92871af9b32ec5dc5b1b16a3b92d}
+
+
+Calculates the tf-\/idf values for a \hyperlink{class_token}{Token} for all documents that contain that \hyperlink{class_token}{Token}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Docs} & -\/ the number of documents in the corpus. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_token_a2f643ffd68e0d9f6fc3a812337cba728}{}\index{Token@{Token}!corpus\+Frequency@{corpus\+Frequency}}
+\index{corpus\+Frequency@{corpus\+Frequency}!Token@{Token}}
+\subsubsection[{corpus\+Frequency()}]{\setlength{\rightskip}{0pt plus 5cm}int\& Token\+::corpus\+Frequency (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_token_a2f643ffd68e0d9f6fc3a812337cba728}
+\hypertarget{class_token_a96f7a2357460942a79f4c83edfc5328e}{}\index{Token@{Token}!corpus\+Frequency@{corpus\+Frequency}}
+\index{corpus\+Frequency@{corpus\+Frequency}!Token@{Token}}
+\subsubsection[{corpus\+Frequency(const int \&corp\+Freq)}]{\setlength{\rightskip}{0pt plus 5cm}void Token\+::corpus\+Frequency (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{corp\+Freq}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_token_a96f7a2357460942a79f4c83edfc5328e}
+\hypertarget{class_token_ae6baab69fb2340897f5a96a824b59296}{}\index{Token@{Token}!doc\+Freqs@{doc\+Freqs}}
+\index{doc\+Freqs@{doc\+Freqs}!Token@{Token}}
+\subsubsection[{doc\+Freqs()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unordered\+\_\+map$<$int,std\+::pair$<$int,float$>$ $>$\& Token\+::doc\+Freqs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_token_ae6baab69fb2340897f5a96a824b59296}
+\hypertarget{class_token_ad72b4a41e4b59f38a60749f4f5f7d839}{}\index{Token@{Token}!doc\+Freqs@{doc\+Freqs}}
+\index{doc\+Freqs@{doc\+Freqs}!Token@{Token}}
+\subsubsection[{doc\+Freqs(const std\+::unordered\+\_\+map$<$ int, std\+::pair$<$ int, float $>$$>$ \&docs)}]{\setlength{\rightskip}{0pt plus 5cm}Token\+::doc\+Freqs (
+\begin{DoxyParamCaption}
+\item[{const std\+::unordered\+\_\+map$<$ int, std\+::pair$<$ int, float $>$$>$ \&}]{docs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_token_ad72b4a41e4b59f38a60749f4f5f7d839}
+
+
+Sets doc\+Freqs to a given value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em docs} & -\/ a std\+::unordered\+\_\+map containing $<$document/$<$document frequency/tf-\/idf$>$$>$ pairs. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_token_ae3802c4c2b1a3daf2de8e72eee09fb57}{}\index{Token@{Token}!has\+Doc\+Pair@{has\+Doc\+Pair}}
+\index{has\+Doc\+Pair@{has\+Doc\+Pair}!Token@{Token}}
+\subsubsection[{has\+Doc\+Pair(const std\+::pair$<$ int, int $>$ \&doc\+I\+D) const }]{\setlength{\rightskip}{0pt plus 5cm}bool Token\+::has\+Doc\+Pair (
+\begin{DoxyParamCaption}
+\item[{const std\+::pair$<$ int, int $>$ \&}]{doc\+I\+D}
+\end{DoxyParamCaption}
+) const}\label{class_token_ae3802c4c2b1a3daf2de8e72eee09fb57}
+\hypertarget{class_token_a7131e0dbc8f28dd91b0adfb40064addc}{}\index{Token@{Token}!incr\+Corp\+Freq@{incr\+Corp\+Freq}}
+\index{incr\+Corp\+Freq@{incr\+Corp\+Freq}!Token@{Token}}
+\subsubsection[{incr\+Corp\+Freq()}]{\setlength{\rightskip}{0pt plus 5cm}void Token\+::incr\+Corp\+Freq (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_token_a7131e0dbc8f28dd91b0adfb40064addc}
+\hypertarget{class_token_a9624e44c95f3c6a1eaca03b384d96ed3}{}\index{Token@{Token}!incr\+Corp\+Freq@{incr\+Corp\+Freq}}
+\index{incr\+Corp\+Freq@{incr\+Corp\+Freq}!Token@{Token}}
+\subsubsection[{incr\+Corp\+Freq(const int \&corp\+Freq)}]{\setlength{\rightskip}{0pt plus 5cm}void Token\+::incr\+Corp\+Freq (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{corp\+Freq}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_token_a9624e44c95f3c6a1eaca03b384d96ed3}
+\hypertarget{class_token_a067a9966459518c42bdeff937b5e25c8}{}\index{Token@{Token}!incr\+Doc\+Pair@{incr\+Doc\+Pair}}
+\index{incr\+Doc\+Pair@{incr\+Doc\+Pair}!Token@{Token}}
+\subsubsection[{incr\+Doc\+Pair(const std\+::pair$<$ int, int $>$ \&doc\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}void Token\+::incr\+Doc\+Pair (
+\begin{DoxyParamCaption}
+\item[{const std\+::pair$<$ int, int $>$ \&}]{doc\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_token_a067a9966459518c42bdeff937b5e25c8}
+\hypertarget{class_token_a518dac411db3279a9b2f4ce38e46d199}{}\index{Token@{Token}!payload@{payload}}
+\index{payload@{payload}!Token@{Token}}
+\subsubsection[{payload()}]{\setlength{\rightskip}{0pt plus 5cm}Token\+::payload (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_token_a518dac411db3279a9b2f4ce38e46d199}
+
+
+Returns a \hyperlink{class_token}{Token}\textquotesingle{}s payload. 
+
+\begin{DoxyReturn}{Returns}
+reference to the \hyperlink{class_token}{Token}\textquotesingle{}s payload (std\+::string). 
+\end{DoxyReturn}
+\hypertarget{class_token_a434580f0f776406d65ecd0985acd1f34}{}\index{Token@{Token}!payload@{payload}}
+\index{payload@{payload}!Token@{Token}}
+\subsubsection[{payload(const std\+::string \&payload)}]{\setlength{\rightskip}{0pt plus 5cm}Token\+::payload (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{payload}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_token_a434580f0f776406d65ecd0985acd1f34}
+
+
+Sets the \hyperlink{class_token}{Token}\textquotesingle{}s payload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload} & -\/ a string to set the \hyperlink{class_token}{Token} payload to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_token_ab4ef7da254223df781029a400d928350}{}\index{Token@{Token}!payload@{payload}}
+\index{payload@{payload}!Token@{Token}}
+\subsubsection[{payload(std\+::string \&\&payload)}]{\setlength{\rightskip}{0pt plus 5cm}Token\+::payload (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&\&}]{payload}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_token_ab4ef7da254223df781029a400d928350}
+
+
+Sets the \hyperlink{class_token}{Token}\textquotesingle{}s payload using an rvalue reference. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload} & -\/ a string to set the \hyperlink{class_token}{Token} payload to. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_token_a720aad55f2d8469a52550be65d947562}{}\index{Token@{Token}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Token@{Token}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}Token\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Token} \&}]{lhs, }
+\item[{const {\bf Token} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{class_token_a720aad55f2d8469a52550be65d947562}
+
+
+Compares two \hyperlink{class_token}{Token} objects for inequality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & -\/ A constant \hyperlink{class_token}{Token} reference. \\
+\hline
+{\em rhs} & -\/ A constant \hyperlink{class_token}{Token} reference. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether two Tokens are not the same. 
+\end{DoxyReturn}
+\hypertarget{class_token_a9b5081d21f0f5dda0c237d0e7622c271}{}\index{Token@{Token}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Token@{Token}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}Token\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Token} \&}]{lhs, }
+\item[{const {\bf Token} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{class_token_a9b5081d21f0f5dda0c237d0e7622c271}
+
+
+Returns whether one \hyperlink{class_token}{Token} is less than another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & -\/ A constant \hyperlink{class_token}{Token} reference. \\
+\hline
+{\em rhs} & -\/ A constant \hyperlink{class_token}{Token} reference. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether a \hyperlink{class_token}{Token} is less than another. 
+\end{DoxyReturn}
+\hypertarget{class_token_af48fd5b021b89a22f25aec6ae884f205}{}\index{Token@{Token}!operator==@{operator==}}
+\index{operator==@{operator==}!Token@{Token}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}Token\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Token} \&}]{lhs, }
+\item[{const {\bf Token} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{class_token_af48fd5b021b89a22f25aec6ae884f205}
+
+
+Compares two \hyperlink{class_token}{Token} objects for equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & -\/ A constant \hyperlink{class_token}{Token} reference. \\
+\hline
+{\em rhs} & -\/ A constant \hyperlink{class_token}{Token} reference. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether two Tokens are the same. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_token_8hpp}{Token.\+hpp}\item 
+\hyperlink{_token_8cpp}{Token.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,228 @@
+\hypertarget{classhash__table}{}\section{hash\+\_\+table$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$ Class Template Reference}
+\label{classhash__table}\index{hash\+\_\+table$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$@{hash\+\_\+table$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$}}
+
+
+{\ttfamily \#include $<$hash\+\_\+table.\+hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Type \hyperlink{classhash__table_a536a4f7db0e47e35283f8e04ea72e88c}{value\+\_\+type}
+\item 
+typedef \+\_\+\+Hash \hyperlink{classhash__table_a50374ab474440525f6739d9e45a851f9}{hasher}
+\item 
+typedef \+\_\+\+Equal \hyperlink{classhash__table_a0261fc20ffaacd3a8b3f4562dd631beb}{key\+\_\+equal}
+\item 
+typedef \hyperlink{classhash__table_a536a4f7db0e47e35283f8e04ea72e88c}{value\+\_\+type} \& \hyperlink{classhash__table_a92ee06d8c071e7a5b41861d2622e02de}{reference}
+\item 
+typedef const \hyperlink{classhash__table_a536a4f7db0e47e35283f8e04ea72e88c}{value\+\_\+type} \& \hyperlink{classhash__table_a84b60c6fc08ecba763d5e3cfa7065e8d}{const\+\_\+reference}
+\item 
+typedef \hyperlink{classhash__table_a536a4f7db0e47e35283f8e04ea72e88c}{value\+\_\+type} $\ast$ \hyperlink{classhash__table_ad9e0d75b1e6756dc449ba917383d0dee}{pointer}
+\item 
+typedef const \hyperlink{classhash__table_a536a4f7db0e47e35283f8e04ea72e88c}{value\+\_\+type} $\ast$ \hyperlink{classhash__table_a8f09397b7443438bc50e7f6bfc9be9d6}{const\+\_\+pointer}
+\item 
+typedef std\+::size\+\_\+t \hyperlink{classhash__table_a8d85f5b55ee3116e6d40c1de62e62368}{size\+\_\+type}
+\item 
+typedef std\+::ptrdiff\+\_\+t \hyperlink{classhash__table_a7f48994c34ddc1f8a19ffa7dc3821b40}{difference\+\_\+type}
+\item 
+typedef std\+::pointer\+\_\+traits$<$ \hyperlink{classhash__table_ad9e0d75b1e6756dc449ba917383d0dee}{pointer} $>$\+::template rebind$<$ void $>$ \hyperlink{classhash__table_a46df0d3f55f71d07f275abebec698098}{void\+\_\+pointer}
+\item 
+typedef \hyperlink{struct__hash__node}{\+\_\+hash\+\_\+node}$<$ \hyperlink{classhash__table_a536a4f7db0e47e35283f8e04ea72e88c}{value\+\_\+type}, \hyperlink{classhash__table_a46df0d3f55f71d07f275abebec698098}{void\+\_\+pointer} $>$ \hyperlink{classhash__table_a0fec4f0d7cfac374e75932db352b7697}{\+\_\+node}
+\item 
+typedef \hyperlink{classhash__table_a0fec4f0d7cfac374e75932db352b7697}{\+\_\+node} $\ast$ \hyperlink{classhash__table_a7e82c643192604e0bcb21b1d7208df28}{\+\_\+node\+\_\+pointer}
+\item 
+typedef const \hyperlink{classhash__table_a0fec4f0d7cfac374e75932db352b7697}{\+\_\+node} $\ast$ \hyperlink{classhash__table_a94de4cb648de7c459348be7df2c9ebd3}{\+\_\+node\+\_\+const\+\_\+pointer}
+\item 
+typedef \hyperlink{struct__hash__node__base}{\+\_\+hash\+\_\+node\+\_\+base}$<$ \hyperlink{classhash__table_a7e82c643192604e0bcb21b1d7208df28}{\+\_\+node\+\_\+pointer} $>$ \hyperlink{classhash__table_ae649e68085e4cd585c9dd7e72360a9f4}{\+\_\+first\+\_\+node}
+\item 
+typedef std\+::pointer\+\_\+traits$<$ \hyperlink{classhash__table_a7e82c643192604e0bcb21b1d7208df28}{\+\_\+node\+\_\+pointer} $>$\+::template rebind$<$ \hyperlink{classhash__table_ae649e68085e4cd585c9dd7e72360a9f4}{\+\_\+first\+\_\+node} $>$ \hyperlink{classhash__table_a424f6f949f9f5edb496d1d2571633ea1}{\+\_\+node\+\_\+base\+\_\+pointer}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classhash__table_a0230402b435247b23c4898022c9aec5e}{hash\+\_\+table} ()
+\item 
+\hyperlink{classhash__table_aceec87dc4c9abc44d7b68fe8203d3ce6}{hash\+\_\+table} (const \hyperlink{classhash__table_a50374ab474440525f6739d9e45a851f9}{hasher} \&hf, const \hyperlink{classhash__table_a0261fc20ffaacd3a8b3f4562dd631beb}{key\+\_\+equal} \&eql)
+\item 
+\hyperlink{classhash__table_aefa871baa0421eef41e21b41d92b8243}{hash\+\_\+table} (const \hyperlink{classhash__table}{hash\+\_\+table} \&copy)
+\item 
+\hyperlink{classhash__table_aaba701f67012d269277871724daafac5}{hash\+\_\+table} (\hyperlink{classhash__table}{hash\+\_\+table} \&\&copy)
+\item 
+\hyperlink{classhash__table_a60e0f19084be4a67632f2b992de85402}{$\sim$hash\+\_\+table} ()
+\item 
+\hyperlink{classhash__table}{hash\+\_\+table} \& \hyperlink{classhash__table_a2192f10ce77baea09e73d46f8c5e8254}{operator=} (const \hyperlink{classhash__table}{hash\+\_\+table} \&copy)
+\item 
+\hyperlink{classhash__table}{hash\+\_\+table} \& \hyperlink{classhash__table_a74641c17369c448fdf63eab1d759e3c3}{operator=} (\hyperlink{classhash__table}{hash\+\_\+table} \&\&copy)
+\item 
+\hyperlink{classhash__table_a50374ab474440525f6739d9e45a851f9}{hasher} \& \hyperlink{classhash__table_ad92313e501faa8d583bc17aa2928e2b9}{hash\+\_\+function} ()
+\item 
+const \hyperlink{classhash__table_a50374ab474440525f6739d9e45a851f9}{hasher} \& \hyperlink{classhash__table_ad6722316ea6db15d511037d3083b1d41}{hash\+\_\+function} () const 
+\item 
+\hyperlink{classhash__table_a0261fc20ffaacd3a8b3f4562dd631beb}{key\+\_\+equal} \& \hyperlink{classhash__table_a360462913491830ed605a6e7694c087f}{key\+\_\+eq} ()
+\item 
+const \hyperlink{classhash__table_a0261fc20ffaacd3a8b3f4562dd631beb}{key\+\_\+equal} \& \hyperlink{classhash__table_ac2fc819d64a284bba17fbf6a66110706}{key\+\_\+eq} () const 
+\item 
+float \& \hyperlink{classhash__table_a18411f20b0593f8c34230862b6a16397}{max\+\_\+load\+\_\+factor} ()
+\item 
+float \hyperlink{classhash__table_abd5414b8eaa7e8cfb733992d2ff940a9}{max\+\_\+load\+\_\+factor} () const 
+\item 
+\hyperlink{classhash__table_a8d85f5b55ee3116e6d40c1de62e62368}{size\+\_\+type} \hyperlink{classhash__table_a0e67f8c6828034c159ea597a7e31b3c1}{size} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classhash__table_ae649e68085e4cd585c9dd7e72360a9f4}{}\index{hash\+\_\+table@{hash\+\_\+table}!\+\_\+first\+\_\+node@{\+\_\+first\+\_\+node}}
+\index{\+\_\+first\+\_\+node@{\+\_\+first\+\_\+node}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{\+\_\+first\+\_\+node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ typedef {\bf \+\_\+hash\+\_\+node\+\_\+base}$<${\bf \+\_\+node\+\_\+pointer}$>$ {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::{\bf \+\_\+first\+\_\+node}}\label{classhash__table_ae649e68085e4cd585c9dd7e72360a9f4}
+\hypertarget{classhash__table_a0fec4f0d7cfac374e75932db352b7697}{}\index{hash\+\_\+table@{hash\+\_\+table}!\+\_\+node@{\+\_\+node}}
+\index{\+\_\+node@{\+\_\+node}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{\+\_\+node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ typedef {\bf \+\_\+hash\+\_\+node}$<${\bf value\+\_\+type},{\bf void\+\_\+pointer}$>$ {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::{\bf \+\_\+node}}\label{classhash__table_a0fec4f0d7cfac374e75932db352b7697}
+\hypertarget{classhash__table_a424f6f949f9f5edb496d1d2571633ea1}{}\index{hash\+\_\+table@{hash\+\_\+table}!\+\_\+node\+\_\+base\+\_\+pointer@{\+\_\+node\+\_\+base\+\_\+pointer}}
+\index{\+\_\+node\+\_\+base\+\_\+pointer@{\+\_\+node\+\_\+base\+\_\+pointer}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{\+\_\+node\+\_\+base\+\_\+pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ typedef std\+::pointer\+\_\+traits$<${\bf \+\_\+node\+\_\+pointer}$>$\+::template rebind$<${\bf \+\_\+first\+\_\+node}$>$ {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::{\bf \+\_\+node\+\_\+base\+\_\+pointer}}\label{classhash__table_a424f6f949f9f5edb496d1d2571633ea1}
+\hypertarget{classhash__table_a94de4cb648de7c459348be7df2c9ebd3}{}\index{hash\+\_\+table@{hash\+\_\+table}!\+\_\+node\+\_\+const\+\_\+pointer@{\+\_\+node\+\_\+const\+\_\+pointer}}
+\index{\+\_\+node\+\_\+const\+\_\+pointer@{\+\_\+node\+\_\+const\+\_\+pointer}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{\+\_\+node\+\_\+const\+\_\+pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ typedef const {\bf \+\_\+node}$\ast$ {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::{\bf \+\_\+node\+\_\+const\+\_\+pointer}}\label{classhash__table_a94de4cb648de7c459348be7df2c9ebd3}
+\hypertarget{classhash__table_a7e82c643192604e0bcb21b1d7208df28}{}\index{hash\+\_\+table@{hash\+\_\+table}!\+\_\+node\+\_\+pointer@{\+\_\+node\+\_\+pointer}}
+\index{\+\_\+node\+\_\+pointer@{\+\_\+node\+\_\+pointer}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{\+\_\+node\+\_\+pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ typedef {\bf \+\_\+node}$\ast$ {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::{\bf \+\_\+node\+\_\+pointer}}\label{classhash__table_a7e82c643192604e0bcb21b1d7208df28}
+\hypertarget{classhash__table_a8f09397b7443438bc50e7f6bfc9be9d6}{}\index{hash\+\_\+table@{hash\+\_\+table}!const\+\_\+pointer@{const\+\_\+pointer}}
+\index{const\+\_\+pointer@{const\+\_\+pointer}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{const\+\_\+pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ typedef const {\bf value\+\_\+type}$\ast$ {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::{\bf const\+\_\+pointer}}\label{classhash__table_a8f09397b7443438bc50e7f6bfc9be9d6}
+\hypertarget{classhash__table_a84b60c6fc08ecba763d5e3cfa7065e8d}{}\index{hash\+\_\+table@{hash\+\_\+table}!const\+\_\+reference@{const\+\_\+reference}}
+\index{const\+\_\+reference@{const\+\_\+reference}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{const\+\_\+reference}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ typedef const {\bf value\+\_\+type}\& {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::{\bf const\+\_\+reference}}\label{classhash__table_a84b60c6fc08ecba763d5e3cfa7065e8d}
+\hypertarget{classhash__table_a7f48994c34ddc1f8a19ffa7dc3821b40}{}\index{hash\+\_\+table@{hash\+\_\+table}!difference\+\_\+type@{difference\+\_\+type}}
+\index{difference\+\_\+type@{difference\+\_\+type}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{difference\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ typedef std\+::ptrdiff\+\_\+t {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::{\bf difference\+\_\+type}}\label{classhash__table_a7f48994c34ddc1f8a19ffa7dc3821b40}
+\hypertarget{classhash__table_a50374ab474440525f6739d9e45a851f9}{}\index{hash\+\_\+table@{hash\+\_\+table}!hasher@{hasher}}
+\index{hasher@{hasher}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{hasher}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ typedef \+\_\+\+Hash {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::{\bf hasher}}\label{classhash__table_a50374ab474440525f6739d9e45a851f9}
+\hypertarget{classhash__table_a0261fc20ffaacd3a8b3f4562dd631beb}{}\index{hash\+\_\+table@{hash\+\_\+table}!key\+\_\+equal@{key\+\_\+equal}}
+\index{key\+\_\+equal@{key\+\_\+equal}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{key\+\_\+equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ typedef \+\_\+\+Equal {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::{\bf key\+\_\+equal}}\label{classhash__table_a0261fc20ffaacd3a8b3f4562dd631beb}
+\hypertarget{classhash__table_ad9e0d75b1e6756dc449ba917383d0dee}{}\index{hash\+\_\+table@{hash\+\_\+table}!pointer@{pointer}}
+\index{pointer@{pointer}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ typedef {\bf value\+\_\+type}$\ast$ {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::{\bf pointer}}\label{classhash__table_ad9e0d75b1e6756dc449ba917383d0dee}
+\hypertarget{classhash__table_a92ee06d8c071e7a5b41861d2622e02de}{}\index{hash\+\_\+table@{hash\+\_\+table}!reference@{reference}}
+\index{reference@{reference}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{reference}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ typedef {\bf value\+\_\+type}\& {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::{\bf reference}}\label{classhash__table_a92ee06d8c071e7a5b41861d2622e02de}
+\hypertarget{classhash__table_a8d85f5b55ee3116e6d40c1de62e62368}{}\index{hash\+\_\+table@{hash\+\_\+table}!size\+\_\+type@{size\+\_\+type}}
+\index{size\+\_\+type@{size\+\_\+type}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{size\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ typedef std\+::size\+\_\+t {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::{\bf size\+\_\+type}}\label{classhash__table_a8d85f5b55ee3116e6d40c1de62e62368}
+\hypertarget{classhash__table_a536a4f7db0e47e35283f8e04ea72e88c}{}\index{hash\+\_\+table@{hash\+\_\+table}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{value\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ typedef \+\_\+\+Type {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::{\bf value\+\_\+type}}\label{classhash__table_a536a4f7db0e47e35283f8e04ea72e88c}
+\hypertarget{classhash__table_a46df0d3f55f71d07f275abebec698098}{}\index{hash\+\_\+table@{hash\+\_\+table}!void\+\_\+pointer@{void\+\_\+pointer}}
+\index{void\+\_\+pointer@{void\+\_\+pointer}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{void\+\_\+pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ typedef std\+::pointer\+\_\+traits$<${\bf pointer}$>$\+::template rebind$<$void$>$ {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::{\bf void\+\_\+pointer}}\label{classhash__table_a46df0d3f55f71d07f275abebec698098}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classhash__table_a0230402b435247b23c4898022c9aec5e}{}\index{hash\+\_\+table@{hash\+\_\+table}!hash\+\_\+table@{hash\+\_\+table}}
+\index{hash\+\_\+table@{hash\+\_\+table}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{hash\+\_\+table()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::{\bf hash\+\_\+table} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classhash__table_a0230402b435247b23c4898022c9aec5e}
+\hypertarget{classhash__table_aceec87dc4c9abc44d7b68fe8203d3ce6}{}\index{hash\+\_\+table@{hash\+\_\+table}!hash\+\_\+table@{hash\+\_\+table}}
+\index{hash\+\_\+table@{hash\+\_\+table}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{hash\+\_\+table(const hasher \&hf, const key\+\_\+equal \&eql)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::{\bf hash\+\_\+table} (
+\begin{DoxyParamCaption}
+\item[{const {\bf hasher} \&}]{hf, }
+\item[{const {\bf key\+\_\+equal} \&}]{eql}
+\end{DoxyParamCaption}
+)}\label{classhash__table_aceec87dc4c9abc44d7b68fe8203d3ce6}
+\hypertarget{classhash__table_aefa871baa0421eef41e21b41d92b8243}{}\index{hash\+\_\+table@{hash\+\_\+table}!hash\+\_\+table@{hash\+\_\+table}}
+\index{hash\+\_\+table@{hash\+\_\+table}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{hash\+\_\+table(const hash\+\_\+table \&copy)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::{\bf hash\+\_\+table} (
+\begin{DoxyParamCaption}
+\item[{const {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$ \&}]{copy}
+\end{DoxyParamCaption}
+)}\label{classhash__table_aefa871baa0421eef41e21b41d92b8243}
+\hypertarget{classhash__table_aaba701f67012d269277871724daafac5}{}\index{hash\+\_\+table@{hash\+\_\+table}!hash\+\_\+table@{hash\+\_\+table}}
+\index{hash\+\_\+table@{hash\+\_\+table}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{hash\+\_\+table(hash\+\_\+table \&\&copy)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::{\bf hash\+\_\+table} (
+\begin{DoxyParamCaption}
+\item[{{\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$ \&\&}]{copy}
+\end{DoxyParamCaption}
+)}\label{classhash__table_aaba701f67012d269277871724daafac5}
+\hypertarget{classhash__table_a60e0f19084be4a67632f2b992de85402}{}\index{hash\+\_\+table@{hash\+\_\+table}!````~hash\+\_\+table@{$\sim$hash\+\_\+table}}
+\index{````~hash\+\_\+table@{$\sim$hash\+\_\+table}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{$\sim$hash\+\_\+table()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::$\sim${\bf hash\+\_\+table} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classhash__table_a60e0f19084be4a67632f2b992de85402}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classhash__table_ad92313e501faa8d583bc17aa2928e2b9}{}\index{hash\+\_\+table@{hash\+\_\+table}!hash\+\_\+function@{hash\+\_\+function}}
+\index{hash\+\_\+function@{hash\+\_\+function}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{hash\+\_\+function()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ {\bf hasher}\& {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::hash\+\_\+function (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classhash__table_ad92313e501faa8d583bc17aa2928e2b9}
+\hypertarget{classhash__table_ad6722316ea6db15d511037d3083b1d41}{}\index{hash\+\_\+table@{hash\+\_\+table}!hash\+\_\+function@{hash\+\_\+function}}
+\index{hash\+\_\+function@{hash\+\_\+function}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{hash\+\_\+function() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ const {\bf hasher}\& {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::hash\+\_\+function (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classhash__table_ad6722316ea6db15d511037d3083b1d41}
+\hypertarget{classhash__table_a360462913491830ed605a6e7694c087f}{}\index{hash\+\_\+table@{hash\+\_\+table}!key\+\_\+eq@{key\+\_\+eq}}
+\index{key\+\_\+eq@{key\+\_\+eq}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{key\+\_\+eq()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ {\bf key\+\_\+equal}\& {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::key\+\_\+eq (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classhash__table_a360462913491830ed605a6e7694c087f}
+\hypertarget{classhash__table_ac2fc819d64a284bba17fbf6a66110706}{}\index{hash\+\_\+table@{hash\+\_\+table}!key\+\_\+eq@{key\+\_\+eq}}
+\index{key\+\_\+eq@{key\+\_\+eq}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{key\+\_\+eq() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ const {\bf key\+\_\+equal}\& {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::key\+\_\+eq (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classhash__table_ac2fc819d64a284bba17fbf6a66110706}
+\hypertarget{classhash__table_a18411f20b0593f8c34230862b6a16397}{}\index{hash\+\_\+table@{hash\+\_\+table}!max\+\_\+load\+\_\+factor@{max\+\_\+load\+\_\+factor}}
+\index{max\+\_\+load\+\_\+factor@{max\+\_\+load\+\_\+factor}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{max\+\_\+load\+\_\+factor()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ float\& {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::max\+\_\+load\+\_\+factor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classhash__table_a18411f20b0593f8c34230862b6a16397}
+\hypertarget{classhash__table_abd5414b8eaa7e8cfb733992d2ff940a9}{}\index{hash\+\_\+table@{hash\+\_\+table}!max\+\_\+load\+\_\+factor@{max\+\_\+load\+\_\+factor}}
+\index{max\+\_\+load\+\_\+factor@{max\+\_\+load\+\_\+factor}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{max\+\_\+load\+\_\+factor() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ float {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::max\+\_\+load\+\_\+factor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classhash__table_abd5414b8eaa7e8cfb733992d2ff940a9}
+\hypertarget{classhash__table_a2192f10ce77baea09e73d46f8c5e8254}{}\index{hash\+\_\+table@{hash\+\_\+table}!operator=@{operator=}}
+\index{operator=@{operator=}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{operator=(const hash\+\_\+table \&copy)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ {\bf hash\+\_\+table} \& {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$ \&}]{copy}
+\end{DoxyParamCaption}
+)}\label{classhash__table_a2192f10ce77baea09e73d46f8c5e8254}
+\hypertarget{classhash__table_a74641c17369c448fdf63eab1d759e3c3}{}\index{hash\+\_\+table@{hash\+\_\+table}!operator=@{operator=}}
+\index{operator=@{operator=}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{operator=(hash\+\_\+table \&\&copy)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ {\bf hash\+\_\+table} \& {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$ \&\&}]{copy}
+\end{DoxyParamCaption}
+)}\label{classhash__table_a74641c17369c448fdf63eab1d759e3c3}
+\hypertarget{classhash__table_a0e67f8c6828034c159ea597a7e31b3c1}{}\index{hash\+\_\+table@{hash\+\_\+table}!size@{size}}
+\index{size@{size}!hash\+\_\+table@{hash\+\_\+table}}
+\subsubsection[{size() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Type , class \+\_\+\+Hash , class \+\_\+\+Equal $>$ {\bf size\+\_\+type} {\bf hash\+\_\+table}$<$ \+\_\+\+Type, \+\_\+\+Hash, \+\_\+\+Equal $>$\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classhash__table_a0e67f8c6828034c159ea597a7e31b3c1}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{hash__table_8hpp}{hash\+\_\+table.\+hpp}\end{DoxyCompactItemize}

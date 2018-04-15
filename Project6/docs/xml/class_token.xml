@@ -1,0 +1,495 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_token" kind="class" language="C++" prot="public">
+    <compoundname>Token</compoundname>
+    <includes refid="_token_8hpp" local="no">Token.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_token_1af1d63dfea74f638ec25cc04fb6e2f020" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Token::_payload</definition>
+        <argsstring></argsstring>
+        <name>_payload</name>
+        <briefdescription>
+<para>A std::string to contain the token extracted from the corpus. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="27" column="1" bodyfile="Token.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_token_1a28f9f1fe03d85a965287e9074406a78d" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; int, std::pair&lt; int, float &gt; &gt;</type>
+        <definition>std::unordered_map&lt;int,std::pair&lt;int,float&gt; &gt; Token::_docFreqs</definition>
+        <argsstring></argsstring>
+        <name>_docFreqs</name>
+        <briefdescription>
+<para>A std::unordered_map for document/(document frequency/tf-idf) pairs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="28" column="1" bodyfile="Token.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_token_1a41c3c30e4e3a3e3511024b79fc39c8f9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Token::corpusFreq</definition>
+        <argsstring></argsstring>
+        <name>corpusFreq</name>
+        <briefdescription>
+<para>An integer for containing a <ref refid="class_token" kindref="compound">Token</ref>&apos;s frequency in the corpus. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="29" column="1" bodyfile="Token.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_token_1aa3c5868ba4115f3189df6b2ac5b36f39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Token::Token</definition>
+        <argsstring>()</argsstring>
+        <name>Token</name>
+        <briefdescription>
+<para>Initializes the member data with default values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="38" column="1" bodyfile="Token.hpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_token_1afbdab46261b6980bebf75e1c910d19ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Token::Token</definition>
+        <argsstring>(const std::string &amp;payload)</argsstring>
+        <name>Token</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>payload</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the member data with a given payload and default values for the rest of the data members. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a payload to initialize the <ref refid="class_token" kindref="compound">Token</ref> with. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="48" column="1" bodyfile="Token.hpp" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_token_1a1385cdd373c4f869067bcf4e4549b35e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Token::Token</definition>
+        <argsstring>(std::string &amp;&amp;payload)</argsstring>
+        <name>Token</name>
+        <param>
+          <type>std::string &amp;&amp;</type>
+          <declname>payload</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the member data with a given payload and default values for the rest of the data members. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- an rvalue payload to initialize the <ref refid="class_token" kindref="compound">Token</ref> with. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="58" column="1" bodyfile="Token.hpp" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_token_1a3c9d92534dea1cf1664b049bbc497631" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Token::addDocPair</definition>
+        <argsstring>(const std::pair&lt; int, int &gt; &amp;doc)</argsstring>
+        <name>addDocPair</name>
+        <param>
+          <type>const std::pair&lt; int, int &gt; &amp;</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="69" column="1" bodyfile="Token.hpp" bodystart="69" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_token_1a98fb92871af9b32ec5dc5b1b16a3b92d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>Token::calculateRanks</definition>
+        <argsstring>(const int &amp;numDocs)</argsstring>
+        <name>calculateRanks</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>numDocs</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the tf-idf values for a <ref refid="class_token" kindref="compound">Token</ref> for all documents that contain that <ref refid="class_token" kindref="compound">Token</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numDocs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the number of documents in the corpus. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="81" column="1" bodyfile="Token.cpp" bodystart="8" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_token_1a2f643ffd68e0d9f6fc3a812337cba728" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int &amp;</type>
+        <definition>int&amp; Token::corpusFrequency</definition>
+        <argsstring>()</argsstring>
+        <name>corpusFrequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="90" column="1" bodyfile="Token.hpp" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_token_1a96f7a2357460942a79f4c83edfc5328e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Token::corpusFrequency</definition>
+        <argsstring>(const int &amp;corpFreq)</argsstring>
+        <name>corpusFrequency</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>corpFreq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="98" column="1" bodyfile="Token.hpp" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_token_1ae6baab69fb2340897f5a96a824b59296" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::unordered_map&lt; int, std::pair&lt; int, float &gt; &gt; &amp;</type>
+        <definition>std::unordered_map&lt;int,std::pair&lt;int,float&gt; &gt;&amp; Token::docFreqs</definition>
+        <argsstring>()</argsstring>
+        <name>docFreqs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="107" column="1" bodyfile="Token.hpp" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_token_1ad72b4a41e4b59f38a60749f4f5f7d839" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>Token::docFreqs</definition>
+        <argsstring>(const std::unordered_map&lt; int, std::pair&lt; int, float &gt;&gt; &amp;docs)</argsstring>
+        <name>docFreqs</name>
+        <param>
+          <type>const std::unordered_map&lt; int, std::pair&lt; int, float &gt;&gt; &amp;</type>
+          <declname>docs</declname>
+        </param>
+        <briefdescription>
+<para>Sets docFreqs to a given value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>docs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a std::unordered_map containing &lt;document/&lt;document frequency/tf-idf&gt;&gt; pairs. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="116" column="1" bodyfile="Token.hpp" bodystart="116" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="class_token_1ae3802c4c2b1a3daf2de8e72eee09fb57" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Token::hasDocPair</definition>
+        <argsstring>(const std::pair&lt; int, int &gt; &amp;docID) const </argsstring>
+        <name>hasDocPair</name>
+        <param>
+          <type>const std::pair&lt; int, int &gt; &amp;</type>
+          <declname>docID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="125" column="1" bodyfile="Token.cpp" bodystart="24" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_token_1a7131e0dbc8f28dd91b0adfb40064addc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Token::incrCorpFreq</definition>
+        <argsstring>()</argsstring>
+        <name>incrCorpFreq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="132" column="1" bodyfile="Token.hpp" bodystart="132" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="class_token_1a9624e44c95f3c6a1eaca03b384d96ed3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Token::incrCorpFreq</definition>
+        <argsstring>(const int &amp;corpFreq)</argsstring>
+        <name>incrCorpFreq</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>corpFreq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="140" column="1" bodyfile="Token.hpp" bodystart="140" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_token_1a067a9966459518c42bdeff937b5e25c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Token::incrDocPair</definition>
+        <argsstring>(const std::pair&lt; int, int &gt; &amp;docID)</argsstring>
+        <name>incrDocPair</name>
+        <param>
+          <type>const std::pair&lt; int, int &gt; &amp;</type>
+          <declname>docID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="148" column="1" bodyfile="Token.cpp" bodystart="32" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_token_1a518dac411db3279a9b2f4ce38e46d199" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string &amp;</type>
+        <definition>Token::payload</definition>
+        <argsstring>()</argsstring>
+        <name>payload</name>
+        <briefdescription>
+<para>Returns a <ref refid="class_token" kindref="compound">Token</ref>&apos;s payload. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>reference to the <ref refid="class_token" kindref="compound">Token</ref>&apos;s payload (std::string). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="157" column="1" bodyfile="Token.hpp" bodystart="157" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_token_1a434580f0f776406d65ecd0985acd1f34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>Token::payload</definition>
+        <argsstring>(const std::string &amp;payload)</argsstring>
+        <name>payload</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>payload</declname>
+        </param>
+        <briefdescription>
+<para>Sets the <ref refid="class_token" kindref="compound">Token</ref>&apos;s payload. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a string to set the <ref refid="class_token" kindref="compound">Token</ref> payload to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="165" column="1" bodyfile="Token.hpp" bodystart="165" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="class_token_1ab4ef7da254223df781029a400d928350" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>Token::payload</definition>
+        <argsstring>(std::string &amp;&amp;payload)</argsstring>
+        <name>payload</name>
+        <param>
+          <type>std::string &amp;&amp;</type>
+          <declname>payload</declname>
+        </param>
+        <briefdescription>
+<para>Sets the <ref refid="class_token" kindref="compound">Token</ref>&apos;s payload using an rvalue reference. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a string to set the <ref refid="class_token" kindref="compound">Token</ref> payload to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="173" column="1" bodyfile="Token.hpp" bodystart="173" bodyend="173"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_token_1af48fd5b021b89a22f25aec6ae884f205" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>Token::operator==</definition>
+        <argsstring>(const Token &amp;lhs, const Token &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="class_token" kindref="compound">Token</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_token" kindref="compound">Token</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Compares two <ref refid="class_token" kindref="compound">Token</ref> objects for equality. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- A constant <ref refid="class_token" kindref="compound">Token</ref> reference. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- A constant <ref refid="class_token" kindref="compound">Token</ref> reference. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean whether two Tokens are the same. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="184" column="1" bodyfile="Token.hpp" bodystart="184" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_token_1a720aad55f2d8469a52550be65d947562" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>Token::operator!=</definition>
+        <argsstring>(const Token &amp;lhs, const Token &amp;rhs)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="class_token" kindref="compound">Token</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_token" kindref="compound">Token</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Compares two <ref refid="class_token" kindref="compound">Token</ref> objects for inequality. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- A constant <ref refid="class_token" kindref="compound">Token</ref> reference. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- A constant <ref refid="class_token" kindref="compound">Token</ref> reference. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean whether two Tokens are not the same. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="196" column="1" bodyfile="Token.hpp" bodystart="196" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_token_1a9b5081d21f0f5dda0c237d0e7622c271" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>Token::operator&lt;</definition>
+        <argsstring>(const Token &amp;lhs, const Token &amp;rhs)</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="class_token" kindref="compound">Token</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_token" kindref="compound">Token</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether one <ref refid="class_token" kindref="compound">Token</ref> is less than another. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- A constant <ref refid="class_token" kindref="compound">Token</ref> reference. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- A constant <ref refid="class_token" kindref="compound">Token</ref> reference. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean whether a <ref refid="class_token" kindref="compound">Token</ref> is less than another. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Token.hpp" line="208" column="1" bodyfile="Token.hpp" bodystart="208" bodyend="209"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for representing each token in the corpus. </para>    </briefdescription>
+    <detaileddescription>
+<para>Also maintains information pertaining to the relationship between the token and its frequencies. <simplesect kind="see"><para><ref refid="class_document" kindref="compound">Document</ref>. </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_document_processor" kindref="compound">DocumentProcessor</ref>. </para></simplesect>
+</para>    </detaileddescription>
+    <location file="Token.hpp" line="23" column="1" bodyfile="Token.hpp" bodystart="23" bodyend="211"/>
+    <listofallmembers>
+      <member refid="class_token_1a28f9f1fe03d85a965287e9074406a78d" prot="private" virt="non-virtual"><scope>Token</scope><name>_docFreqs</name></member>
+      <member refid="class_token_1af1d63dfea74f638ec25cc04fb6e2f020" prot="private" virt="non-virtual"><scope>Token</scope><name>_payload</name></member>
+      <member refid="class_token_1a3c9d92534dea1cf1664b049bbc497631" prot="public" virt="non-virtual"><scope>Token</scope><name>addDocPair</name></member>
+      <member refid="class_token_1a98fb92871af9b32ec5dc5b1b16a3b92d" prot="public" virt="non-virtual"><scope>Token</scope><name>calculateRanks</name></member>
+      <member refid="class_token_1a41c3c30e4e3a3e3511024b79fc39c8f9" prot="private" virt="non-virtual"><scope>Token</scope><name>corpusFreq</name></member>
+      <member refid="class_token_1a2f643ffd68e0d9f6fc3a812337cba728" prot="public" virt="non-virtual"><scope>Token</scope><name>corpusFrequency</name></member>
+      <member refid="class_token_1a96f7a2357460942a79f4c83edfc5328e" prot="public" virt="non-virtual"><scope>Token</scope><name>corpusFrequency</name></member>
+      <member refid="class_token_1ae6baab69fb2340897f5a96a824b59296" prot="public" virt="non-virtual"><scope>Token</scope><name>docFreqs</name></member>
+      <member refid="class_token_1ad72b4a41e4b59f38a60749f4f5f7d839" prot="public" virt="non-virtual"><scope>Token</scope><name>docFreqs</name></member>
+      <member refid="class_token_1ae3802c4c2b1a3daf2de8e72eee09fb57" prot="public" virt="non-virtual"><scope>Token</scope><name>hasDocPair</name></member>
+      <member refid="class_token_1a7131e0dbc8f28dd91b0adfb40064addc" prot="public" virt="non-virtual"><scope>Token</scope><name>incrCorpFreq</name></member>
+      <member refid="class_token_1a9624e44c95f3c6a1eaca03b384d96ed3" prot="public" virt="non-virtual"><scope>Token</scope><name>incrCorpFreq</name></member>
+      <member refid="class_token_1a067a9966459518c42bdeff937b5e25c8" prot="public" virt="non-virtual"><scope>Token</scope><name>incrDocPair</name></member>
+      <member refid="class_token_1a720aad55f2d8469a52550be65d947562" prot="public" virt="non-virtual"><scope>Token</scope><name>operator!=</name></member>
+      <member refid="class_token_1a9b5081d21f0f5dda0c237d0e7622c271" prot="public" virt="non-virtual"><scope>Token</scope><name>operator&lt;</name></member>
+      <member refid="class_token_1af48fd5b021b89a22f25aec6ae884f205" prot="public" virt="non-virtual"><scope>Token</scope><name>operator==</name></member>
+      <member refid="class_token_1a518dac411db3279a9b2f4ce38e46d199" prot="public" virt="non-virtual"><scope>Token</scope><name>payload</name></member>
+      <member refid="class_token_1a434580f0f776406d65ecd0985acd1f34" prot="public" virt="non-virtual"><scope>Token</scope><name>payload</name></member>
+      <member refid="class_token_1ab4ef7da254223df781029a400d928350" prot="public" virt="non-virtual"><scope>Token</scope><name>payload</name></member>
+      <member refid="class_token_1aa3c5868ba4115f3189df6b2ac5b36f39" prot="public" virt="non-virtual"><scope>Token</scope><name>Token</name></member>
+      <member refid="class_token_1afbdab46261b6980bebf75e1c910d19ec" prot="public" virt="non-virtual"><scope>Token</scope><name>Token</name></member>
+      <member refid="class_token_1a1385cdd373c4f869067bcf4e4549b35e" prot="public" virt="non-virtual"><scope>Token</scope><name>Token</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

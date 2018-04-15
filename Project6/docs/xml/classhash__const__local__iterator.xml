@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="classhash__const__local__iterator" kind="class" language="C++" prot="public">
+    <compoundname>hash_const_local_iterator</compoundname>
+    <includes refid="hash__table_8hpp" local="no">hash_table.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class _ConstNodePtr</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classhash__const__local__iterator_1a722901ff24ab1735132413fb6a5cac21" prot="private" static="no">
+        <type>_ConstNodePtr</type>
+        <definition>typedef _ConstNodePtr hash_const_local_iterator&lt; _ConstNodePtr &gt;::node_pointer</definition>
+        <argsstring></argsstring>
+        <name>node_pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="303" column="1" bodyfile="hash_table.hpp" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhash__const__local__iterator_1a7ef5251db353760af754a84742a90790" prot="private" static="no">
+        <type>std::pointer_traits&lt; node_pointer &gt;</type>
+        <definition>typedef std::pointer_traits&lt;node_pointer&gt; hash_const_local_iterator&lt; _ConstNodePtr &gt;::pointer_traits</definition>
+        <argsstring></argsstring>
+        <name>pointer_traits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="304" column="1" bodyfile="hash_table.hpp" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classhash__const__local__iterator_1aec8b54be78028f13749b7a12c2e3b5a2" prot="public" static="no">
+        <type>std::forward_iterator_tag</type>
+        <definition>typedef std::forward_iterator_tag hash_const_local_iterator&lt; _ConstNodePtr &gt;::iterator_category</definition>
+        <argsstring></argsstring>
+        <name>iterator_category</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="312" column="1" bodyfile="hash_table.hpp" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhash__const__local__iterator_1af8701342a208f3b71712270ece9e7572" prot="public" static="no">
+        <type>pointer_traits::element_type::value_type</type>
+        <definition>typedef pointer_traits::element_type::value_type hash_const_local_iterator&lt; _ConstNodePtr &gt;::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="313" column="1" bodyfile="hash_table.hpp" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhash__const__local__iterator_1aeb5f0926216599a01a0df40329208f91" prot="public" static="no">
+        <type>pointer_traits::difference_type</type>
+        <definition>typedef pointer_traits::difference_type hash_const_local_iterator&lt; _ConstNodePtr &gt;::difference_type</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="314" column="1" bodyfile="hash_table.hpp" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhash__const__local__iterator_1a651a8f3ade8e5024bc7819582c854f83" prot="public" static="no">
+        <type><ref refid="classhash__const__local__iterator_1af8701342a208f3b71712270ece9e7572" kindref="member">value_type</ref> &amp;</type>
+        <definition>typedef value_type&amp; hash_const_local_iterator&lt; _ConstNodePtr &gt;::reference</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="315" column="1" bodyfile="hash_table.hpp" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhash__const__local__iterator_1acfcca3eb814a6062a2f3cdb62ebc94e4" prot="public" static="no">
+        <type>pointer_traits::template rebind&lt; <ref refid="classhash__const__local__iterator_1af8701342a208f3b71712270ece9e7572" kindref="member">value_type</ref> &gt;</type>
+        <definition>typedef pointer_traits::template rebind&lt;value_type&gt; hash_const_local_iterator&lt; _ConstNodePtr &gt;::pointer</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="316" column="1" bodyfile="hash_table.hpp" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhash__const__local__iterator_1a0d161d0ca9732e1139b6d080f9cfc402" prot="private" static="no" mutable="no">
+        <type>node_pointer</type>
+        <definition>node_pointer hash_const_local_iterator&lt; _ConstNodePtr &gt;::_ref</definition>
+        <argsstring></argsstring>
+        <name>_ref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="306" column="1" bodyfile="hash_table.hpp" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhash__const__local__iterator_1ac33ac6e6681a2a12a7df5093d40124b0" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t hash_const_local_iterator&lt; _ConstNodePtr &gt;::_bucket</definition>
+        <argsstring></argsstring>
+        <name>_bucket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="307" column="1" bodyfile="hash_table.hpp" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhash__const__local__iterator_1a23b15680a2193c4e8cb80784a57879be" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t hash_const_local_iterator&lt; _ConstNodePtr &gt;::_bucket_count</definition>
+        <argsstring></argsstring>
+        <name>_bucket_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="308" column="1" bodyfile="hash_table.hpp" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classhash__const__local__iterator_1a39f140c37d8ec7b0c08b23083c94562e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class</type>
+          </param>
+          <param>
+            <type>class</type>
+          </param>
+          <param>
+            <type>class</type>
+          </param>
+        </templateparamlist>
+        <type>friend class</type>
+        <definition>friend class hash_table</definition>
+        <argsstring></argsstring>
+        <name>hash_table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="393" column="1" bodyfile="hash_table.hpp" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classhash__const__local__iterator_1a782c403295d166dc14d2350772adf50b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const hash_local_iterator &amp;lhs, const hash_local_iterator &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classhash__local__iterator" kindref="compound">hash_local_iterator</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classhash__local__iterator" kindref="compound">hash_local_iterator</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="373" column="1" bodyfile="hash_table.hpp" bodystart="373" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="friend" id="classhash__const__local__iterator_1a59dc2e0a3828f0cb29ce36ef3b3d27dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(const hash_local_iterator &amp;lhs, const hash_local_iterator &amp;rhs)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classhash__local__iterator" kindref="compound">hash_local_iterator</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classhash__local__iterator" kindref="compound">hash_local_iterator</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="377" column="1" bodyfile="hash_table.hpp" bodystart="377" bodyend="378"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhash__const__local__iterator_1a4f696dbd652463eff2a0694426810ffc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hash_const_local_iterator&lt; _ConstNodePtr &gt;::hash_local_iterator</definition>
+        <argsstring>()</argsstring>
+        <name>hash_local_iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="319" column="1" bodyfile="hash_table.hpp" bodystart="319" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classhash__const__local__iterator_1aa25e7f6e7190512c5e3ea83efb3f6c13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hash_const_local_iterator&lt; _ConstNodePtr &gt;::hash_local_iterator</definition>
+        <argsstring>(const hash_local_iterator &amp;copy)</argsstring>
+        <name>hash_local_iterator</name>
+        <param>
+          <type>const <ref refid="classhash__local__iterator" kindref="compound">hash_local_iterator</ref> &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="322" column="1" bodyfile="hash_table.hpp" bodystart="322" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classhash__const__local__iterator_1aaaa2de24d964d60ced25f38b52f594cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hash_const_local_iterator&lt; _ConstNodePtr &gt;::~hash_local_iterator</definition>
+        <argsstring>()</argsstring>
+        <name>~hash_local_iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="327" column="1" bodyfile="hash_table.hpp" bodystart="327" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="classhash__const__local__iterator_1ae564d42312230bbc12bf9306a5be11a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhash__local__iterator" kindref="compound">hash_local_iterator</ref> &amp;</type>
+        <definition>hash_local_iterator&amp; hash_const_local_iterator&lt; _ConstNodePtr &gt;::operator=</definition>
+        <argsstring>(const hash_local_iterator &amp;copy)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classhash__local__iterator" kindref="compound">hash_local_iterator</ref> &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="330" column="1" bodyfile="hash_table.hpp" bodystart="330" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classhash__const__local__iterator_1a6f962677e98910597e58c4ed870a32cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhash__const__local__iterator_1a651a8f3ade8e5024bc7819582c854f83" kindref="member">reference</ref></type>
+        <definition>reference hash_const_local_iterator&lt; _ConstNodePtr &gt;::operator*</definition>
+        <argsstring>()</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="345" column="1" bodyfile="hash_table.hpp" bodystart="345" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="classhash__const__local__iterator_1a342db797fb8c5b5620da1e6e5dd8ca51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhash__const__local__iterator_1acfcca3eb814a6062a2f3cdb62ebc94e4" kindref="member">pointer</ref></type>
+        <definition>pointer hash_const_local_iterator&lt; _ConstNodePtr &gt;::operator-&gt;</definition>
+        <argsstring>()</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="348" column="1" bodyfile="hash_table.hpp" bodystart="348" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="classhash__const__local__iterator_1a535769b06678a31762c600f7e76518d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhash__local__iterator" kindref="compound">hash_local_iterator</ref> &amp;</type>
+        <definition>hash_local_iterator&amp; hash_const_local_iterator&lt; _ConstNodePtr &gt;::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="351" column="1" bodyfile="hash_table.hpp" bodystart="351" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="classhash__const__local__iterator_1ab4f72c1d60c8de79822534e60ae7fa9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhash__local__iterator" kindref="compound">hash_local_iterator</ref></type>
+        <definition>hash_local_iterator hash_const_local_iterator&lt; _ConstNodePtr &gt;::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="362" column="1" bodyfile="hash_table.hpp" bodystart="362" bodyend="370"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classhash__const__local__iterator_1a0a4eaeb60369f9c6e9717ac8f399457b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hash_const_local_iterator&lt; _ConstNodePtr &gt;::hash_local_iterator</definition>
+        <argsstring>(node_pointer ref, std::size_t bucket, std::size_t bucket_count)</argsstring>
+        <name>hash_local_iterator</name>
+        <param>
+          <type>node_pointer</type>
+          <declname>ref</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>bucket</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>bucket_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="383" column="1" bodyfile="hash_table.hpp" bodystart="383" bodyend="391"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="hash_table.hpp" line="39" column="1" bodyfile="hash_table.hpp" bodystart="39" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classhash__const__local__iterator_1ac33ac6e6681a2a12a7df5093d40124b0" prot="private" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>_bucket</name></member>
+      <member refid="classhash__const__local__iterator_1a23b15680a2193c4e8cb80784a57879be" prot="private" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>_bucket_count</name></member>
+      <member refid="classhash__const__local__iterator_1a0d161d0ca9732e1139b6d080f9cfc402" prot="private" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>_ref</name></member>
+      <member refid="classhash__const__local__iterator_1aeb5f0926216599a01a0df40329208f91" prot="public" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>difference_type</name></member>
+      <member refid="classhash__const__local__iterator_1a4f696dbd652463eff2a0694426810ffc" prot="public" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>hash_local_iterator</name></member>
+      <member refid="classhash__const__local__iterator_1aa25e7f6e7190512c5e3ea83efb3f6c13" prot="public" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>hash_local_iterator</name></member>
+      <member refid="classhash__const__local__iterator_1a0a4eaeb60369f9c6e9717ac8f399457b" prot="private" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>hash_local_iterator</name></member>
+      <member refid="classhash__const__local__iterator_1a39f140c37d8ec7b0c08b23083c94562e" prot="private" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>hash_table</name></member>
+      <member refid="classhash__const__local__iterator_1aec8b54be78028f13749b7a12c2e3b5a2" prot="public" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>iterator_category</name></member>
+      <member refid="classhash__const__local__iterator_1a722901ff24ab1735132413fb6a5cac21" prot="private" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>node_pointer</name></member>
+      <member refid="classhash__const__local__iterator_1a59dc2e0a3828f0cb29ce36ef3b3d27dd" prot="public" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>operator!=</name></member>
+      <member refid="classhash__const__local__iterator_1a6f962677e98910597e58c4ed870a32cd" prot="public" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>operator*</name></member>
+      <member refid="classhash__const__local__iterator_1a535769b06678a31762c600f7e76518d6" prot="public" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>operator++</name></member>
+      <member refid="classhash__const__local__iterator_1ab4f72c1d60c8de79822534e60ae7fa9c" prot="public" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>operator++</name></member>
+      <member refid="classhash__const__local__iterator_1a342db797fb8c5b5620da1e6e5dd8ca51" prot="public" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>operator-&gt;</name></member>
+      <member refid="classhash__const__local__iterator_1ae564d42312230bbc12bf9306a5be11a7" prot="public" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>operator=</name></member>
+      <member refid="classhash__const__local__iterator_1a782c403295d166dc14d2350772adf50b" prot="public" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>operator==</name></member>
+      <member refid="classhash__const__local__iterator_1acfcca3eb814a6062a2f3cdb62ebc94e4" prot="public" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>pointer</name></member>
+      <member refid="classhash__const__local__iterator_1a7ef5251db353760af754a84742a90790" prot="private" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>pointer_traits</name></member>
+      <member refid="classhash__const__local__iterator_1a651a8f3ade8e5024bc7819582c854f83" prot="public" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>reference</name></member>
+      <member refid="classhash__const__local__iterator_1af8701342a208f3b71712270ece9e7572" prot="public" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>value_type</name></member>
+      <member refid="classhash__const__local__iterator_1aaaa2de24d964d60ced25f38b52f594cd" prot="public" virt="non-virtual"><scope>hash_const_local_iterator</scope><name>~hash_local_iterator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

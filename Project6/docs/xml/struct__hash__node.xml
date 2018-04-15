@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__hash__node" kind="struct" language="C++" prot="public">
+    <compoundname>_hash_node</compoundname>
+    <basecompoundref refid="struct__hash__node__base" prot="private" virt="non-virtual">_hash_node_base&lt; std::pointer_traits&lt; _VoidPtr &gt;::template rebind&lt; _hash_node&lt; _Type, _VoidPtr &gt; &gt; &gt;</basecompoundref>
+    <includes refid="hash__table_8hpp" local="no">hash_table.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class _Type</type>
+      </param>
+      <param>
+        <type>class _VoidPtr</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="struct__hash__node_1a9cf761f744b825cd8d029b23e987278e" prot="public" static="no">
+        <type>_Type</type>
+        <definition>typedef _Type _hash_node&lt; _Type, _VoidPtr &gt;::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="23" column="1" bodyfile="hash_table.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="struct__hash__node_1ab8640749cb597dcdad8e375118aea949" prot="public" static="no">
+        <type>std::size_t</type>
+        <definition>typedef std::size_t _hash_node&lt; _Type, _VoidPtr &gt;::size_type</definition>
+        <argsstring></argsstring>
+        <name>size_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="24" column="1" bodyfile="hash_table.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__hash__node_1a76441125881a6d5bf9366d60edf2f0ab" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__hash__node_1ab8640749cb597dcdad8e375118aea949" kindref="member">size_type</ref></type>
+        <definition>size_type _hash_node&lt; _Type, _VoidPtr &gt;::_hash</definition>
+        <argsstring></argsstring>
+        <name>_hash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="26" column="1" bodyfile="hash_table.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__hash__node_1a5a7003f35790918c985be19c537cd464" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__hash__node_1a9cf761f744b825cd8d029b23e987278e" kindref="member">value_type</ref></type>
+        <definition>value_type _hash_node&lt; _Type, _VoidPtr &gt;::_value</definition>
+        <argsstring></argsstring>
+        <name>_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table.hpp" line="27" column="1" bodyfile="hash_table.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>_hash_node&lt; _Type, _VoidPtr &gt;</label>
+        <link refid="struct__hash__node"/>
+        <childnode refid="1" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>_hash_node_base&lt; std::pointer_traits&lt; _VoidPtr &gt;::template rebind&lt; _hash_node&lt; _Type, _VoidPtr &gt; &gt; &gt;</label>
+        <link refid="struct__hash__node__base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>_hash_node&lt; _Type, _VoidPtr &gt;</label>
+        <link refid="struct__hash__node"/>
+        <childnode refid="3" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_hash_node_base&lt; std::pointer_traits&lt; _VoidPtr &gt;::template rebind&lt; _hash_node&lt; _Type, _VoidPtr &gt; &gt; &gt;</label>
+        <link refid="struct__hash__node__base"/>
+      </node>
+    </collaborationgraph>
+    <location file="hash_table.hpp" line="21" column="1" bodyfile="hash_table.hpp" bodystart="21" bodyend="29"/>
+    <listofallmembers>
+      <member refid="struct__hash__node__base_1a77d1467b3b1f892476ab62f275e27047" prot="private" virt="non-virtual"><scope>_hash_node</scope><name>_first_node</name></member>
+      <member refid="struct__hash__node_1a76441125881a6d5bf9366d60edf2f0ab" prot="public" virt="non-virtual"><scope>_hash_node</scope><name>_hash</name></member>
+      <member refid="struct__hash__node__base_1a6e858d0e78ef9cad930efafa35d9f233" prot="private" virt="non-virtual"><scope>_hash_node</scope><name>_hash_node_base</name></member>
+      <member refid="struct__hash__node__base_1a2058572d4712840fbeae3489b64ab740" prot="private" virt="non-virtual"><scope>_hash_node</scope><name>_next</name></member>
+      <member refid="struct__hash__node_1a5a7003f35790918c985be19c537cd464" prot="public" virt="non-virtual"><scope>_hash_node</scope><name>_value</name></member>
+      <member refid="struct__hash__node_1ab8640749cb597dcdad8e375118aea949" prot="public" virt="non-virtual"><scope>_hash_node</scope><name>size_type</name></member>
+      <member refid="struct__hash__node_1a9cf761f744b825cd8d029b23e987278e" prot="public" virt="non-virtual"><scope>_hash_node</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
